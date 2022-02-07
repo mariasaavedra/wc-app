@@ -2,16 +2,23 @@ import styles from "../../styles/Section.module.css";
 interface SectionProps {
   children: any;
   grid: number;
+  gap?: string;
 }
 
-export const getClasses = (): string => {
-  const classes = [styles.ResponsiveBlockComponent];
+
+export const Section = (props: SectionProps) => {
+
+const getClasses = (): string => {
+  const classes = [`${styles.section}`];
+  classes.push(`grid grid-flow-col`);
+  if (props.gap) {
+    classes.push(`gap-${props.gap}`);
+  }
   return classes.join(" ");
 };
 
-export const Section = (props: SectionProps) => {
   return (
-    <div className={styles.section + " grid grid-flow-col"}>
+    <div className={getClasses()}>
       {props.children}
     </div>
   );
