@@ -1,4 +1,7 @@
 .hero {
-  background: url('https://placehold.co/1200x450/EEE/31343C');
+  background: url('https://source.unsplash.com/random/1200x650/?elearning');
+  background-size: cover;
+  background-position: center;
   min-height: 60vh;
+  width: 100%;
 }

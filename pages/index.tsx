@@ -7,6 +7,11 @@ import { Text } from "./components/Text";
 import { Footer } from "./components/Footer";
 // import styles from "../styles/Image.module.css";
 
+const homepageData = fetch('http://localhost:1337/api/homepage?populate=*', {
+}).then(response => response.json())
+.then(data => console.log(data));
+   
+
 const Home: NextPage = () => {
   return (
     <div className="container mx-auto">
@@ -25,10 +30,10 @@ const Home: NextPage = () => {
         </ImageCard>
       </Section>
       <Section>
-        <div className="columns-1 md:columns-3 sm:columns-1">
-        <img className="mx-auto" src="https://placehold.co/300"></img>
-        <img className="mx-auto" src="https://placehold.co/300"></img>
-        <img className="mx-auto" src="https://placehold.co/300"></img>
+        <div className="columns-1 md:columns-3 sm:columns-3">
+        <img className="mx-auto" src="https://source.unsplash.com/random/600x600/?hackathon"></img>
+        <img className="mx-auto" src="https://source.unsplash.com/random/600x600/?tech"></img>
+        <img className="mx-auto" src="https://source.unsplash.com/random/600x600/?coding"></img>
         </div>
         
       </Section>
