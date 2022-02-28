@@ -10,7 +10,8 @@ import { Footer } from "./components/Footer";
 const homepageData = fetch('http://localhost:1337/api/homepage?populate=*', {
 }).then(response => response.json())
 .then(data => console.log(data));
-   
+
+console.log(homepageData)
 
 const Home: NextPage = () => {
   return (
