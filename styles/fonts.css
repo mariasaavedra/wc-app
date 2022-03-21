@@ -1,0 +1,9 @@
+@font-face {
+    src: url('../asset/RedHatDisplay-Italic-VariableFont_wght.ttf');
+    font-family: "Redhat-Italic" ;
+}
+
+@font-face {
+    src: url('../asset/RedHatDisplay-VariableFont_wght.ttf');
+    font-family: "Redhat-Regular" ;
+}

@@ -3,6 +3,7 @@ interface SectionProps {
   children: any;
   grid: number;
   gap?: string;
+  display: string;
 }
 
 
