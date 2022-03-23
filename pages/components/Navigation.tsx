@@ -24,14 +24,14 @@ export const Navigation = () => {
                         </Link>
                     </div>
                     <div className="hidden desktop-menu lg:flex items-center space-x-1" >
+                        <Link href='/about-us'>
+                            <a className="py-4 px-3 text-lg font-semibold hover:text-brand-purple">ABOUT US</a>
+                        </Link>
                         <Link href='/programs'>
                             <a className="py-4 px-3 text-lg font-semibold hover:text-brand-purple">PROGRAMS</a>
                         </Link>
                         <Link href='/events'>
                             <a className="py-4 px-3 text-lg font-semibold hover:text-brand-purple">EVENT</a>
-                        </Link>
-                        <Link href='/aboutus'>
-                            <a className="py-4 px-3 text-lg font-semibold hover:text-brand-purple">ABOUT US</a>
                         </Link>
                         <Link href='#'>
                             <a className="py-3 px-3 text-lg font-semibold bg-brand-gold text-white rounded-full hover:text-black">DONATE</a>
