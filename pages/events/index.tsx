@@ -1,8 +1,10 @@
-const EventsPage = () => {
+import type { NextPage } from "Next";
+import { Section } from "../components/Section";
+import { Text } from "../components/Text";
+
+const EventsPage: NextPage = () => {
   return (
-    <div className="container mx-auto">
-      <p>Events Page</p>
-    </div>
+    <></>
   );
 }
 
