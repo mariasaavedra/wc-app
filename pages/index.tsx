@@ -48,9 +48,7 @@ const Home: NextPage = () => {
         </Column>
       </Section>
 
-      <Section>
-        <Footer></Footer>
-      </Section>
+      <Footer />
     </div>
   );
 };
