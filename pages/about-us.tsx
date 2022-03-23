@@ -1,3 +1,5 @@
+import { Footer } from "./components/Footer";
+
 const AboutPage = () => {
   return (
     <div className="mx-auto">
@@ -12,7 +14,7 @@ WE CODE KC is an initiative that serves the urban core of Kansas City, exposing 
           </p>
         </div>
     </div>
-    <div className="cards-container columns-1 md:columns-2 pt-20 px-32 flex justify-around flex-col items-center lg:items-stretch lg:flex-row">
+    <div className="cards-container columns-1 md:columns-2 py-20 px-32 flex justify-around flex-col items-center lg:items-stretch lg:flex-row">
         <div className="card-container  pb-12  w-80 lg:w-96 flex flex-col">
           <img className="card-image mx-auto pb-5" src="https://source.unsplash.com/random/600x600/?hackathon"></img>
           <button className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 uppercase">OUR TEAM</button>
@@ -22,6 +24,7 @@ WE CODE KC is an initiative that serves the urban core of Kansas City, exposing 
           <button className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 uppercase">OUR BOARD</button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
