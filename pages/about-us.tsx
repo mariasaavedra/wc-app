@@ -19,7 +19,7 @@ WE CODE KC is an initiative that serves the urban core of Kansas City, exposing 
         <div className="card-container  pb-12  w-80 lg:w-96 flex flex-col">
           <img className="card-image mx-auto pb-5" src="https://source.unsplash.com/random/600x600/?hackathon"></img>
           <Link href={'/team'}>
-          <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 uppercase text-center">OUR TEAM</a>
+            <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 uppercase text-center">OUR TEAM</a>
           </Link>
         </div>
         <div className="card-container w-80 lg:w-96 flex flex-col">
