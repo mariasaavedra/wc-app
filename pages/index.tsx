@@ -7,13 +7,13 @@ import Text from "../components/Text";
 import { Button } from "../components/Button";
 let response;
 
-try {
-  response = fetch("http://localhost:1337/api/homepage?populate=*", {})
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-} catch(err) {
-  console.log(err);
-}
+// try {
+//   response = fetch("http://localhost:1337/api/homepage?populate=*", {})
+//   .then((response) => response.json())
+//   .then((data) => console.log(data))
+// } catch(err) {
+//   console.log(err);
+// }
 
 const Home: NextPage = () => {
   return (
