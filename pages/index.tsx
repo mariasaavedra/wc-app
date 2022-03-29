@@ -5,6 +5,7 @@ import { Section } from "../components/Section";
 import { ImageCard } from "../components/ImageCard";
 import Text from "../components/Text";
 import { Button } from "../components/Button";
+import Heading from "../components/Heading";
 let response;
 
 // try {
@@ -21,9 +22,10 @@ const Home: NextPage = () => {
       <Hero>
         <div>
           <h1>FIGHTING INEQUITY THROUGH TECH AND INNOVATION EDUCATION</h1>
-          <Button className="align-center mx-auto">Learn More</Button>
         </div>
       </Hero>
+
+      <Heading>Title</Heading>
 
       <Section>
         <ImageCard imagePosition="right">
