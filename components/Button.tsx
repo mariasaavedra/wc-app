@@ -1,6 +1,7 @@
+import { MaybeParentComponentProps } from "../interfaces/ParentComponentProps";
 import styles from "../styles/components/Button.module.scss";
 
-interface ButtonProps {
+interface ButtonProps extends MaybeParentComponentProps {
   children?: any;
 }
 
@@ -10,7 +11,10 @@ export const Button = (props: ButtonProps) => {
       <button
         type="button"
         className={
-          styles.ButtonComponent + " block py-2 px-4 text-white border-b-2"
+          styles.ButtonComponent +
+          " " +
+          props.className +
+          " block py-2 px-4 text-white border-b-2"
         }
       >
         {props.children}

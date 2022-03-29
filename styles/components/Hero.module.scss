@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  h1, a { 
+    color: #fff !important;
+    text-align: center;
+  }
   &:before {
     display: block;
     content: "";
@@ -25,6 +29,6 @@
 .innerWrapper {
   position: relative;
   z-index: 100;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }

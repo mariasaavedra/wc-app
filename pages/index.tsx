@@ -17,8 +17,10 @@ const Home: NextPage = () => {
   return (
     <div className="container-fluid mx-auto">
       <Hero>
-        <h1>FIGHTING INEQUITY THROUGH TECH AND INNOVATION EDUCATION</h1>
-        <Button>Learn More</Button>
+        <div>
+          <h1>FIGHTING INEQUITY THROUGH TECH AND INNOVATION EDUCATION</h1>
+          <Button className="align-center mx-auto">Learn More</Button>
+        </div>
       </Hero>
 
       <Section>
