@@ -5,13 +5,15 @@ import { Section } from "../components/Section";
 import { ImageCard } from "../components/ImageCard";
 import Text from "../components/Text";
 import { Button } from "../components/Button";
-// import styles from "../styles/Image.module.css";
+let response;
 
-const homepageData = fetch("http://localhost:1337/api/homepage?populate=*", {})
+try {
+  response = fetch("http://localhost:1337/api/homepage?populate=*", {})
   .then((response) => response.json())
-  .then((data) => console.log(data));
-
-console.log(homepageData);
+  .then((data) => console.log(data))
+} catch(err) {
+  console.log(err);
+}
 
 const Home: NextPage = () => {
   return (
