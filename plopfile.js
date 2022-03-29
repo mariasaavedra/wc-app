@@ -18,12 +18,7 @@ module.exports = function (plop) {
                 type: 'add',
                 path: 'styles/components/{{name}}.module.scss',
                 templateFile: 'templates/component/styles.hbs',
-            },
-            {
-                type: 'add',
-                path: 'stories/{{name}}.stories.tsx',
-                templateFile: 'templates/component/story.hbs',
-            },
+            }
         ],
     });
 };

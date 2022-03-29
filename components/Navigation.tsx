@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import { Button } from "./Button";
 
 export const Navigation = () => {
   const [active, setActive] = useState(false);
@@ -74,7 +75,7 @@ export const Navigation = () => {
           <a className="block py-2 px-4 text-white border-b-2">About Us</a>
         </Link>
         <Link href="#">
-          <a className="block py-2 px-4 text-white border-b-2">Donate</a>
+          <Button>Donate</Button>
         </Link>
       </div>
     </nav>
