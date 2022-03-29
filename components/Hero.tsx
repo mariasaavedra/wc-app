@@ -1,5 +1,5 @@
 import { MaybeParentComponentProps } from "../interfaces/ParentComponentProps";
-import styles from "../styles/Hero.module.scss";
+import styles from "../styles/components/Hero.module.scss";
 
 interface HeroProps extends MaybeParentComponentProps {
 
