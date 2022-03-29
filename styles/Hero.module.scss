@@ -2,7 +2,9 @@
   background: url('https://source.unsplash.com/random/1200x650/?elearning');
   background-size: cover;
   background-position: center;
-  min-height: 60vh;
+  min-height: 75vh;
   width: 100%;
-  margin-top: 2rem;
+  &:after {
+    
+  }
 }

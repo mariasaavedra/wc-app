@@ -1,4 +1,4 @@
-import styles from "../../styles/Text.module.css";
+import styles from "../../styles/Text.module.scss";
 interface TextProps {
   children: any;
 }

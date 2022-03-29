@@ -15,7 +15,7 @@ console.log(homepageData)
 
 const Home: NextPage = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container-fluid mx-auto">
       
       <Hero></Hero>
 
