@@ -1,6 +1,6 @@
 import { Column } from "./Column";
 import { Section } from "./Section";
-import styles from '../../styles/ImageCard.module.scss'
+import styles from '../styles/ImageCard.module.scss'
 
 interface ImageProps {
   imageUrl?: string;

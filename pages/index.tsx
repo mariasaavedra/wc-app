@@ -1,23 +1,25 @@
 import type { NextPage } from "next";
-import { Column } from "./components/Column";
-import { Hero } from "./components/Hero";
-import { Section } from "./components/Section";
-import { ImageCard } from "./components/ImageCard";
-import { Text } from "./components/Text";
-import { Footer } from "./components/Footer";
+import { Column } from "../components/Column";
+import { Hero } from "../components/Hero";
+import { Section } from "../components/Section";
+import { ImageCard } from "../components/ImageCard";
+import { Text } from "../components/Text";
+import { Button } from "../components/Button";
 // import styles from "../styles/Image.module.css";
 
-const homepageData = fetch('http://localhost:1337/api/homepage?populate=*', {
-}).then(response => response.json())
-.then(data => console.log(data));
+const homepageData = fetch("http://localhost:1337/api/homepage?populate=*", {})
+  .then((response) => response.json())
+  .then((data) => console.log(data));
 
-console.log(homepageData)
+console.log(homepageData);
 
 const Home: NextPage = () => {
   return (
     <div className="container-fluid mx-auto">
-      
-      <Hero></Hero>
+      <Hero>
+        <h1>FIGHTING INEQUITY THROUGH TECH AND INNOVATION EDUCATION</h1>
+        <Button>Learn More</Button>
+      </Hero>
 
       <Section>
         <ImageCard imagePosition="right">
@@ -32,11 +34,19 @@ const Home: NextPage = () => {
       </Section>
       <Section>
         <div className="columns-1 md:columns-3 sm:columns-3">
-        <img className="mx-auto" src="https://source.unsplash.com/random/600x600/?hackathon"></img>
-        <img className="mx-auto" src="https://source.unsplash.com/random/600x600/?tech"></img>
-        <img className="mx-auto" src="https://source.unsplash.com/random/600x600/?coding"></img>
+          <img
+            className="mx-auto"
+            src="https://source.unsplash.com/random/600x600/?hackathon"
+          ></img>
+          <img
+            className="mx-auto"
+            src="https://source.unsplash.com/random/600x600/?tech"
+          ></img>
+          <img
+            className="mx-auto"
+            src="https://source.unsplash.com/random/600x600/?coding"
+          ></img>
         </div>
-        
       </Section>
 
       <Section>
@@ -47,7 +57,6 @@ const Home: NextPage = () => {
           </Text>
         </Column>
       </Section>
-
     </div>
   );
 };

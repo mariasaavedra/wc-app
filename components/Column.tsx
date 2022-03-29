@@ -1,4 +1,3 @@
-import styles from "../../styles/Section.module.scss";
 interface SectionProps {
   children?: any;
   size: number | string;

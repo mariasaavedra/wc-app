@@ -1,4 +1,4 @@
-import styles from "../../styles/Section.module.scss";
+import styles from "../styles/Section.module.scss";
 interface SectionProps {
   children?: any;
   grid: number;
