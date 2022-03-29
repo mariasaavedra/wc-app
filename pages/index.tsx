@@ -3,7 +3,7 @@ import { Column } from "../components/Column";
 import { Hero } from "../components/Hero";
 import { Section } from "../components/Section";
 import { ImageCard } from "../components/ImageCard";
-import { Text } from "../components/Text";
+import Text from "../components/Text";
 import { Button } from "../components/Button";
 // import styles from "../styles/Image.module.css";
 
