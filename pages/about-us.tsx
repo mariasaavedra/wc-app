@@ -30,7 +30,6 @@ WE CODE KC is an initiative that serves the urban core of Kansas City, exposing 
           
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
