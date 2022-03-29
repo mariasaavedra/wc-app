@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { Button } from "../components/Button";
 import Text from '../components/Text';
 
 const AboutPage = () => {
   return (
-    <div className="mx-auto">
+    <div className="container mx-auto">
       <div>
         <div className="flex flex-col justify-center py-8 px-8 text-justify lg:px-14">
           <h1 className="flex justify-center text-2xl pb-3.5 lg:text-5xl lg:pb-12 lg:pt-5">
@@ -30,9 +31,7 @@ const AboutPage = () => {
             src="https://source.unsplash.com/random/600x600/?hackathon"
           ></img>
           <Link href={"/team"}>
-            <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 text-center">
-              OUR TEAM
-            </a>
+            <Button>Our Team</Button>
           </Link>
         </div>
         <div className="card-container w-80 lg:w-96 flex flex-col">
@@ -41,9 +40,7 @@ const AboutPage = () => {
             src="https://source.unsplash.com/random/600x600/?tech"
           ></img>
           <Link href={"/board"}>
-            <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 text-center">
-              OUR BOARD
-            </a>
+            <Button>Our Board</Button>
           </Link>
         </div>
       </div>

@@ -14,7 +14,7 @@ export const Button = (props: ButtonProps) => {
           styles.ButtonComponent +
           " " +
           props.className +
-          " block py-2 px-4 text-white border-b-2"
+          " block py-2 px-5 rounded-md text-white bg-brand-green"
         }
       >
         {props.children}
