@@ -9,31 +9,31 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="navigation px-2">
-      <div className="p-px lg:px-10 mx-auto">
+    <nav className="navigation py-4  px-4 shadow-md">
+      <div className="lg:px-10 mx-auto">
         <div className="nav-desktop-container flex justify-between">
           <div className="logo-container flex items-center">
             <Link href="/">
               <a className="logo-link w-3/5 lg:w-full flex justify-start md:items-center py-2">
                 <img
                   className="logo-image h-full w-full"
-                  src="http://localhost:3000/images/logo.png"
+                  src="http://localhost:3000/images/logo-simple.png"
                 ></img>{" "}
               </a>
             </Link>
           </div>
           <div className="hidden desktop-menu lg:flex items-center space-x-1">
             <Link href="/about-us">
-              <a className="py-4 px-3 hover:text-brand-purple">About Us</a>
+              <a className="py-4 px-3 text-sm hover:text-brand-purple">About Us</a>
             </Link>
             <Link href="/programs">
-              <a className="py-4 px-3 hover:text-brand-purple">Programs</a>
+              <a className="py-4 px-3 text-sm hover:text-brand-purple">Programs</a>
             </Link>
             <Link href="/events">
-              <a className="py-4 px-3 hover:text-brand-purple">Event</a>
+              <a className="py-4 px-3 text-sm hover:text-brand-purple">Event</a>
             </Link>
             <Link href="#">
-              <a className="p-2 bg-brand-gold text-white rounded-full hover:text-black">
+              <a className="py-2 px-5  text-sm bg-brand-green text-white rounded-sm hover:text-black">
                 Donate
               </a>
             </Link>
