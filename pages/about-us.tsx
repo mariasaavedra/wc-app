@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Text from '../components/Text';
 
 const AboutPage = () => {
   return (
@@ -8,7 +9,7 @@ const AboutPage = () => {
           <h1 className="flex justify-center text-2xl pb-3.5 lg:text-5xl lg:pb-12 lg:pt-5">
             About Us
           </h1>
-          <p className="lg:pb-20 lg:px-40 lg:text-lg">
+          <Text size="b1">
             Our mission is to give youth the opportunity to learn technology
             concepts, and leadership skills; creating a pipeline of future-ready
             professionals through project-based learning and innovative
@@ -19,7 +20,7 @@ const AboutPage = () => {
             skills, builds confidence and helps to build a positive future.
             Every child, no matter their zip code or their family’s financial
             status, should have the opportunity to learn to code.
-          </p>
+          </Text>
         </div>
       </div>
       <div className="cards-container columns-1 md:columns-2 py-20 px-32 flex justify-around flex-col items-center lg:items-stretch lg:flex-row">
