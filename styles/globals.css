@@ -20,3 +20,6 @@ a {
 * {
   box-sizing: border-box;
 }
+.logo-image {
+  max-width: 200px;
+}

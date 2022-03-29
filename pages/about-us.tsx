@@ -6,8 +6,8 @@ const AboutPage = () => {
     <div className="mx-auto">
        <div className="bg-brand-gold">
         <div className="flex flex-col justify-center py-8 px-8 text-justify lg:px-14">
-        <h1 className="flex justify-center text-2xl pb-3.5 lg:text-5xl lg:pb-12 lg:pt-5 uppercase">
-          ABOUT US
+        <h1 className="flex justify-center text-2xl pb-3.5 lg:text-5xl lg:pb-12 lg:pt-5">
+          About Us
         </h1>
           <p className="lg:pb-20 lg:px-40 lg:text-lg">
           Our mission is to give youth the opportunity to learn technology concepts, and leadership skills; creating a pipeline of future-ready professionals through project-based learning and innovative programs.
@@ -19,13 +19,13 @@ WE CODE KC is an initiative that serves the urban core of Kansas City, exposing 
         <div className="card-container  pb-12  w-80 lg:w-96 flex flex-col">
           <img className="card-image mx-auto pb-5" src="https://source.unsplash.com/random/600x600/?hackathon"></img>
           <Link href={'/team'}>
-            <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 uppercase text-center">OUR TEAM</a>
+            <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 text-center">OUR TEAM</a>
           </Link>
         </div>
         <div className="card-container w-80 lg:w-96 flex flex-col">
           <img className="card-image mx-auto pb-5" src="https://source.unsplash.com/random/600x600/?tech"></img>
           <Link href={'/board'}>
-           <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 uppercase text-center">OUR BOARD</a>
+           <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 text-center">OUR BOARD</a>
           </Link>
           
         </div>

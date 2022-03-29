@@ -5,7 +5,7 @@ const TeamsPage = () => {
       <div className="mx-auto">
         <div className="header bg-brand-purple">
           <div className="flex flex-col justify-center py-8 px-8 text-justify lg:px-14">
-            <h1 className="flex justify-center text-2xl pb-3.5 lg:text-5xl lg:pb-12 lg:pt-5 uppercase">
+            <h1 className="flex justify-center text-2xl pb-3.5 lg:text-5xl lg:pb-12 lg:pt-5">
               OUR TEAM
             </h1>
             <p className="lg:pb-20 lg:px-40 lg:text-lg">
