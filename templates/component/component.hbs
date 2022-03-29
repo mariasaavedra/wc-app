@@ -1,6 +1,7 @@
+import { MaybeParentComponentProps } from "../interfaces/ParentComponentProps";
 import styles from '../styles/components/{{name}}.module.scss';
 
-export interface {{name}}Props {
+export interface {{name}}Props extends MaybeParentComponentProps {
 }
 
 export default function {{name}}(props: {{name}}Props) {

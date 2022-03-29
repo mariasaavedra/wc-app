@@ -1,7 +1,8 @@
+import { MaybeParentComponentProps } from "../interfaces/ParentComponentProps";
 import styles from "../styles/Hero.module.scss";
 
-interface HeroProps {
-  children?: any;
+interface HeroProps extends MaybeParentComponentProps {
+
 }
 
 export const Hero = (props: HeroProps) => {
