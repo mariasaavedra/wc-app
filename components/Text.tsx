@@ -1,7 +1,7 @@
 import { ParentComponentProps } from '../interfaces/ParentComponentProps';
 import styles from '../styles/components/Text.module.scss';
 
-type TextSize = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'b1' | 'b2' | 'b3';
+export type TextSize = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'b1' | 'b2' | 'b3';
 
 export interface TextProps extends ParentComponentProps {
     /**

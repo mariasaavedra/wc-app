@@ -34,7 +34,7 @@ export const Navigation = () => {
               <a className="py-4 px-3 text-sm hover:text-brand-purple">Event</a>
             </Link>
             <Link href="#">
-              <a className="py-2 px-5  text-sm bg-brand-green text-white rounded-sm hover:text-black">
+              <a className="py-2 px-5  text-sm bg-brand-green text-white rounded-md hover:text-black">
                 Donate
               </a>
             </Link>
