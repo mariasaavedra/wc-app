@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import { Column } from "./components/Column";
-import { Hero } from "./components/Hero";
-import { Section } from "./components/Section";
-import { ImageCard } from "./components/ImageCard";
-import { Text } from "./components/Text";
-import { Footer } from "./components/Footer";
+import { Column } from "../components/Column";
+import { Hero } from "../components/Hero";
+import { Section } from "../components/Section";
+import { ImageCard } from "../components/ImageCard";
+import { Text } from "../components/Text";
+import { Footer } from "../components/Footer";
 import Link from "next/link"
-import styles from "../styles/Image.module.css";
+
 
 const Home: NextPage = (props) => {
 
@@ -79,7 +79,7 @@ const Home: NextPage = (props) => {
       <div className="bg-brand-blue">
         <Section>
           <Column>
-            <Text className="bg-brank-gold">
+            <Text className="bg-brand-gold">
               <h1 className="mb-4 text-2xl text-white font-bold">OUR WHY</h1>
               <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </Text>
