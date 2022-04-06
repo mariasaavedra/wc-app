@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./Button";
+import  styles from "../styles/components/Navigation.module.scss"
 
 export const Navigation = () => {
   const [active, setActive] = useState(false);
@@ -10,9 +11,9 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="navigation py-4  px-4 shadow-md">
+    <nav className="navigation py-4 shadow-md">
       <div className="lg:px-10 mx-auto">
-        <div className="nav-desktop-container flex justify-between">
+        <div className="nav-desktop-container pl-4 flex justify-between">
           <div className="logo-container flex items-center">
             <Link href="/">
               <a className="logo-link w-3/5 lg:w-full flex justify-start md:items-center py-2">
@@ -23,7 +24,7 @@ export const Navigation = () => {
               </a>
             </Link>
           </div>
-          <div className="hidden desktop-menu lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1">
             <Link href="/about-us">
               <a className="py-4 px-3 text-sm hover:text-brand-purple">About Us</a>
             </Link>
@@ -33,13 +34,13 @@ export const Navigation = () => {
             <Link href="/events">
               <a className="py-4 px-3 text-sm hover:text-brand-purple">Event</a>
             </Link>
-            <Link href="#">
-              <a className="py-2 px-5  text-sm bg-brand-green text-white rounded-md hover:text-black">
-                Donate
+            <Link href="https://www.eventbrite.com/o/we-code-kc-29250142705">
+              <a className="py-2 px-5  text-sm bg-brand-green text-white rounded-sm hover:text-black">
+                Learn to Code
               </a>
             </Link>
           </div>
-          <div className="lg:hidden flex items-center">
+          <div className="lg:hidden flex items-center pr-4">
             <button className="mobile-menu-button" onClick={handleClick}>
               <svg
                 className="w-6 h-6"
@@ -63,19 +64,19 @@ export const Navigation = () => {
       <div
         className={`${
           active ? "" : "hidden"
-        } "h-screen mobile-menu bg-brand-blue z-50"`}
+        } " mobile-menu bg-brand-blue z-50"`}
       >
+        <Link href="/about-us">
+          <a className="block py-2 px-4 text-white border-b-2">About Us</a>
+        </Link>
         <Link href="/programs">
           <a className="block py-2 px-4 text-white border-b-2">Programs</a>
         </Link>
         <Link href="/events">
           <a className="block py-2 px-4 text-white border-b-2">Event</a>
         </Link>
-        <Link href="/about-us">
-          <a className="block py-2 px-4 text-white border-b-2">About Us</a>
-        </Link>
-        <Link href="#">
-          <Button>Donate</Button>
+        <Link href="https://www.eventbrite.com/o/we-code-kc-29250142705">
+          <Button>Learn to Code</Button>
         </Link>
       </div>
     </nav>
