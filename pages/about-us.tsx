@@ -31,13 +31,13 @@ const AboutPage = () => {
       <div className={styles.cardContainer}>
           <img
             className={styles.image}
-            src="http://localhost:3000/images/mentor-kid.jpeg" />
+            src="/images/mentor-kid.jpeg" />
           <img
             className={styles.image}
-            src="http://localhost:3000/images/wecode_team.jpeg" />  
+            src="/images/wecode_team.jpeg" />  
           <img
             className={styles.image}
-            src="http://localhost:3000/images/boys_computer.png" />   
+            src="/images/boys_computer.png" />   
       </div>
       <div className={styles.buttoncontainer}>
         <a className={styles.aboutButton} href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform">
