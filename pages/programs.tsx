@@ -54,7 +54,7 @@ const ProgramsPage = () => {
         <section className={styles.container2}>
           <img
               className={styles.image}
-              src="http://localhost:3000/images/wecode_careers.jpeg" />
+              src="/images/wecode_careers.jpeg" />
           <div>
             <Text className={styles.headerText1} size="b1">
               Aligned with We Code’s mission of empowering youth with technology 
