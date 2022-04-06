@@ -5,21 +5,27 @@ import { Section } from "../components/Section";
 import { ImageCard } from "../components/ImageCard";
 import Text from "../components/Text";
 import { Button } from "../components/Button";
-// import styles from "../styles/Image.module.css";
+import Heading from "../components/Heading";
+let response;
 
-const homepageData = fetch("http://localhost:1337/api/homepage?populate=*", {})
-  .then((response) => response.json())
-  .then((data) => console.log(data));
-
-console.log(homepageData);
+// try {
+//   response = fetch("http://localhost:1337/api/homepage?populate=*", {})
+//   .then((response) => response.json())
+//   .then((data) => console.log(data))
+// } catch(err) {
+//   console.log(err);
+// }
 
 const Home: NextPage = () => {
   return (
     <div className="container-fluid mx-auto">
       <Hero>
-        <h1>FIGHTING INEQUITY THROUGH TECH AND INNOVATION EDUCATION</h1>
-        <Button>Learn More</Button>
+        <div>
+          <h1>FIGHTING INEQUITY THROUGH TECH AND INNOVATION EDUCATION</h1>
+        </div>
       </Hero>
+
+      <Heading>Title</Heading>
 
       <Section>
         <ImageCard imagePosition="right">

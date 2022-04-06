@@ -1,6 +1,7 @@
+import { MaybeParentComponentProps } from "../interfaces/ParentComponentProps";
 import styles from "../styles/components/Button.module.scss";
 
-interface ButtonProps {
+interface ButtonProps extends MaybeParentComponentProps {
   children?: any;
 }
 
