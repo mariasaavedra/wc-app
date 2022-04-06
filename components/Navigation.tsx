@@ -19,7 +19,7 @@ export const Navigation = () => {
               <a className="logo-link w-3/5 lg:w-full flex justify-start md:items-center py-2">
                 <img
                   className="logo-image h-full w-full"
-                  src="http://localhost:3000/images/logo-simple.png"
+                  src="/images/logo-simple.png"
                 ></img>{" "}
               </a>
             </Link>
