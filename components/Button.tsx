@@ -10,7 +10,7 @@ export const Button = (props: ButtonProps) => {
       <button
         type="button"
         className={
-          styles.ButtonComponent + " block py-2 px-4 text-white border-b-2"
+          styles.ButtonComponent + " block py-2 px-3 text-white border-b-1"
         }
       >
         {props.children}

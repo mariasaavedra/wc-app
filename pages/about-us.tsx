@@ -1,19 +1,24 @@
 import Link from "next/link";
+import { Button } from "../components/Button";
 import Text from '../components/Text';
+import styles from '../styles/About.module.scss'
 
 const AboutPage = () => {
   return (
     <div className="mx-auto">
       <div>
-        <div className="flex flex-col justify-center py-8 px-8 text-justify lg:px-14">
-          <h1 className="flex justify-center text-2xl pb-3.5 lg:text-5xl lg:pb-12 lg:pt-5">
-            About Us
-          </h1>
-          <Text size="b1">
+        <div className={styles.headerContainer}>
+          <Text className={styles.header} size="h1">
+            ABOUT US  
+          </Text>
+          <Text className={styles.headerText1} size="b1">
             Our mission is to give youth the opportunity to learn technology
             concepts, and leadership skills; creating a pipeline of future-ready
             professionals through project-based learning and innovative
-            programs. WE CODE KC is an initiative that serves the urban core of
+            programs. 
+          </Text>
+          <Text className={styles.headerText2} size="b1"> 
+            WE CODE KC is an initiative that serves the urban core of
             Kansas City, exposing youth to various programming languages,
             technology, cyber security, and computer science concepts. Learning
             the basic concept of coding develops creativity, problem solving
@@ -23,29 +28,24 @@ const AboutPage = () => {
           </Text>
         </div>
       </div>
-      <div className="cards-container columns-1 md:columns-2 py-20 px-32 flex justify-around flex-col items-center lg:items-stretch lg:flex-row">
-        <div className="card-container  pb-12  w-80 lg:w-96 flex flex-col">
+      <div className={styles.cardContainer}>
           <img
-            className="card-image mx-auto pb-5"
-            src="https://source.unsplash.com/random/600x600/?hackathon"
-          ></img>
-          <Link href={"/team"}>
-            <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 text-center">
-              OUR TEAM
-            </a>
-          </Link>
-        </div>
-        <div className="card-container w-80 lg:w-96 flex flex-col">
+            className={styles.image}
+            src="http://localhost:3000/images/mentor-kid.jpeg" />
           <img
-            className="card-image mx-auto pb-5"
-            src="https://source.unsplash.com/random/600x600/?tech"
-          ></img>
-          <Link href={"/board"}>
-            <a className="card-button w-8/12 bg-brand-blue text-white mx-auto p-2.5 text-center">
-              OUR BOARD
-            </a>
-          </Link>
-        </div>
+            className={styles.image}
+            src="http://localhost:3000/images/wecode_team.jpeg" />  
+          <img
+            className={styles.image}
+            src="http://localhost:3000/images/boys_computer.png" />   
+      </div>
+      <div className={styles.buttoncontainer}>
+        <a className={styles.aboutButton} href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform">
+          JOIN OUR TEAM 
+        </a>  
+        {/* <Link href="">
+          <button>JOIN OUR TEAM</button>
+        </Link> */}
       </div>
     </div>
   );
