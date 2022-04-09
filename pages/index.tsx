@@ -13,20 +13,145 @@ const Home: NextPage = () => {
     return (
         <div className="container mx-auto">
 
-            <div className="bg-brand-purple" >
+            <div className="bg-brand-Magenta" >
                 <div className="flex flex-wrap lg:flex-no-wrap justify-between">
                     <div className="">
-                        <img className="h-64" src="/images/wecodegirls.png"></img>
+                        <img className="h-80" src="/images/wecodegirls.png"></img>
                     </div>
-                    <div>
-                        <h1 className="text-4xl font-bold p-10">
-                            <span className='block'>CODING A </span>
-                            <span className='block'>PIPELINE OF </span>
-                            <span className='block'>FUTURE-READY</span>
-                            <span className='block'>PROFESSIONALS</span>
+                    <div className=''>
+                        <h1 className="text-3xl font-bold p-12 text-white ">
+                            <span className='block p-1'>Coding a Pipeline of</span>
+                            <span className='block p-1'>Tech Professionals</span>
+                            <span className='block p-1'>Real World Skills.</span>
+                            <span className='block p-1'>Real World Projects.</span>
                         </h1>
                     </div>
                 </div>
+            </div>
+
+            <div className="bg-brand-purple mt-10">
+                <Section>
+                    <Column>
+                        <Text>
+                            <h1 className="text-center text-white text-3xl font-bold uppercase">Get Students Coding & Learning with We Code KC</h1>
+                            <Text className="mt-4 text-white text-center" size="b1">
+                              WeCodeKC introduces coding for kids through project-based or game development learning. Our students begin their tech journey using Scratch, which is block-based coding, and gradually increase their skill levels to writing their own code in JavaScript and Python.  WeCodeKC also introduces various other technology concepts including Virtual Reality, Machine Learning, NFTs, and more!
+                            </Text>
+                        </Text>
+                    </Column>
+                </Section>
+            </div>
+
+            <Section >
+                <div className='flex flex-wrap align-center justify-center gap-4 p-10'>
+
+                <div className='grid grid-cols-1 w-52 shadow-xl'>
+                    <div className='bg-brand-Magenta p-4 rounded-t-md text-white h-28'>
+                        <p className='text-2xl font-bold'>LEVEL 01</p>
+                        <p className='font-simibold text-lg'>Planet:</p>
+                        <p className='italic'>Fusion fuchsia</p>
+                    </div>
+                    <div>
+                        <p className='p-4 h-80 bg-white'>
+                            As a techstraunaut, your journey is yours alone! Fuchsia is the embodiment of uniqueness and confidence. After you master all the levels, you’ll realize the power of your own shine.
+                        </p>
+                    </div>
+                    <div className='bg-brand-Magenta p-4 pt-2 rounded-b-md text-white h-24'>
+                        <p className='font-simibold text-lg'>Scratch Badges:</p>
+                        <p>Beginner, Intermediate, Advanced</p>
+                    </div>
+                </div>
+
+                <div className='grid grid-cols-1 w-52 shadow-xl'>
+                    <div className='bg-brand-blue p-4 rounded-t-md text-white h-28'>
+                        <p className='text-2xl font-bold'>LEVEL 02</p>
+                        <p className='font-simibold text-lg'>Planet:</p>
+                        <p className='italic'>Aegean Cool</p>
+                    </div>
+                    <div>
+                        <p className='p-4 h-80 bg-white'>
+                            We hope that you’ll cruise through planet Aegean Cool! You’ve pushed it this far building on basic functions and growing your knowledge. The Aegean blue hue badges will be a mark of true trust in your intelligence and the ability to move forward.
+                        </p>
+                    </div>
+                    <div className='bg-brand-blue p-4 pt-2 rounded-b-md text-white h-24'>
+                        <p className='font-simibold text-lg'>HTML/CSS Badges:</p>
+                        <p>Beginner, Intermediate, Advanced</p>
+                    </div>
+                </div>
+
+                <div className='grid grid-cols-1 w-52 shadow-xl'>
+                    <div className='bg-brand-purple p-4 rounded-t-md text-white h-28'>
+                        <p className='text-2xl font-bold'>LEVEL 03</p>
+                        <p className='font-simibold text-lg'>Planet:</p>
+                        <p className='italic'>Indigo-go</p>
+                    </div>
+                    <div>
+                        <p className='p-4 h-80 bg-white'>
+                            You’ve made it halfway; look at you Indigo-Go! We love your dedication and you’ll soon prove your mastery of the core principles of Javascript. Your wisdom is infinite, keep on going!
+                        </p>
+                    </div>
+                    <div className='bg-brand-purple p-4 pt-2 rounded-b-md text-white h-24'>
+                        <p className='font-simibold text-lg'>Javascript Badges:</p>
+                        <p>Beginner, Intermediate, Advanced</p>
+                    </div>
+                </div>
+
+                <div className='grid grid-cols-1 w-52 shadow-xl'>
+                    <div className='bg-brand-green p-4 rounded-t-md text-white h-28'>
+                        <p className='text-2xl font-bold'>LEVEL 04</p>
+                        <p className='font-simibold text-lg'>Planet:</p>
+                        <p className='italic'>Galactic Green</p>
+                    </div>
+                    <div>
+                        <p className='p-4 h-80 bg-white'>
+                            Groundbreaking work getting to Galactic Green! Here you’ll learn and demonstrate your rockin’ Python skills.
+                        </p>
+                    </div>
+                    <div className='bg-brand-green p-4 pt-2 rounded-b-md text-white h-24'>
+                        <p className='font-simibold text-lg'>Python Badges:</p>
+                        <p>Beginner, Intermediate</p>
+                    </div>
+                </div>
+
+                <div className='grid grid-cols-1 w-52 shadow-xl'>
+                    <div className='bg-brand-gold p-4 rounded-t-md text-white h-28'>
+                        <p className='text-2xl font-bold'>LEVEL 05</p>
+                        <p className='font-simibold text-lg'>Planet:</p>
+                        <p className='italic'>Gleaming Gold</p>
+                    </div>
+                    <div>
+                        <p className='p-4 h-80 bg-white'>
+                        The final step in your astonishing techstronaut journey– completing Gleaming Gold. On this last planet, the ease you’ll have in creating an app will seem like true sorcery. As this become the last stop, you’ll learn you are the magic that keeps tech going.
+                        </p>
+                    </div>
+                    <div className='bg-brand-gold p-4 pt-2 rounded-b-md text-white h-24'>
+                        <p className='font-simibold text-lg'>App Inventor Badges:</p>
+                        <p>Beginner, Intermediate</p>
+                    </div>
+                </div>
+
+                </div>
+
+            </Section>
+       
+
+          <div className="bg-brand-blue">
+                <Section>
+                    <Column>
+                        <Text>
+                            <h1 className="text-center text-white text-3xl font-bold">WHAT WE DO</h1>
+                            <Text className="mt-4 text-white text-center" size="b1">
+                              Our mission is to create a collaborative network offering pathways to economic prosperity for youth, young adults, and women of color in underserved communities by providing the opportunity to learn the technical skills that will create a pipeline of future-ready STEM professionals with the ability to create generational wealth.
+                              <span className="block pt-4 italic text-gray-400">
+                                We Code KC is fiscally funded by Learn Techquity, a 501c3 organization.
+                              </span>
+                              <span className="block italic text-gray-400">
+                              EIN: 83-3413497
+                              </span>
+                            </Text>
+                        </Text>
+                    </Column>
+                </Section>
             </div>
 
             <Section>
@@ -73,20 +198,20 @@ const Home: NextPage = () => {
 
                 </div>
             </Section>
+        
 
-            <div className="bg-brand-blue">
-                <Section>
-                    <Column>
-                        <Text>
-                            <div className="text-center">
-                                <Text size="h1">OUR WHY</Text>
-                            </div>
-                            <Text className="mt-4 text-white text-center" size='b1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-                            <p ></p>
+        <div className="bg-brand-purple mt-10">
+            <Section>
+                <Column>
+                    <Text>
+                        <h1 className="text-center text-white text-3xl font-bold uppercase">Our Mission Statement</h1>
+                        <Text className="mt-4 text-white text-center" size="b1">
+                            Our mission is to give youth the opportunity to learn technology concepts and leadership skills to create a pipeline of future-ready technology professionals.
                         </Text>
-                    </Column>
-                </Section>
-            </div>
+                    </Text>
+                </Column>
+            </Section>
+        </div>
 
             <Section>
                 <div className="flex flex-wrap align-center justify-center  gap-12 my-12">
