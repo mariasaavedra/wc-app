@@ -26,16 +26,16 @@ export const Navigation = () => {
           </div>
           <div className="hidden lg:flex items-center space-x-1">
             <Link href="/about-us">
-              <a className="py-4 px-3 text-sm hover:text-brand-purple">About Us</a>
+              <a className="py-4 px-3 text-base font-semibold hover:text-brand-purple">About Us</a>
             </Link>
             <Link href="/programs">
-              <a className="py-4 px-3 text-sm hover:text-brand-purple">Programs</a>
+              <a className="py-4 px-3 text-base font-semibold hover:text-brand-purple">Programs</a>
             </Link>
             <Link href="/events">
-              <a className="py-4 px-3 text-sm hover:text-brand-purple">Event</a>
+              <a className="py-4 px-3 text-base font-semibold hover:text-brand-purple">Event</a>
             </Link>
             <Link href="https://www.eventbrite.com/o/we-code-kc-29250142705">
-              <a className="py-2 px-5  text-sm bg-brand-green text-white rounded-sm hover:text-black">
+              <a className="py-2 px-5  text-base font-semibold bg-brand-green text-white rounded-sm hover:text-black">
                 Learn to Code
               </a>
             </Link>

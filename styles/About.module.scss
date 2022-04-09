@@ -7,7 +7,7 @@
     padding: 20px 25px 40px;
 
     @media (min-width: 1024px) { 
-        font-size: 46px;
+        font-size: 2.875rem;
         padding: 20px 120px 80px;;
      }
 }
@@ -15,10 +15,10 @@
 .header { 
     display: flex;
     justify-content: center;
-    font-size: 24px;
+    font-size: 1.5rem;
    
     @media (min-width: 1024px) { 
-        font-size: 46px;
+        font-size: 2.875rem;
         padding: 20px 60px 0;
      }
 }
@@ -27,11 +27,11 @@
 .headerText2 {
     text-align: justify;
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.875rem;
 
     @media (min-width: 1024px) { 
         padding: 10px 120px;
-        font-size: 16px;
+        font-size: 1rem;
      }
 }
 
@@ -76,8 +76,3 @@
     justify-content: center;
     padding: 20px 10px;
 }
-
-// cards-container columns-1 md:columns-2 py-20 px-32 flex justify-around flex-col items-center lg:items-stretch lg:flex-row
-
-//card-image mx-auto pb-5
-// flex flex-col justify-center py-8 px-8 text-justify lg:px-14
