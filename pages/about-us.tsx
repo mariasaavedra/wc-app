@@ -5,7 +5,7 @@ import styles from '../styles/About.module.scss'
 
 const AboutPage = () => {
   return (
-    <div className="container mx-auto">
+    <div className="mx-auto">
       <div>
         <div className={styles.headerContainer}>
           <Text className={styles.header} size="h1">

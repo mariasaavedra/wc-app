@@ -11,7 +11,7 @@ const ProgramsPage = () => {
           <Text className={styles.header} size="h1">
             PROGRAMS
           </Text>
-          <Text className={styles.headerText1} size="b1">
+          <Text className={styles.headerText} size="b1">
           WeCodeKC introduces coding for kids through project-based 
           or game development learning. Our students begin their tech 
           journey using Scratch, which is block-based coding, 
@@ -28,7 +28,7 @@ const ProgramsPage = () => {
               className={styles.image}
               src="http://localhost:3000/images/techstronaut-journey.png" />
           <div className={styles.container1content}>
-            <Text className={styles.headerText1} size="b1">
+            <Text className={styles.bodyText1} size="b1">
               Aligned with We Code’s mission of empowering youth with technology 
               and leadership skills– Techstronauts (Technology Astronauts) 
               will embark on an important journey through the coding universe. 
@@ -39,7 +39,7 @@ const ProgramsPage = () => {
               level. Each badge represents an item that helps motivate them 
               through their journey. 
             </Text>
-            <Text className={styles.headerText2} size="b1">
+            <Text className={styles.bodyText2} size="b1">
               By the time their journey across the coding universe is complete, 
               they will have acquired many of the skills necessary to be 
               successful in their real-life journey in this field. 
@@ -53,10 +53,10 @@ const ProgramsPage = () => {
         </section>
         <section className={styles.container2}>
           <img
-              className={styles.image}
+              className={styles.image2}
               src="/images/wecode_careers.jpeg" />
-          <div>
-            <Text className={styles.headerText1} size="b1">
+          <div className={styles.textContainer2}>
+            <Text className={styles.bodyText1} size="b1">
               Aligned with We Code’s mission of empowering youth with technology 
               and leadership skills– Techstronauts (Technology Astronauts) 
               will embark on an important journey through the coding universe. 
@@ -67,7 +67,7 @@ const ProgramsPage = () => {
               level. Each badge represents an item that helps motivate them 
               through their journey. 
             </Text>
-            <Text className={styles.headerText2} size="b1">
+            <Text className={styles.bodyText2} size="b1">
               By the time their journey across the coding universe is complete, 
               they will have acquired many of the skills necessary to be 
               successful in their real-life journey in this field. 
