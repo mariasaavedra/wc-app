@@ -87,8 +87,12 @@
     @media (min-width: 1024px) { 
         width: 25%;
         font-size: 0.875rem;
-     }
-    
+     } 
+}
+
+.programButton:hover {
+    background-color: #eebb1d;
+    color: black;
 }
 
 .buttoncontainer {
