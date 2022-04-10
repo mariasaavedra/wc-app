@@ -17,10 +17,10 @@ export const Navigation = () => {
         <div className="nav-desktop-container pl-4 flex justify-between">
           <div className="logo-container flex items-center">
             <Link href="/">
-              <Image
+              <img
                 className="logo-image h-full w-full"
                 src="/images/logo-simple.png"
-              ></Image>
+              ></img>
             </Link>
           </div>
 
