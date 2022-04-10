@@ -24,18 +24,16 @@ const AboutPage = () => {
             Every child, no matter their zip code or their family\’s financial
             status, should have the opportunity to learn to code.
           </Text>
+          <Button className="mt-8" href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform">
+            Join Our Team
+          </Button>
         </>
       </Hero>
-      <div className={styles.cardContainer}>
+      {/* <div className={styles.cardContainer}>
         <img className={styles.image} src="/images/mentor-kid.jpeg" />
         <img className={styles.image} src="/images/wecode_team.jpeg" />
         <img className={styles.image} src="/images/boys_computer.png" />
-      </div>
-      <div className={styles.buttoncontainer}>
-        <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform">
-          Join Our Team
-        </Button>
-      </div>
+      </div> */}
     </div>
   );
 };

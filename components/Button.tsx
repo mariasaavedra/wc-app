@@ -33,17 +33,17 @@ export function Button(props: ButtonProps) {
 
   const getClasses = () => {
     if (props.size === "medium") {
-      return "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10";
+      return "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-purple cursor-pointer hover:bg-indigo-700 md:py-4 md:text-lg md:px-10";
     } 
     else if (props.size === "small") {
-      return "w-full flex px-4 py-2 items-center justify-center border border-transparent text-base font-small rounded-md text-white bg-indigo-600 hover:bg-indigo-700  ";
+      return "w-full flex px-4 py-2 items-center justify-center border border-transparent text-base font-small rounded-md text-white bg-brand-purple cursor-pointer hover:bg-indigo-700 cursor-pointer ";
     }
   };
   return (
     <div
-      className={props.className + " " + styles.width + " rounded-md shadow"}
+      className={props.className + " " + styles.width + " cursor-pointer rounded-md shadow"}
     >
-      <a href={props.href} className={getClasses()}>
+      <a href={props.href} target={props.target} className={getClasses()}>
         {props.children}
       </a>
     </div>
