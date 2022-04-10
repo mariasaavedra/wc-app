@@ -21,12 +21,13 @@ export function Button(props: ButtonProps) {
   const router = useRouter();
   const isUrlAbsolute = (href: string) =>
     href.indexOf("://") > 0 || href.indexOf("//") === 0;
-  const goToUrl = () => {
+
+  const getTarget = () => {
     if (props.href) {
       if (isUrlAbsolute(props.href)) {
-        window.open(props.href, "_blank");
+        return "_blank";
       } else {
-        router.push(props.href);
+        return "_self";
       }
     }
   };
@@ -34,16 +35,20 @@ export function Button(props: ButtonProps) {
   const getClasses = () => {
     if (props.size === "medium") {
       return "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-purple cursor-pointer hover:bg-indigo-700 md:py-4 md:text-lg md:px-10";
-    } 
-    else if (props.size === "small") {
+    } else if (props.size === "small") {
       return "w-full flex px-4 py-2 items-center justify-center border border-transparent text-base font-small rounded-md text-white bg-brand-purple cursor-pointer hover:bg-indigo-700 cursor-pointer ";
     }
   };
   return (
     <div
-      className={props.className + " " + styles.width + " cursor-pointer rounded-md shadow"}
+      className={
+        props.className +
+        " " +
+        styles.width +
+        " cursor-pointer rounded-md shadow"
+      }
     >
-      <a href={props.href} className={getClasses()}>
+      <a href={props.href} target={getTarget()} className={getClasses()}>
         {props.children}
       </a>
     </div>

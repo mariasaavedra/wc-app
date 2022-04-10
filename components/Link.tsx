@@ -23,6 +23,20 @@ export default function Link(props: LinkProps) {
     }
   };
 
+  const isUrlAbsolute = (href: string) =>
+  href.indexOf("://") > 0 || href.indexOf("//") === 0;
+
+  
+  const getTarget = () => {
+    if (props.href) {
+      if (isUrlAbsolute(props.href)) {
+        return "_blank";
+      } else {
+        return "_self";
+      }
+    }
+  };
+
   const handleOnClick = (e: React.MouseEvent<HTMLElement>) => {
     if (props.onClick) {
       return props.onClick(e);
