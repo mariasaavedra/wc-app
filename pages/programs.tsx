@@ -55,7 +55,7 @@ const ProgramsPage = () => {
             className="d-block  my-4 mx-auto"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfEejRmMTPP4yyRjCGAmVEdaOVVzGL9Rc-ECoK23RI-PzMb1w/viewform"
           >
-            JOIN TECHSTRONAUTS
+             Join Techstronauts
           </Button>
         </Column>
       </Section>

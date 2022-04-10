@@ -26,7 +26,7 @@ export const Navigation = () => {
           <div className="hidden lg:flex items-center space-x-1">
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
-            <Link href="/events">Event</Link>
+            <Link href="/events">Events</Link>
 
             <Button size="small" href="https://www.eventbrite.com/o/we-code-kc-29250142705">
               Donate
