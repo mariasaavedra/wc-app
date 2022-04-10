@@ -1,6 +1,7 @@
 import Link from "./Link";
 import { useState } from "react";
 import { Button } from "./Button";
+import Image from "next/image";
 import styles from "../styles/components/Navigation.module.scss";
 
 export const Navigation = () => {
@@ -16,10 +17,10 @@ export const Navigation = () => {
         <div className="nav-desktop-container pl-4 flex justify-between">
           <div className="logo-container flex items-center">
             <Link href="/">
-              <img
+              <Image
                 className="logo-image h-full w-full"
                 src="/images/logo-simple.png"
-              ></img>
+              ></Image>
             </Link>
           </div>
 
