@@ -28,9 +28,9 @@ export const Navigation = () => {
             <Link href="/programs">Programs</Link>
             <Link href="/events">Event</Link>
 
-            <Link href="https://www.eventbrite.com/o/we-code-kc-29250142705">
+            <Button size="small" href="https://www.eventbrite.com/o/we-code-kc-29250142705">
               Donate
-            </Link>
+            </Button>
           </div>
           <div className="lg:hidden flex items-center pr-4">
             <button className="mobile-menu-button" onClick={handleClick}>

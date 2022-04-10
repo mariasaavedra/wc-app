@@ -1,7 +1,10 @@
 import type { NextPage } from "next";
-import { Column } from "../components/Column";;
+import { Column } from "../components/Column";
+import { Hero } from "../components/Hero";
 import { Section } from "../components/Section";
+import { ImageCard } from "../components/ImageCard";
 import Text from "../components/Text";
+
 import Link from "next/link"
 
 const Home: NextPage = () => {

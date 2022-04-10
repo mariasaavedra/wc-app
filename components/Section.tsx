@@ -6,23 +6,17 @@ interface SectionProps {
   display?: string;
 }
 
-
 export const Section = (props: SectionProps) => {
+  const getClasses = (): string => {
+    const classes = [`${styles.section}`];
+    classes.push(`grid grid-flow-col`);
+    if (props.gap) {
+      classes.push(`gap-${props.gap}`);
+    }
+    return classes.join(" ");
+  };
 
-const getClasses = (): string => {
-  const classes = [`${styles.section}`];
-  classes.push(`grid grid-flow-col`);
-  if (props.gap) {
-    classes.push(`gap-${props.gap}`);
-  }
-  return classes.join(" ");
-};
-
-  return (
-    <div className={getClasses()}>
-      {props.children}
-    </div>
-  );
+  return <div className={getClasses()}>{props.children}</div>;
 };
 
 Section.defaultProps = {
