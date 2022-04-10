@@ -5,7 +5,6 @@ export const Footer = () => {
     <footer className="text-center lg:text-left bg-gray-100 text-gray-600">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
         <div className="mr-12 hidden lg:block">
-          <span>Get connected with us on social networks:</span>
         </div>
         <div className="flex justify-center">
           <a href="#!" className="mr-6 text-gray-600">
