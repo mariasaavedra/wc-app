@@ -1,3 +1,117 @@
-.ButtonComponent {
-    
+
+.btn-primary,
+.btn-secondary,
+.btn-tertiary {
+    position: relative;
+    display: inline-block;
+    /* fallback */
+    width: auto;
+    width: fit-content;
+}
+
+.btn-primary {
+    background: #056976;
+    color: #fff;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:disabled {
+        opacity: 0.4;
+        &:hover {
+            opacity: 0.4;
+            cursor: default;
+        }
+    }
+    &:focus {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            left: 2px;
+            bottom: 2px;
+            border: 2px solid #fff;
+            border-radius: 3px;
+        }
+    }
+}
+.btn-secondary {
+    background: transparent;
+    background: transparent;
+    border: 2px solid #62696c;
+    color: #62696c;
+    &:focus {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            left: 2px;
+            bottom: 2px;
+            border: 1px solid #62696c;
+            border-radius: 3px;
+        }
+    }
+    &:hover {
+        background: lighten(#62696c, 55%);
+        background-color: lighten(#62696c, 55%);
+    }
+    &:disabled {
+        opacity: 0.5;
+        &:hover {
+            cursor: default;
+            background: transparent;
+        }
+    }
+}
+.btn-tertiary {
+    background: transparent;
+    background: transparent;
+    color: #62696c;
+    &:focus {
+        border: 2px solid #62696c;
+    }
+    &:hover {
+        background: lighten(#62696c, 55%);
+        background-color: lighten(#62696c, 55%);
+    }
+    &:disabled {
+        opacity: 0.5;
+        &:hover {
+            cursor: default;
+            background: transparent;
+        }
+    }
+}
+.btn-tiny {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    min-width: 24px;
+    min-height: 24px;
+    height: 24px;
+    border: none;
+}
+.btn-small {
+    padding: 0 12px;
+    font-size: 16px;
+    min-width: 32px;
+    min-height: 32px;
+    height: 32px;
+}
+.btn-medium {
+    padding: 0 24px;
+    font-size: 18px;
+    min-width: 48px;
+    min-height: 40px;
+    height: 40px;
+}
+.btn-large {
+    padding: 0 24px;
+    font-size: 20px;
+    min-width: 62px;
+    min-height: 48px;
+    height: 40px;
 }

@@ -40,12 +40,9 @@ const AboutPage = () => {
             src="/images/boys_computer.png" />   
       </div>
       <div className={styles.buttoncontainer}>
-        <a className={styles.aboutButton} href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform">
-          JOIN OUR TEAM 
-        </a>  
-        {/* <Link href="">
-          <button>JOIN OUR TEAM</button>
-        </Link> */}
+        <Button href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform">
+          Join Our Team
+        </Button>
       </div>
     </div>
   );

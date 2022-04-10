@@ -1,17 +1,13 @@
 import type { NextPage } from "next";
-import { Column } from "../components/Column";
-import { Hero } from "../components/Hero";
+import { Column } from "../components/Column";;
 import { Section } from "../components/Section";
-import { ImageCard } from "../components/ImageCard";
 import Text from "../components/Text";
-import { Footer } from "../components/Footer";
 import Link from "next/link"
-import { hkdf } from "crypto";
 
 const Home: NextPage = () => {
 
     return (
-        <div className="container mx-auto">
+        <div className="container-fluid mx-auto">
 
             <div className="bg-brand-Magenta" >
                 <div className="flex flex-wrap lg:flex-no-wrap justify-between">
