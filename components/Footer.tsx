@@ -202,13 +202,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="text-center p-6 bg-gray-200">
-        <span>© 2021 Copyright:</span>
-        <a
-          className="text-gray-600 font-semibold"
-          href="https://tailwind-elements.com/"
-        >
-          Tailwind Elements
-        </a>
+         © Copyright 2022 - WeCodeKC All rights Reserved
       </div>
     </footer>
   );
