@@ -43,7 +43,7 @@ export function Button(props: ButtonProps) {
     <div
       className={props.className + " " + styles.width + " cursor-pointer rounded-md shadow"}
     >
-      <a href={props.href} target={props.target} className={getClasses()}>
+      <a href={props.href} className={getClasses()}>
         {props.children}
       </a>
     </div>
