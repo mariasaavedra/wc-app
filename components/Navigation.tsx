@@ -83,8 +83,8 @@ export const Navigation = () => {
         <Link href="/about-us">About Us</Link>
         <Link href="/programs">Programs</Link>
         <Link href="/events">Event</Link>
-        <Link href="https://www.eventbrite.com/o/we-code-kc-29250142705">
-          <Button>Learn to Code</Button>
+        <Link href="https://www.paypal.com/donate?token=Bzy2VDKeuqwoNSwAlgnoxpRdhJjsCf4wG7bT1uUzLJxa_FUkM6bLsq0YArH3vq1g5Xb7j_wqONSQMzcy">
+          Donate
         </Link>
       </div>
     </nav>
