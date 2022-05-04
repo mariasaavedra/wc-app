@@ -162,8 +162,8 @@ const Home: NextPage = () => {
             <div>
               <img
                 className="h-60 w-60"
-                src="https://source.unsplash.com/random/600x600/?tech"
-                alt=""
+                src="/images/donate.JPG"
+                alt="Donate"
               />
             </div>
             <div className="py-4 px-4 grid place-items-center">
@@ -175,8 +175,8 @@ const Home: NextPage = () => {
             <div>
               <img
                 className="h-60 w-60"
-                src="https://source.unsplash.com/random/600x600/?coding"
-                alt=""
+                src="/images/get-involved.JPG"
+                alt="Get Involved"
               />
             </div>
             <div className="py-4 px-4 grid place-items-center">
@@ -188,8 +188,8 @@ const Home: NextPage = () => {
             <div>
               <img
                 className="h-60 w-60"
-                src="https://source.unsplash.com/random/600x600/?hackathon"
-                alt=""
+                src="/images/learn-to-code.jpeg"
+                alt="Learn to Code"
               />
             </div>
             <div className="py-4 px-4 grid place-items-center">
