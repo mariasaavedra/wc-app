@@ -20,7 +20,7 @@ const Events: NextPage = (props) => {
             exposing youth to various computer science concepts.
             <br />
             <br />
-            Every child, no matter their zip code or their family\’s financial
+            Every child, no matter their zip code or their family’s financial
             status, should have the opportunity to learn to code.
           </Text>
           <Button

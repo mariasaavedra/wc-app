@@ -20,8 +20,8 @@ const Home: NextPage = () => {
             science concepts.
           </Text>
           <br />
-          <Button>Get Started</Button>
-        </>
+            <Button href='/programs'>Get Started</Button>
+          </>
       </Hero>
 
       <div className="bg-brand-purple mt-10">
@@ -167,7 +167,7 @@ const Home: NextPage = () => {
               />
             </div>
             <div className="py-4 px-4 grid place-items-center">
-              <Button>Donate</Button>
+              <Button href='https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU'>Donate</Button>
             </div>
           </div>
 
@@ -180,7 +180,7 @@ const Home: NextPage = () => {
               />
             </div>
             <div className="py-4 px-4 grid place-items-center">
-              <Button>Get Involved</Button>
+              <Button href='https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform?usp=sf_link'>Get Involved</Button>
             </div>
           </div>
 
@@ -193,7 +193,7 @@ const Home: NextPage = () => {
               />
             </div>
             <div className="py-4 px-4 grid place-items-center">
-              <Button>Learn to Code</Button>
+              <Button href='/programs#get-into-tech'>Learn to Code</Button>
             </div>
           </div>
         </div>
