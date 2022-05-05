@@ -83,7 +83,7 @@ export const Navigation = () => {
         <Link href="/about-us">About Us</Link>
         <Link href="/programs">Programs</Link>
         <Link href="/events">Event</Link>
-        <Link href="https://www.paypal.com/donate?token=Bzy2VDKeuqwoNSwAlgnoxpRdhJjsCf4wG7bT1uUzLJxa_FUkM6bLsq0YArH3vq1g5Xb7j_wqONSQMzcy">
+        <Link href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU">
           Donate
         </Link>
       </div>

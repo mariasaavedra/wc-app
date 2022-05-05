@@ -24,11 +24,12 @@ const ProgramsPage = () => {
             Virtual Reality, Machine Learning, NFTs, and more!
           </Text>
           <br />
-          <Button>Get Started</Button>
+          <Button href='#get-into-tech'>Get Started</Button>
         </>
       </Hero>
 
       <Section>
+        <div id='get-into-tech'></div> {/*Added to link to section from home-page.*/}
         <img className={styles.image2} src="/images/techstronaut-journey.png" />
         <Column>
           <Text className="px-10 py-4 text-black" size="h1">
