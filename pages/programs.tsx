@@ -33,7 +33,7 @@ const ProgramsPage = () => {
         <img className={styles.image2} src="/images/techstronaut-journey.png" />
         <Column>
           <Text className="px-10 py-4 text-black" size="h1">
-            Get into tech
+            Get your 7-17 year old into tech
           </Text>
           <Text className="px-10 py-4" size="b1">
             Aligned with We Code’s mission of empowering youth with technology
@@ -54,7 +54,7 @@ const ProgramsPage = () => {
           </Text>
           <Button
             className="d-block  my-4 mx-auto"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfEejRmMTPP4yyRjCGAmVEdaOVVzGL9Rc-ECoK23RI-PzMb1w/viewform"
+            href="https://www.eventbrite.com/e/techstronauts-coding-club-by-wecode-kc-tickets-317392187577"
           >
              Join Techstronauts
           </Button>
@@ -64,14 +64,14 @@ const ProgramsPage = () => {
         <img className={styles.image2} src="/images/wecode_careers.jpeg" />
         <Column>
           <Text className="px-10 py-4 text-black" size="h1">
-            Get into tech
+            Start your Career in tech
           </Text>
           <Text className="px-10 py-4" size="b1">
             In partnership with the State of Missouri Workforce Department, We
             Code is excited to bring a free certification program to Missouri
             residents. We are dedicated to providing quality coding and
             technology education and experience to participants with free access
-            to the Coursea platform. In a self pace program you will be able to
+            to the Coursera platform. In a self pace program you will be able to
             take your future in your own hands.
           </Text>
           <Text className="px-10 py-4" size="b1">
