@@ -6,22 +6,24 @@ import Text from "../components/Text";
 const Events: NextPage = (props) => {
   return (
     <div className="mx-auto">
-      <Hero title="Events">
+      <Hero title="Develop your tech skills in one of our many courses below!">
         <>
           <Text size="b1">
-            Our mission is to give youth the opportunity to learn technology
-            concepts, and leadership skills; creating a pipeline of future-ready
-            professionals through project-based learning and innovative
-            programs.
+          WeCode/KC is committed to helping Kansas City's youth
+          and young adults develop their skills and knowledge to
+          prepare for a career in technology.  Our classes and
+          clubs below are designed for various age groups and skill levels.
           </Text>
           <br />
           <Text size="b1">
-            We're an initiative that serves the urban core of Kansas City,
-            exposing youth to various computer science concepts.
-            <br />
-            <br />
-            Every child, no matter their zip code or their family’s financial
-            status, should have the opportunity to learn to code.
+          Our adult programs include wrap-around services and mentorships
+          with professionals and business owners to further assist in the
+          full-scope of skill-building and knowledge development that
+          is needed for a career in the field of technology
+          </Text>
+          <br />
+          <Text size='h4' className='text-black'>
+          Sign up and Begin Your Tech Journey with Us!
           </Text>
           <Button
             className="mt-8"
