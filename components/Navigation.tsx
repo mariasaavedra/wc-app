@@ -28,31 +28,7 @@ export const Navigation = () => {
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
             <Link href="/events">Events</Link>
-
-            <form
-              action="https://www.paypal.com/donate"
-              method="post"
-              target="_top"
-            >
-              <input
-                type="hidden"
-                name="hosted_button_id"
-                value="AV3BJKXGLJ2BU"
-              />
-              <input
-                type="image"
-                src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-                name="submit"
-                title="PayPal - The safer, easier way to pay online!"
-                alt="Donate with PayPal button"
-              />
-              <img
-                alt=""
-                src="https://www.paypal.com/en_US/i/scr/pixel.gif"
-                width="1"
-                height="1"
-              />
-            </form>
+            <Button size="small" href="https://www.tinyurl.com/ymcy9f6e">Donate</Button>
           </div>
           <div className="lg:hidden flex items-center pr-4">
             <button className="mobile-menu-button" onClick={handleClick}>

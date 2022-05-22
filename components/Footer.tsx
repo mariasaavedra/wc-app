@@ -2,12 +2,12 @@ import styles from "../styles/components/Footer.module.scss";
 import Link from "./Link";
 export const Footer = () => {
   return (
-    <footer className="text-center lg:text-left bg-gray-100 text-gray-600">
+    <footer className="text-center lg:text-left bg-brand-green text-white">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
         <div className="mr-12 hidden lg:block">
         </div>
         <div className="flex justify-center">
-          <a href="https://www.facebook.com/WeCodeKC/" className="mr-6 text-gray-600">
+          <a href="https://www.facebook.com/WeCodeKC/" className="mr-6 text-white">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -24,7 +24,7 @@ export const Footer = () => {
               ></path>
             </svg>
           </a>
-          <a href="https://twitter.com/wecodekc" className="mr-6 text-gray-600">
+          <a href="https://twitter.com/wecodekc" className="mr-6 text-white">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -42,7 +42,7 @@ export const Footer = () => {
             </svg>
           </a>
 
-          <a href="https://www.instagram.com/wecodekc/" className="mr-6 text-gray-600">
+          <a href="https://www.instagram.com/wecodekc/" className="mr-6 text-white">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -59,7 +59,7 @@ export const Footer = () => {
               ></path>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/company/52165551/" className="mr-6 text-gray-600">
+          <a href="https://www.linkedin.com/company/52165551/" className="mr-6 text-white">
             <svg
               aria-hidden="true"
               focusable="false"
@@ -95,7 +95,8 @@ export const Footer = () => {
             >
               <Link href="/">
                 <img
-                  className="logo-image h-full w-full"
+                  className="logo-image white m
+                  h-full w-full"
                   src="/images/logo-simple.png"
                 ></img>
               </Link>
@@ -168,7 +169,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center p-6 bg-gray-200">
+      <div className="text-center p-6 bg-brand-green">
          © Copyright 2022 - WeCodeKC All rights Reserved
       </div>
     </footer>

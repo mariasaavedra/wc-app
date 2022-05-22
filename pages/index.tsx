@@ -47,22 +47,30 @@ const Home: NextPage = () => {
               levels, you’ll realize the power of your own shine.
             </Badge>
             <Badge planet="Aegean Cool" level="02" label="HTML & CSS">
-            We hope that you’ll cruise through planet Aegean Cool! You’ve pushed it this far building on basic functions and growing your knowledge. The Aegean blue hue badges will be a mark of true trust in your intelligence and the ability to move forward.
+              We hope that you’ll cruise through planet Aegean Cool! You’ve
+              pushed it this far building on basic functions and growing your
+              knowledge. The Aegean blue hue badges will be a mark of true trust
+              in your intelligence and the ability to move forward.
             </Badge>
             <Badge planet="Indigo-go" level="03" label="JavaScript">
-            You’ve made it halfway; look at you Indigo-Go! We love your dedication and you’ll soon prove your mastery of the core principles of Javascript. Your wisdom is infinite, keep on going!
+              You’ve made it halfway; look at you Indigo-Go! We love your
+              dedication and you’ll soon prove your mastery of the core
+              principles of Javascript. Your wisdom is infinite, keep on going!
             </Badge>
             <Badge planet="Galactic Green" level="04" label="Python">
-            Groundbreaking work getting to Galactic Green! Here you’ll learn and demonstrate your rockin’ Python skills.
+              Groundbreaking work getting to Galactic Green! Here you’ll learn
+              and demonstrate your rockin’ Python skills.
             </Badge>
             <Badge planet="Gleaming Gold" level="05" label="App Inventor">
-            The final step in your astonishing techstronaut journey– completing Gleaming Gold. On this last planet, the ease you’ll have in creating an app will seem like true sorcery. As this become the last stop, you’ll learn you are the magic that keeps tech going.
+              The final step in your astonishing techstronaut journey–
+              completing Gleaming Gold. On this last planet, the ease you’ll
+              have in creating an app will seem like true sorcery. As this
+              become the last stop, you’ll learn you are the magic that keeps
+              tech going.
             </Badge>
           </div>
         </div>
       </Section>
-
-
 
       <div className="bg-brand-purple mt-10">
         <TextBanner title="Our Mission">
