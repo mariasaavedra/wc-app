@@ -1,14 +1,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;600;700&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: 'Redhat-regular', sans-serif;
+  font-family: "Redhat-regular", sans-serif;
   font-weight: 400;
 }
 
@@ -22,4 +22,7 @@ a {
 }
 .logo-image {
   max-width: 200px;
+  &.white {
+    filter: brightness(100);
+  }
 }

@@ -157,11 +157,11 @@ const Home: NextPage = () => {
       </div>
 
       <Section>
-        <div className="px-10 py-10 grid place-items-center gap-10 md:grid-cols-3">
-          <div className="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 ">
+        <div className="px-5 py-5 grid place-items-center gap-2 md:grid-cols-3">
+          <div className="rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 ">
             <div>
               <img
-                className="h-60 w-60"
+                className="h-80 w-80"
                 src="/images/donate.JPG"
                 alt="Donate"
               />
@@ -174,7 +174,7 @@ const Home: NextPage = () => {
           <div className="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500">
             <div>
               <img
-                className="h-60 w-60"
+                className="h-80 w-80"
                 src="/images/get-involved.JPG"
                 alt="Get Involved"
               />
@@ -187,7 +187,7 @@ const Home: NextPage = () => {
           <div className="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500">
             <div>
               <img
-                className="h-60 w-60"
+                className="h-80 w-80"
                 src="/images/learn-to-code.jpeg"
                 alt="Learn to Code"
               />
