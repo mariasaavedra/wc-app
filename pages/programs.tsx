@@ -61,7 +61,7 @@ const ProgramsPage = () => {
         </Column>
       </Section>
       <Section>
-        <img className={styles.image2} src="/images/wecode_careers.jpg" />
+        <img className={styles.image2} src="/images/wecode_careers.JPG" />
         <Column>
           <Text className="px-10 py-4 text-black" size="h1">
             Start your Career in tech

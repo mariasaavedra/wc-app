@@ -1,0 +1,24 @@
+@use "../variables.scss" as variables;
+
+.CarouselComponent {
+  max-width: 700px;
+  margin: 0 auto;
+  .dots {
+    text-align: center;
+    cursor: pointer;
+    margin: 16px 0;
+    margin-top: 0;
+  }
+  .dot {
+    display: inline-flex;
+    background: #ccc;
+    opacity: .75;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+  }
+}
