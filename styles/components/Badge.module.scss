@@ -1,0 +1,61 @@
+@use "../variables.scss" as variables;
+
+.BadgeComponent {
+  padding: 2rem;
+  display: block;
+  position: relative;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  &:nth-child(1) {
+    .color {
+      background: #752a60;
+    }
+  }
+  &:nth-child(2) {
+    .color {
+      background: #364b75;
+    }
+  }
+  &:nth-child(3) {
+    .color {
+      background: #59559f;
+    }
+  }
+  &:nth-child(4) {
+    .color {
+      background: #3a7b5b;
+    }
+  }
+  &:nth-child(5) {
+    .color {
+      background: #b99838;
+    }
+  }
+  .level {
+    font-size: 4rem;
+  }
+  .label,
+  .level {
+    position: static;
+  }
+  .label {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #000;
+  }
+  .color {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #000;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+}
