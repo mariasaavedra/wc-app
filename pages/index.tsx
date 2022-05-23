@@ -12,13 +12,19 @@ import Badge from "../components/Badge";
 
 const Home: NextPage = () => {
   return (
-    <div className="container-fluid mx-auto">
+    <div className="container-fluid mx-auto ">
       <Hero title="Creating a pipeline of future-ready professionals.">
         <>
           <Text size="b1">
             We serve the urban core of Kansas City, exposing youth to various
             programming languages, technology, cyber security, and computer
             science concepts.
+            <br />
+            <br /> 
+            Our mission is to give youth the opportunity to learn
+            technology concepts, and leadership skills; creating a pipeline of
+            future-ready professionals through project-based learning and
+            innovative programs
           </Text>
           <br />
           <Button href="/programs">Get Started</Button>

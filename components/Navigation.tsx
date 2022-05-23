@@ -28,7 +28,9 @@ export const Navigation = () => {
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
             <Link href="/events">Events</Link>
-            <Button size="small" href="https://www.tinyurl.com/ymcy9f6e">Donate</Button>
+            <Button size="small" href="https://www.tinyurl.com/ymcy9f6e">
+              Donate
+            </Button>
           </div>
           <div className="lg:hidden flex items-center pr-4">
             <button className="mobile-menu-button" onClick={handleClick}>
@@ -54,14 +56,16 @@ export const Navigation = () => {
       <div
         className={`${
           active ? "" : "hidden"
-        } " mobile-menu bg-brand-blue z-50"`}
+        } " mobile-menu text-white py-4 bg-brand-green z-50"`}
       >
-        <Link href="/about-us">About Us</Link>
-        <Link href="/programs">Programs</Link>
-        <Link href="/events">Event</Link>
-        <Link href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU">
-          Donate
-        </Link>
+        <div className={styles.mobileMenu}>
+          <Link href="/about-us">About Us</Link>
+          <Link href="/programs">Programs</Link>
+          <Link href="/events">Event</Link>
+          <Link href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU">
+            Donate
+          </Link>
+        </div>
       </div>
     </nav>
   );

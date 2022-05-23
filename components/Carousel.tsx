@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MaybeParentComponentProps } from "../interfaces/ParentComponentProps";
 import styles from "../styles/components/Carousel.module.scss";
 
@@ -10,6 +10,28 @@ export interface CarouselProps extends MaybeParentComponentProps {
 
 export default function Carousel(props: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  const getClasses = (index: number): string => {
+    const classes = [styles.dot];
+    if (currentIndex === index) {
+      classes.push(styles.active);
+    }
+    return classes.join(" ");
+  };
+
+  useEffect(() => {
+    setInterval(() => {
+      setCurrentIndex((prevIndex) => {
+        const totalSlides = props.slides.length - 1;
+        if (prevIndex + 1 > totalSlides) {
+          return 0;
+        } else {
+          return prevIndex + 1;
+        }
+      });
+    }, 5000);
+  }, []);
+
   /* Add arrows */
   const displayArrows = () => {
     return props.pagination.length > 0 && props.pagination.includes("dots");
@@ -35,7 +57,7 @@ export default function Carousel(props: CarouselProps) {
           props.slides.map((slide, index) => (
             <div
               onClick={() => setCurrentIndex(index)}
-              className={styles.dot}
+              className={getClasses(index)}
             ></div>
           ))}
       </div>

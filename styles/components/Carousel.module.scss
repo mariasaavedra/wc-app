@@ -10,15 +10,21 @@
     margin-top: 0;
   }
   .dot {
-    display: inline-flex;
-    background: #ccc;
-    opacity: .75;
-    height: 12px;
-    width: 12px;
-    border-radius: 100%;
-    flex-wrap: wrap;
+    &.active,
+    &:hover {
+      transition: 0.5s ease all;
+      background: darken(#ccc, 90%);
+    }
     align-items: center;
+    background: #ccc;
+    border-radius: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 12px;
     justify-content: center;
     margin: 0 8px;
+    opacity: 0.75;
+    transition: 1s ease all;
+    width: 12px;
   }
 }

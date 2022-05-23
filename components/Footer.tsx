@@ -2,12 +2,14 @@ import styles from "../styles/components/Footer.module.scss";
 import Link from "./Link";
 export const Footer = () => {
   return (
-    <footer className="text-center lg:text-left bg-brand-green text-white">
+    <footer className="text-center lg:text-left bg-brand-blue text-white">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
-        <div className="mr-12 hidden lg:block">
-        </div>
+        <div className="mr-12 hidden lg:block"></div>
         <div className="flex justify-center">
-          <a href="https://www.facebook.com/WeCodeKC/" className="mr-6 text-white">
+          <a
+            href="https://www.facebook.com/WeCodeKC/"
+            className="mr-6 text-white"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
@@ -42,7 +44,10 @@ export const Footer = () => {
             </svg>
           </a>
 
-          <a href="https://www.instagram.com/wecodekc/" className="mr-6 text-white">
+          <a
+            href="https://www.instagram.com/wecodekc/"
+            className="mr-6 text-white"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
@@ -59,7 +64,10 @@ export const Footer = () => {
               ></path>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/company/52165551/" className="mr-6 text-white">
+          <a
+            href="https://www.linkedin.com/company/52165551/"
+            className="mr-6 text-white"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
@@ -76,11 +84,10 @@ export const Footer = () => {
               ></path>
             </svg>
           </a>
-
         </div>
       </div>
       <div className="mx-6 py-10 text-center md:text-left">
-        <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="">
             <h6
               className="
@@ -167,10 +174,17 @@ export const Footer = () => {
               8164340551
             </p>
           </div>
+
+          <div className="text-center">
+            <img className="text-align mx-auto" src="/images/QRCODE.png"></img>
+            <p className="d-block py-4 text-align mx-auto">
+              Want to support our mission? <br/> Scan this QR code below to donate.
+            </p>
+          </div>
         </div>
       </div>
-      <div className="text-center p-6 bg-brand-green">
-         © Copyright 2022 - WeCodeKC All rights Reserved
+      <div className="text-center p-6 bg-brand-blue">
+        © Copyright 2022 - WeCodeKC All rights Reserved
       </div>
     </footer>
   );
