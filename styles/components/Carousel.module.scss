@@ -1,8 +1,22 @@
 @use "../variables.scss" as variables;
 
 .CarouselComponent {
+  position: relative;
   max-width: 700px;
   margin: 0 auto;
+  .leftArrow,
+  .rightArrow {
+    position: absolute;
+    cursor: pointer;
+  }
+  .leftArrow {
+    top: 45%;
+    left: 0;
+  }
+  .rightArrow {
+    top: 45%;
+    right: 0;
+  }
   .dots {
     text-align: center;
     cursor: pointer;

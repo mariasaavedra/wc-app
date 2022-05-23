@@ -29,19 +29,44 @@ export default function Carousel(props: CarouselProps) {
           return prevIndex + 1;
         }
       });
-    }, 5000);
+    }, 15000);
   }, []);
 
   /* Add arrows */
-  const displayArrows = () => {
+  const displayArrows = (): boolean => {
+    return props.pagination.length > 0 && props.pagination.includes("arrows");
+  };
+  const displayDots = (): boolean => {
     return props.pagination.length > 0 && props.pagination.includes("dots");
   };
-  const displayDots = () => {
-    return props.pagination.length > 0 && props.pagination.includes("dots");
+
+  const prevSlide = () => {
+    if (currentIndex === 0) {
+      return;
+    }
+    setCurrentIndex((prevIndex) => {
+      return prevIndex - 1;
+    });
+  };
+
+  const nextSlide = () => {
+    if (currentIndex === props.slides.length - 1) {
+      return;
+    }
+    setCurrentIndex((prevIndex) => {
+      return prevIndex + 1;
+    });
   };
 
   return (
     <div className={styles.CarouselComponent}>
+      {/* Left Arrow */}
+      {displayArrows() && (
+        <div className={styles.leftArrow} onClick={prevSlide}>
+          {"<"}
+        </div>
+      )}
+
       {/* Slides */}
       <div className="flex flex-col items-center m-8">
         <div className="w-100 bg-white rounded overflow-x-hidden flex snap-x">
@@ -50,6 +75,13 @@ export default function Carousel(props: CarouselProps) {
           })}
         </div>
       </div>
+
+      {/* Right Arrow */}
+      {displayArrows() && (
+        <div className={styles.rightArrow} onClick={nextSlide}>
+          {">"}
+        </div>
+      )}
 
       {/* Pagination */}
       <div className={styles.dots}>

@@ -46,7 +46,7 @@ const AboutPage = () => {
           </Button>
         </>
       </Hero>
-      <Carousel slides={slides}></Carousel>
+      <Carousel pagination={["dots", "arrows"]} slides={slides}></Carousel>
     </div>
   );
 };
