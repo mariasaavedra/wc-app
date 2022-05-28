@@ -29,7 +29,7 @@ export default function Carousel(props: CarouselProps) {
           return prevIndex + 1;
         }
       });
-    }, 15000);
+    }, 5000);
   }, []);
 
   /* Add arrows */
