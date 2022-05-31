@@ -4,11 +4,12 @@ import { Hero } from "../components/Hero";
 import { Section } from "../components/Section";
 import { ImageCard } from "../components/ImageCard";
 import Text from "../components/Text";
-
+import SPONSORS from "../constants/sponsors";
 import Link from "next/link";
 import { Button } from "../components/Button";
 import TextBanner from "../components/TextBanner";
 import Badge from "../components/Badge";
+import FlexImages from "../components/FlexImages";
 
 const Home: NextPage = () => {
   return (
@@ -88,45 +89,9 @@ const Home: NextPage = () => {
           </Text>
         </TextBanner>
       </div>
-
+  
       <Section>
-        <div className="flex flex-wrap align-center justify-center  gap-12 my-12">
-          <div>
-            <img
-              className="w-48"
-              src="/images/1597745175.jpg"
-              alt="Microsoft"
-            ></img>
-          </div>
-          <div>
-            <img
-              className="w-48"
-              src="/images/1597745275.png"
-              alt="Community Builders of Kansas City"
-            ></img>
-          </div>
-          <div>
-            <img
-              className="w-48"
-              src="/images/1597745457.png"
-              alt="Fishtech Group"
-            ></img>
-          </div>
-          <div>
-            <img
-              className=" w-48"
-              src="/images/1597745663.png"
-              alt="Artisan Technology Group"
-            ></img>
-          </div>
-          <div>
-            <img
-              className="w-48"
-              src="/images/1597745834.png"
-              alt="Initiatives"
-            ></img>
-          </div>
-        </div>
+        <FlexImages images={SPONSORS}/>
       </Section>
     </div>
   );
