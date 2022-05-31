@@ -98,6 +98,6 @@ export default function Carousel(props: CarouselProps) {
 }
 
 Carousel.defaultProps = {
-  slides: [<p>Slide One</p>, <p>Slide Two</p>, <p>Slide Three</p>],
+  slides: [<p>Slide One</p>, <p>Slide Two</p>],
   pagination: ["dots"],
 };
