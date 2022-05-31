@@ -17,7 +17,7 @@ const Home: NextPage = () => {
     <div className="container-fluid mx-auto ">
       <Hero title="Creating a pipeline of future-ready professionals.">
         <>
-          <Text size="b1 p-2">
+          <Text size="b1" className="mt-2">
             We serve the urban core of Kansas City, exposing youth to various
             programming languages, technology, cyber security, and computer
             science concepts.
