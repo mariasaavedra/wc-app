@@ -10,12 +10,13 @@ export interface BadgeProps extends MaybeParentComponentProps {
 
 export default function Badge(props: BadgeProps) {
   return (
-    <div className={styles.BadgeComponent}>
+    <div className={styles.BadgeComponent + " " + "bg-brand-magenta"}>
+
+      <p>{props.children}</p>
       <p className="font-bold">Planet: {props.planet}</p>
       <p className={styles.level}>{props.level}</p>
       <p className={styles.label}>{props.label}</p>
-      <p>{props.children}</p>
-      <div className={styles.color}></div>
+      {/* <div className={styles.color}></div> */}
     </div>
   );
 }

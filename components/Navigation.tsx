@@ -28,7 +28,10 @@ export const Navigation = () => {
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
             <Link href="/events">Events</Link>
-            <Button size="small" href="https://www.tinyurl.com/ymcy9f6e">
+            <Button
+              size="small"
+              href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU"
+            >
               Donate
             </Button>
           </div>

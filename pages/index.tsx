@@ -10,22 +10,22 @@ import { Button } from "../components/Button";
 import TextBanner from "../components/TextBanner";
 import Badge from "../components/Badge";
 import FlexImages from "../components/FlexImages";
+import styles from "../styles/components/Badge.module.scss";
 
 const Home: NextPage = () => {
   return (
     <div className="container-fluid mx-auto ">
       <Hero title="Creating a pipeline of future-ready professionals.">
         <>
-          <Text size="b1">
+          <Text size="b1" className="mt-2">
             We serve the urban core of Kansas City, exposing youth to various
             programming languages, technology, cyber security, and computer
             science concepts.
             <br />
-            <br /> 
-            Our mission is to give youth the opportunity to learn
-            technology concepts, and leadership skills; creating a pipeline of
-            future-ready professionals through project-based learning and
-            innovative programs
+            <br />
+            Our mission is to give youth the opportunity to learn technology
+            concepts, and leadership skills; creating a pipeline of future-ready
+            professionals through project-based learning and innovative programs
           </Text>
           <br />
           <Button href="/programs">Get Started</Button>
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
 
       <div className="bg-brand-purple mt-10">
         <TextBanner title="Learn to Code, Code to Learn">
-          <Text className="mt-4 text-center" size="b1">
+          <Text className="mt-4 p-2 text-center" size="b1">
             WeCodeKC introduces coding for kids through project-based or game
             development learning. Our students begin their tech journey using
             Scratch, which is block-based coding, and gradually increase their
@@ -49,31 +49,36 @@ const Home: NextPage = () => {
         <div>
           <div className="grid md:grid-cols-1 lg:grid-cols-5 gap-4">
             <Badge planet="Fusion fuchsia" label="HTML & CSS">
-              As a techstraunaut, your journey is yours alone! Fuchsia is the
+              {/* As a techstraunaut, your journey is yours alone! Fuchsia is the
               embodiment of uniqueness and confidence. After you master all the
-              levels, you’ll realize the power of your own shine.
+              levels, you’ll realize the power of your own shine. */}
+              <img className={styles.badgeImg} src="/images/magenta.png" />
             </Badge>
             <Badge planet="Aegean Cool" level="02" label="HTML & CSS">
-              We hope that you’ll cruise through planet Aegean Cool! You’ve
+              {/* We hope that you’ll cruise through planet Aegean Cool! You’ve
               pushed it this far building on basic functions and growing your
               knowledge. The Aegean blue hue badges will be a mark of true trust
-              in your intelligence and the ability to move forward.
+              in your intelligence and the ability to move forward. */}
+              <img className={styles.badgeImg} src="/images/blue.png" />
             </Badge>
             <Badge planet="Indigo-go" level="03" label="JavaScript">
-              You’ve made it halfway; look at you Indigo-Go! We love your
+              {/* You’ve made it halfway; look at you Indigo-Go! We love your
               dedication and you’ll soon prove your mastery of the core
-              principles of Javascript. Your wisdom is infinite, keep on going!
+              principles of Javascript. Your wisdom is infinite, keep on going! */}
+              <img className={styles.badgeImg} src="/images/purple.png" />
             </Badge>
             <Badge planet="Galactic Green" level="04" label="Python">
-              Groundbreaking work getting to Galactic Green! Here you’ll learn
-              and demonstrate your rockin’ Python skills.
+              {/* Groundbreaking work getting to Galactic Green! Here you’ll learn
+              and demonstrate your rockin’ Python skills. */}
+              <img className={styles.badgeImg} src="/images/teal.png" />
             </Badge>
             <Badge planet="Gleaming Gold" level="05" label="App Inventor">
-              The final step in your astonishing techstronaut journey–
+              {/* The final step in your astonishing techstronaut journey–
               completing Gleaming Gold. On this last planet, the ease you’ll
               have in creating an app will seem like true sorcery. As this
               become the last stop, you’ll learn you are the magic that keeps
-              tech going.
+              tech going. */}
+              <img className={styles.badgeImg} src="/images/yellow.png" />
             </Badge>
           </div>
         </div>

@@ -1,5 +1,11 @@
 @use "../variables.scss" as variables;
 
+.badgeImg {
+  left: 0;
+  right: 0;
+  margin: 2rem auto;
+  max-width: 200px;
+}
 .BadgeComponent {
   padding: 2rem;
   display: block;
