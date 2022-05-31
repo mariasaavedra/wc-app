@@ -41,4 +41,8 @@ const TestimonialItem = (props: TestimonialItemProps) => {
   );
 };
 
+TestimonialItem.defaultProps = {
+  image: "/images/anonymous-user.jpg"
+};
+
 export default TestimonialItem;
