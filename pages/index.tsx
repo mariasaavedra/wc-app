@@ -11,7 +11,6 @@ import TextBanner from "../components/TextBanner";
 import Badge from "../components/Badge";
 import styles from "../styles/components/Badge.module.scss";
 
-
 const Home: NextPage = () => {
   return (
     <div className="container-fluid mx-auto ">
@@ -22,11 +21,10 @@ const Home: NextPage = () => {
             programming languages, technology, cyber security, and computer
             science concepts.
             <br />
-            <br /> 
-            Our mission is to give youth the opportunity to learn
-            technology concepts, and leadership skills; creating a pipeline of
-            future-ready professionals through project-based learning and
-            innovative programs
+            <br />
+            Our mission is to give youth the opportunity to learn technology
+            concepts, and leadership skills; creating a pipeline of future-ready
+            professionals through project-based learning and innovative programs
           </Text>
           <br />
           <Button href="/programs">Get Started</Button>
@@ -53,25 +51,25 @@ const Home: NextPage = () => {
               {/* As a techstraunaut, your journey is yours alone! Fuchsia is the
               embodiment of uniqueness and confidence. After you master all the
               levels, you’ll realize the power of your own shine. */}
-              <img className={styles.badgeImg} src="/images/magenta.png"/>
+              <img className={styles.badgeImg} src="/images/magenta.png" />
             </Badge>
             <Badge planet="Aegean Cool" level="02" label="HTML & CSS">
               {/* We hope that you’ll cruise through planet Aegean Cool! You’ve
               pushed it this far building on basic functions and growing your
               knowledge. The Aegean blue hue badges will be a mark of true trust
               in your intelligence and the ability to move forward. */}
-              <img className={styles.badgeImg} src="/images/blue.png"/>
+              <img className={styles.badgeImg} src="/images/blue.png" />
             </Badge>
             <Badge planet="Indigo-go" level="03" label="JavaScript">
               {/* You’ve made it halfway; look at you Indigo-Go! We love your
               dedication and you’ll soon prove your mastery of the core
               principles of Javascript. Your wisdom is infinite, keep on going! */}
-              <img className={styles.badgeImg} src="/images/purple.png"/>
+              <img className={styles.badgeImg} src="/images/purple.png" />
             </Badge>
             <Badge planet="Galactic Green" level="04" label="Python">
               {/* Groundbreaking work getting to Galactic Green! Here you’ll learn
               and demonstrate your rockin’ Python skills. */}
-              <img className={styles.badgeImg} src="/images/teal.png"/>
+              <img className={styles.badgeImg} src="/images/teal.png" />
             </Badge>
             <Badge planet="Gleaming Gold" level="05" label="App Inventor">
               {/* The final step in your astonishing techstronaut journey–
@@ -79,7 +77,7 @@ const Home: NextPage = () => {
               have in creating an app will seem like true sorcery. As this
               become the last stop, you’ll learn you are the magic that keeps
               tech going. */}
-              <img className={styles.badgeImg} src="/images/yellow.png"/>
+              <img className={styles.badgeImg} src="/images/yellow.png" />
             </Badge>
           </div>
         </div>

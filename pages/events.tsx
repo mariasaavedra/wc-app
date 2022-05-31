@@ -64,7 +64,6 @@ const Events: NextPage = ({ data, events }: EventProps) => {
             full-scope of skill-building and knowledge development that is
             needed for a career in the field of technology
             <br />
-            <br />
           </Text>
           <br />
           <Text size="h3" className="mt-2">
@@ -86,7 +85,6 @@ const Events: NextPage = ({ data, events }: EventProps) => {
             concepts shown above. Classes starts DAILY at 9am and end at 4pm.
             Lunch will be provided for each student.
           </Text>
-          <br />
           <br />
           <Text size="h3" className="mt-2">
             Sign for Summer of Code classes below:
