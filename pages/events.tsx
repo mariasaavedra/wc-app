@@ -1,37 +1,30 @@
-import type { NextPage } from "next";
-import { Button } from "../components/Button";
-import { Hero } from "../components/Hero";
-import { Section } from "../components/Section";
-import Text from "../components/Text";
+import type { GetServerSideProps, NextPage } from "next";
 
-const Events: NextPage = (props) => {
-  return (
-    <div className="mx-auto">
-      <Hero title="Events">
-        <>
-          <Text size="b1">
-            Develop your tech skills in one of our many courses below. <br />
-            <br />
-            WeCode/KC is committed to helping Kansas City's youth and young
-            adults develop their skills and knowledge to prepare for a career in
-            technology. Our classes and clubs below are designed for various age
-            groups and skill levels.
-            <br />
-            <br />
-            Our adult programs include wrap-around services and mentorships with
-            professionals and business owners to further assist in the
-            full-scope of skill-building and knowledge development that is
-            needed for a career in the field of technology
-            <br />
-            <br />
-            <strong>Sign up and Begin Your Tech Journey with Us!</strong>
-          </Text>
-          <br />
-          <Button href="#get-into-tech">Get Started</Button>
-        </>
-      </Hero>
-    </div>
-  );
+const BASE_URL = "http://www.eventbriteapi.com/v3";
+const TOKEN = "HJBPBHYXVAW7GFRXTAZ7"; // @TODO -> move this into secret.
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const res = await fetch(`${BASE_URL}/users/me/`, {
+    method: "GET",
+    headers: {
+      Authorization: "Bearer HJBPBHYXVAW7GFRXTAZ7",
+    },
+  });
+  const data: any = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
+};
+
+interface EventProps {
+  data: any;
+}
+const Events: NextPage = ({ data }: EventProps) => {
+  console.log(data);
+  return <div className="mx-auto">Test: </div>;
 };
 
 export default Events;
