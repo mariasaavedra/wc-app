@@ -1,4 +1,4 @@
-import type { GetServerSideProps, NextPage } from "next";
+import type { GetServerSideProps, GetStaticProps, NextPage } from "next";
 import Hero from "../components/Hero";
 import Text from "../components/Text";
 import { Button } from "../components/Button";
@@ -7,7 +7,7 @@ import EventCard from "../components/EventCard";
 const BASE_URL = "http://www.eventbriteapi.com/v3";
 const TOKEN = "HJBPBHYXVAW7GFRXTAZ7"; // @TODO -> move this into secret.
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   let data;
   let events;
   const orgId = "354358193503";
