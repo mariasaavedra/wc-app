@@ -4,7 +4,49 @@ import Text from "../components/Text";
 import { Button } from "../components/Button";
 import EventCard from "../components/EventCard";
 
-const Events: NextPage = () => {
+const BASE_URL = "http://www.eventbriteapi.com/v3";
+const TOKEN = "HJBPBHYXVAW7GFRXTAZ7"; // @TODO -> move this into secret.
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  let data;
+  let events;
+  const orgId = "354358193503";
+  const init = async () => {
+    const res = await fetch(`${BASE_URL}/users/me/`, {
+      method: "GET",
+      headers: {
+        Authorization: "Bearer HJBPBHYXVAW7GFRXTAZ7",
+      },
+    });
+    data = await res.json();
+  };
+  const fetchEventsByOrgId = async () => {
+    const res = await fetch(`${BASE_URL}/organizations/${orgId}/events/`, {
+      method: "GET",
+      headers: {
+        Authorization: "Bearer HJBPBHYXVAW7GFRXTAZ7",
+      },
+    });
+    events = await res.json();
+  };
+
+  await init();
+  await fetchEventsByOrgId();
+
+  return {
+    props: {
+      data,
+      events,
+    },
+  };
+};
+
+interface EventProps {
+  data: any;
+  events: any;
+}
+const Events: NextPage = ({ data, events }: EventProps) => {
+  console.log(data, events)
   return (
     <div className="mx-auto">
       <Hero title="Our Events">
