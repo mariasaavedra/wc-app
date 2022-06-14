@@ -1,11 +1,10 @@
-import type { GetServerSideProps, GetStaticProps, NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Hero from "../components/Hero";
 import Text from "../components/Text";
-import { Button } from "../components/Button";
 import EventCard from "../components/EventCard";
 
 const BASE_URL = "http://www.eventbriteapi.com/v3";
-const TOKEN = "HJBPBHYXVAW7GFRXTAZ7"; // @TODO -> move this into secret.
+const TOKEN = process.env.EVENTBRITE_TOKEN; // @TODO -> move this into secret.
 
 export const getStaticProps: GetStaticProps = async () => {
   let data;
@@ -15,7 +14,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const res = await fetch(`${BASE_URL}/users/me/`, {
       method: "GET",
       headers: {
-        Authorization: "Bearer HJBPBHYXVAW7GFRXTAZ7",
+        Authorization: `Bearer ${TOKEN}`,
       },
     });
     data = await res.json();
@@ -46,7 +45,7 @@ interface EventProps {
   events: any;
 }
 const Events: NextPage = ({ data, events }: EventProps) => {
-  console.log(data, events)
+  console.log(data, events);
   return (
     <div className="mx-auto">
       <Hero title="Our Events">
