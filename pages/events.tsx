@@ -9,6 +9,7 @@ const TOKEN = process.env.EVENTBRITE_TOKEN; // @TODO -> move this into secret.
 export const getStaticProps: GetStaticProps = async () => {
   let data;
   let events;
+
   const orgId = "354358193503";
   const init = async () => {
     const res = await fetch(`${BASE_URL}/users/me/`, {
@@ -19,6 +20,7 @@ export const getStaticProps: GetStaticProps = async () => {
     });
     data = await res.json();
   };
+  
   const fetchEventsByOrgId = async () => {
     const res = await fetch(`${BASE_URL}/organizations/${orgId}/events/`, {
       method: "GET",

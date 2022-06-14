@@ -69,7 +69,7 @@ export default function Carousel(props: CarouselProps) {
 
       {/* Slides */}
       <div className="flex flex-col items-center m-8">
-        <div className="w-100 bg-white rounded overflow-x-hidden flex snap-x">
+        <div className="w-100 rounded overflow-x-hidden flex snap-x">
           {props.slides.map((slide, index) => {
             return <div>{currentIndex === index && slide}</div>;
           })}
