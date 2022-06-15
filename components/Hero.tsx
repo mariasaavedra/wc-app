@@ -8,18 +8,10 @@ interface HeroProps extends MaybeParentComponentProps {
 
 export const Hero = (props: HeroProps) => {
   return (
-    <div className="relative bg-white overflow-hidden min-h-screen">
+    <div className="relative overflow-hidden min-h-screen">
       <div className="max-w-7xl mx-auto pt-0 pb-4 px-8">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-          <svg
-            className="min-h-screen hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-            fill="currentColor"
-            viewBox="0 0 100 100"
-            preserveAspectRatio="none"
-            aria-hidden="true"
-          >
-            <polygon points="50,0 100,0 50,100 0,100" />
-          </svg>
+        <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        
 
           <main className="mt-28 mx-auto max-w-7xl  ">
             <div className="sm:text-center lg:text-left">
@@ -33,7 +25,7 @@ export const Hero = (props: HeroProps) => {
           </main>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="lg:absolute lg:inset-y-0 lg:right-0 -z-50 ">
         <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
           src={props.imageUrl}
@@ -45,6 +37,6 @@ export const Hero = (props: HeroProps) => {
 };
 
 Hero.defaultProps = {
-  imageUrl: "/images/programmer-male.jpg",
+  imageUrl: "/images/cpro.jpg",
 };
 export default Hero;
