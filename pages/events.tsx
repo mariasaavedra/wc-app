@@ -4,11 +4,13 @@ import Text from "../components/Text";
 import EventCard from "../components/EventCard";
 
 const BASE_URL = "http://www.eventbriteapi.com/v3";
-const TOKEN = process.env.EVENTBRITE_TOKEN; // @TODO -> move this into secret.
+const TOKEN = process.env.NEXT_PUBLIC_EVENTBRITE_TOKEN; // @TODO -> move this into secret.
+
+console.log("env", process.env);
 
 export const getStaticProps: GetStaticProps = async () => {
   let data;
-  let events;
+  let results;
 
   const orgId = "354358193503";
   const init = async () => {
@@ -20,15 +22,18 @@ export const getStaticProps: GetStaticProps = async () => {
     });
     data = await res.json();
   };
-  
+
   const fetchEventsByOrgId = async () => {
-    const res = await fetch(`${BASE_URL}/organizations/${orgId}/events/`, {
-      method: "GET",
-      headers: {
-        Authorization: "Bearer HJBPBHYXVAW7GFRXTAZ7",
-      },
-    });
-    events = await res.json();
+    const res = await fetch(
+      `${BASE_URL}/organizations/${orgId}/events/?status=live&expand=ticket_classes`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: "Bearer HJBPBHYXVAW7GFRXTAZ7",
+        },
+      }
+    );
+    results = await res.json();
   };
 
   await init();
@@ -37,17 +42,55 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       data,
-      events,
+      results,
     },
   };
 };
 
-interface EventProps {
+interface EventsPageProps {
   data: any;
-  events: any;
+  results: any;
 }
-const Events: NextPage = ({ data, events }: EventProps) => {
-  console.log(data, events);
+
+interface EventText {
+  html: string;
+  text: string;
+}
+interface EventTime {
+  local: string;
+  timezone: string;
+  utc: string;
+}
+interface Event {
+  name: EventText;
+  description: EventText;
+  url: string;
+  series_id: string;
+  is_series: boolean;
+  start: EventTime;
+  end: EventTime;
+}
+
+
+const Events: NextPage = ({ data, results }: EventsPageProps) => {
+  const events: Array<Event> = results?.events.map((e) => {
+    return {
+      name: e.name,
+      description: e.description,
+      url: e.url,
+      series_id: e.series_id,
+      is_series: e.is_series,
+      start: e.start,
+      end: e.end,
+    };
+  });
+
+  // retrieve list of events.
+  console.log(results.events);
+
+  // if event is non-series, display.
+
+  // if event is part of series, group into a bucket.
   return (
     <div className="mx-auto">
       <Hero title="Our Events">
@@ -95,45 +138,19 @@ const Events: NextPage = ({ data, events }: EventProps) => {
         </>
       </Hero>
       <div className="mx-auto container">
-        <EventCard
-          title="Build-a-Laptop"
-          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
-        >
-          Students will learn how to build-a-laptop using special hardware and
-          then will program it. Laptops will NOT be given to students upon
-          completion of the class. Scholarships are available under special
-          circumstances
-        </EventCard>
-        <EventCard
-          title="Roblox"
-          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
-        >
-          Students will create their own games in their own virtual studios.
-          Scholarships are available under special circumstances for students.
-        </EventCard>
-        <EventCard
-          title="Virtual Reality"
-          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
-        >
-          Students will explore VR by programming a virtual environment using VR
-          headsets. Students will NOT be given headsets upon completion.
-          Scholarships are available to qualifying students.
-        </EventCard>
-        <EventCard
-          title="Raspberry Pi Jam"
-          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
-        >
-          Students will program Raspberry Pi hardware using the Python
-          programming language. Students will NOT be given Raspberry Pi hardware
-          upon completion. Scholarships are available to qualifying students.
-        </EventCard>
-        <EventCard
-          title="Graphic Design w/ NFTs"
-          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
-        >
-          Students will develop professional graphics such as logos, banners,
-          and more! Scholarships are available to qualifying students.
-        </EventCard>
+        {events.map((e) => {
+          return (
+            <>
+              {" "}
+              <EventCard
+                title={e.name.text}
+                href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
+              >
+                {e.description.text}
+              </EventCard>
+            </>
+          );
+        })}
       </div>
     </div>
   );
