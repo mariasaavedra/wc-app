@@ -143,25 +143,45 @@ const Events: NextPage = ({ data, results }: EventsPageProps) => {
         </Text>
       </div>
       <div className="mx-auto container">
-        <EventCard title={events[0].name.text} href="">
-          {/* {events[0].description.text} */}
+        <EventCard
+          title="Build-a-Laptop"
+          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
+        >
+          Students will learn how to build-a-laptop using special hardware and
+          then will program it. Laptops will NOT be given to students upon
+          completion of the class. Scholarships are available under special
+          circumstances
         </EventCard>
-        <EventCard title={events[3].name.text} href="">
-          {/* {events[3].description.text} */}
+        <EventCard
+          title="Roblox"
+          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
+        >
+          Students will create their own games in their own virtual studios.
+          Scholarships are available under special circumstances for students.
         </EventCard>
-        {/* {events.map((e) => {
-          return (
-            <>
-              {" "}
-              <EventCard
-                title={e.name.text}
-                href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
-              >
-                {e.description.text}
-              </EventCard>
-            </>
-          );
-        })} */}
+        <EventCard
+          title="Virtual Reality"
+          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
+        >
+          Students will explore VR by programming a virtual environment using VR
+          headsets. Students will NOT be given headsets upon completion.
+          Scholarships are available to qualifying students.
+        </EventCard>
+        <EventCard
+          title="Raspberry Pi Jam"
+          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
+        >
+          Students will program Raspberry Pi hardware using the Python
+          programming language. Students will NOT be given Raspberry Pi hardware
+          upon completion. Scholarships are available to qualifying students.
+        </EventCard>
+        <EventCard
+          title="Graphic Design w/ NFTs"
+          href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
+        >
+          Students will develop professional graphics such as logos, banners,
+          and more! Scholarships are available to qualifying students.
+        </EventCard>
       </div>
     </div>
   );

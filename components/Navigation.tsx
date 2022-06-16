@@ -12,9 +12,9 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="navigation py-4 shadow-md">
+    <nav className="navigation shadow-md">
       <div className="lg:px-10 mx-auto">
-        <div className="nav-desktop-container pl-4 flex justify-between">
+        <div className="nav-desktop-container pl-4 py-4 flex justify-between">
           <div className="logo-container flex items-center">
             <Link href="/">
               <img

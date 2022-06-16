@@ -9,7 +9,7 @@ interface SectionProps {
 export const Section = (props: SectionProps) => {
   const getClasses = (): string => {
     const classes = [`${styles.section}`];
-    classes.push(`grid grid-flow-col`);
+    classes.push(`grid md:grid-flow-col sm:grid-flow-row`);
     if (props.gap) {
       classes.push(`gap-${props.gap}`);
     }

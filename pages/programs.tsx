@@ -32,7 +32,7 @@ const ProgramsPage = () => {
         <div id='get-into-tech'></div> {/*Added to link to section from home-page.*/}
         <img className={styles.image2} src="/images/blob1.png" />
         <Column>
-          <Text className="px-10 py-10text-black" size="h1">
+          <Text className="px-10 py-10 text-black" size="h1">
             Get your child into tech.
           </Text>
           <Text className="px-10 py-4" size="b1">
