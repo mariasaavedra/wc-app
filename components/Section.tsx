@@ -16,7 +16,7 @@ export const Section = (props: SectionProps) => {
     return classes.join(" ");
   };
 
-  return <div className={getClasses()}>{props.children}</div>;
+  return <div className={getClasses() + " " + "mx-auto container my-8"}>{props.children}</div>;
 };
 
 Section.defaultProps = {

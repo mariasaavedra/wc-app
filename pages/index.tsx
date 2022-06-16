@@ -34,10 +34,9 @@ const Home: NextPage = () => {
 
       <div className="bg-brand-purple mt-10">
         <TextBanner title="Learn to Code, Code to Learn">
-          <Text className="mt-4 p-2 text-center" size="b1">
+          <Text className="mt-4 p-2 text-left w-2/3 mx-auto" size="b1">
             WeCodeKC introduces coding for kids through project-based or game
-            development learning. Our students begin their tech journey using
-            Scratch, which is block-based coding, and gradually increase their
+            development learning. Our students gradually increase their
             skill levels to writing their own code in JavaScript and Python.
             WeCodeKC also introduces various other technology concepts including
             Virtual Reality, Machine Learning, NFTs, and more!

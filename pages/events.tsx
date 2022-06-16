@@ -114,33 +114,42 @@ const Events: NextPage = ({ data, results }: EventsPageProps) => {
         </>
       </Hero>
 
-      <div className="mx-auto container">
-        <Text size="h3" className="mt-2">
-          Summer of Code
-        </Text>
+      <div className="mx-auto container my-4 py-5  px-5 text-left">
+        <div className="w-2/3">
+          <Text size="h3" className="mt-2">
+            Summer of Code
+          </Text>
 
-        <Text size="h4" className="mt-2">
-          <small>
-            Mon, Aug 1, 2022, 9:00 AM – Fri, Aug 5, 2022, 4:00 PM CDT
-          </small>
-        </Text>
+          <Text size="h4" className="mt-2">
+            <small>
+              Mon, Aug 1, 2022, 9:00 AM – Fri, Aug 5, 2022, 4:00 PM CDT
+            </small>
+          </Text>
 
-        <Text size="h4" className="mt-2">
-          <small>5008 Prospect Avenue Kansas City, MO 64130</small>
-        </Text>
-        <Text className="mt-4" size="b1">
-          These classes are hands-on workshops that focus on teaching the
-          beginner, intermediate, and advanced students the technology concepts
-          shown above. Classes starts DAILY at 9am and end at 4pm. Lunch will be
-          provided for each student.
-        </Text>
+          <Text size="h4" className="mt-2">
+            <small>5008 Prospect Avenue Kansas City, MO 64130</small>
+          </Text>
+          <Text className="mt-4" size="b1">
+            These classes are hands-on workshops that focus on teaching the
+            beginner, intermediate, and advanced students the technology
+            concepts shown above. Classes starts DAILY at 9am and end at 4pm.
+            Lunch will be provided for each student.
+          </Text>
+        </div>
+
         <br />
-        <Text size="h3" className="mt-2">
-          Sign for Summer of Code classes below:
+        <Text size="b2" className="mt-1">
+          <strong>Sign for Summer of Code classes below:</strong>
         </Text>
       </div>
       <div className="mx-auto container">
-        {events.map((e) => {
+        <EventCard title={events[0].name.text} href="">
+          {/* {events[0].description.text} */}
+        </EventCard>
+        <EventCard title={events[3].name.text} href="">
+          {/* {events[3].description.text} */}
+        </EventCard>
+        {/* {events.map((e) => {
           return (
             <>
               {" "}
@@ -152,7 +161,7 @@ const Events: NextPage = ({ data, results }: EventsPageProps) => {
               </EventCard>
             </>
           );
-        })}
+        })} */}
       </div>
     </div>
   );

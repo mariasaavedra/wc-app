@@ -15,10 +15,10 @@ const TestimonialItem = (props: TestimonialItemProps) => {
         className="snap-start w-full h-full flex items-center justify-center flex-shrink-0 "
         id={"slide-" + props.index}
       >
-        <div className="bg-gray-200 rounded-lg p-6 border-4 border-brand-purple">
+        <div className="bg-whiteshadow rounded-lg p-6 border-4">
           <div className="flex items-center space-x-6 mb-4">
             <img
-              className="h-28 w-28 object-cover object-center rounded-full border-2 border-brand-blue shadow-brand-purple  shadow-sm"
+              className="h-28 w-28 object-cover object-center rounded-full border-brand-blue shadow-brand-purple  shadow-sm"
               src={props.image}
             />
             <div>
