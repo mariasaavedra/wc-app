@@ -50,7 +50,7 @@ export default function Link(props: LinkProps) {
       <a
         href={props.href}
         className={
-          "py-4 px-3 text-base font-semibold hover:text-brand-purple " +
+          "py-4 px-3 text-base font-semibold" +
           props.className
         }
         style={props.style}
@@ -66,7 +66,7 @@ export default function Link(props: LinkProps) {
       <NextLink href={props.href}>
         <a
           className={
-            "py-4 px-3 text-base font-semibold hover:text-brand-purple " +
+            "py-4 px-3 text-base font-semibold" +
             props.className
           }
           style={props.style}
