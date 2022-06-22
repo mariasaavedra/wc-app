@@ -30,20 +30,10 @@ const ProgramsPage = () => {
 
       <Section>
         <div id='get-into-tech'></div> {/*Added to link to section from home-page.*/}
-        <img className={styles.image2} src="/images/techstronaut-journey.png" />
+        <img className={styles.image2} src="/images/blob1.png" />
         <Column>
-          <Text className="px-10 py-4 text-black" size="h1">
-            Get your 7-17 year old into tech
-          </Text>
-          <Text className="px-10 py-4" size="b1">
-            Aligned with We Code’s mission of empowering youth with technology
-            and leadership skills– Techstronauts (Technology Astronauts) will
-            embark on an important journey through the coding universe.
-            Techstronauts embody the values of perseverance, knowledge, and
-            strength as they venture from planet to planet to complete the
-            coding levels. Upon completion of a level on a planet, they receive
-            a badge to signify their advancement to the next level. Each badge
-            represents an item that helps motivate them through their journey.
+          <Text className="px-10 py-10 text-black" size="h1">
+            Get your child into tech.
           </Text>
           <Text className="px-10 py-4" size="b1">
             By the time their journey across the coding universe is complete,
@@ -61,7 +51,7 @@ const ProgramsPage = () => {
         </Column>
       </Section>
       <Section>
-        <img className={styles.image2} src="/images/wecode_careers.JPG" />
+        <img className={styles.image2} src="/images/blob.png" />
         <Column>
           <Text className="px-10 py-4 text-black" size="h1">
             Start your Career in tech
@@ -69,14 +59,11 @@ const ProgramsPage = () => {
           <Text className="px-10 py-4" size="b1">
             In partnership with the State of Missouri Workforce Department, We
             Code is excited to bring a free certification program to Missouri
-            residents. We are dedicated to providing quality coding and
-            technology education and experience to participants with free access
-            to the Coursera platform. In a self pace program you will be able to
-            take your future in your own hands.
+            residents.
           </Text>
           <Text className="px-10 py-4" size="b1">
-            If you are between the ages of 16 - 35 and are interested starting a
-            career in tech. Please complete the sign-up form below and one of
+            For people  ages of 16 - 35 and that are interested starting a
+            career in technology. Complete the form below and one of
             our representatives will be in touch with you within 48 hours.
             Thanks and we look forward to having you volunteer for us!
           </Text>

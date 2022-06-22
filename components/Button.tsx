@@ -34,9 +34,9 @@ export function Button(props: ButtonProps) {
 
   const getClasses = () => {
     if (props.size === "medium") {
-      return "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xs text-white bg-brand-blue cursor-pointer hover:bg-indigo-700 md:py-4 md:text-lg md:px-10";
+      return "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium uppercase rounded-sm text-white bg-black cursor-pointer hover:bg-black-700 md:py-4 text-xs  tracking-widest md:px-10";
     } else if (props.size === "small") {
-      return "w-full flex px-4 py-2 items-center justify-center border border-transparent text-base font-small rounded-xs text-white bg-brand-blue cursor-pointer hover:bg-indigo-700 cursor-pointer ";
+      return "w-full flex px-4 py-2 items-center justify-center border border-transparent text-base font-small uppercase rounded-md text-white bg-black cursor-pointer hover:bg-black-700  text-xs tracking-widest cursor-pointer ";
     }
   };
   return (
@@ -45,7 +45,7 @@ export function Button(props: ButtonProps) {
         props.className +
         " " +
         styles.width +
-        " cursor-pointer rounded-md shadow"
+        " cursor-pointer rounded-md shadow "
       }
     >
       <a href={props.href} target={getTarget()} className={getClasses()}>

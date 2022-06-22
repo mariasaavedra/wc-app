@@ -2,7 +2,7 @@ import styles from "../styles/components/Footer.module.scss";
 import Link from "./Link";
 export const Footer = () => {
   return (
-    <footer className="text-center lg:text-left bg-brand-blue text-white">
+    <footer className="text-center lg:text-left bg-black text-white">
       <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
         <div className="mr-12 hidden lg:block"></div>
         <div className="flex justify-center">
@@ -183,7 +183,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center p-6 bg-brand-blue">
+      <div className="text-center p-6 bg-black">
         © Copyright 2022 - WeCodeKC All rights Reserved
       </div>
     </footer>

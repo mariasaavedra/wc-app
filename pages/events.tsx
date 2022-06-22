@@ -1,10 +1,95 @@
-import type { GetServerSideProps, NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Hero from "../components/Hero";
 import Text from "../components/Text";
-import { Button } from "../components/Button";
 import EventCard from "../components/EventCard";
 
-const Events: NextPage = () => {
+const BASE_URL = "http://www.eventbriteapi.com/v3";
+const TOKEN = process.env.NEXT_PUBLIC_EVENTBRITE_TOKEN; // @TODO -> move this into secret.
+
+console.log("env", process.env);
+
+export const getStaticProps: GetStaticProps = async () => {
+  let data;
+  let results;
+
+  const orgId = "354358193503";
+  const init = async () => {
+    const res = await fetch(`${BASE_URL}/users/me/`, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${TOKEN}`,
+      },
+    });
+    data = await res.json();
+  };
+
+  const fetchEventsByOrgId = async () => {
+    const res = await fetch(
+      `${BASE_URL}/organizations/${orgId}/events/?status=live&expand=ticket_classes`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: "Bearer HJBPBHYXVAW7GFRXTAZ7",
+        },
+      }
+    );
+    results = await res.json();
+  };
+
+  await init();
+  await fetchEventsByOrgId();
+
+  return {
+    props: {
+      data,
+      results,
+    },
+  };
+};
+
+interface EventsPageProps {
+  data: any;
+  results: any;
+}
+
+interface EventText {
+  html: string;
+  text: string;
+}
+interface EventTime {
+  local: string;
+  timezone: string;
+  utc: string;
+}
+interface Event {
+  name: EventText;
+  description: EventText;
+  url: string;
+  series_id: string;
+  is_series: boolean;
+  start: EventTime;
+  end: EventTime;
+}
+
+const Events: NextPage = ({ data, results }: EventsPageProps) => {
+  const events: Array<Event> = results?.events.map((e) => {
+    return {
+      name: e.name,
+      description: e.description,
+      url: e.url,
+      series_id: e.series_id,
+      is_series: e.is_series,
+      start: e.start,
+      end: e.end,
+    };
+  });
+
+  // retrieve list of events.
+  console.log(results.events);
+
+  // if event is non-series, display.
+
+  // if event is part of series, group into a bucket.
   return (
     <div className="mx-auto">
       <Hero title="Our Events">
@@ -25,6 +110,12 @@ const Events: NextPage = () => {
             <br />
           </Text>
           <br />
+          {/* <Button href="/programs">Get Started</Button> */}
+        </>
+      </Hero>
+
+      <div className="mx-auto container my-4 py-5  px-5 text-left">
+        <div className="w-2/3">
           <Text size="h3" className="mt-2">
             Summer of Code
           </Text>
@@ -44,13 +135,13 @@ const Events: NextPage = () => {
             concepts shown above. Classes starts DAILY at 9am and end at 4pm.
             Lunch will be provided for each student.
           </Text>
-          <br />
-          <Text size="h3" className="mt-2">
-            Sign for Summer of Code classes below:
-          </Text>
-          {/* <Button href="/programs">Get Started</Button> */}
-        </>
-      </Hero>
+        </div>
+
+        <br />
+        <Text size="b2" className="mt-1">
+          <strong>Sign for Summer of Code classes below:</strong>
+        </Text>
+      </div>
       <div className="mx-auto container">
         <EventCard
           title="Build-a-Laptop"
