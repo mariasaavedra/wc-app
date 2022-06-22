@@ -21,7 +21,7 @@ const ProgramsPage = () => {
             <br />
             <br />
             WeCodeKC also introduces various other technology concepts including
-            Virtual Reality, Machine Learning, NFTs, and more!
+            Virtual Reality, Machine Learning, and more!
           </Text>
           <br />
           <Button href='#get-into-tech'>Get Started</Button>

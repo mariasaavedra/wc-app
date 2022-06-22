@@ -90,7 +90,7 @@ const Events: NextPage = () => {
           upon completion. Scholarships are available to qualifying students.
         </EventCard>
         <EventCard
-          title="Graphic Design w/ NFTs"
+          title="Graphic Design"
           href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
         >
           Students will develop professional graphics such as logos, banners,
