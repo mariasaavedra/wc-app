@@ -4,112 +4,101 @@ import { Hero } from "../components/Hero";
 import { Section } from "../components/Section";
 import { ImageCard } from "../components/ImageCard";
 import Text from "../components/Text";
-import { Footer } from "../components/Footer";
-import Link from "next/link"
-import { hkdf } from "crypto";
+import SPONSORS from "../constants/sponsors";
+import Link from "next/link";
+import { Button } from "../components/Button";
+import TextBanner from "../components/TextBanner";
+import Badge from "../components/Badge";
+import FlexImages from "../components/FlexImages";
+import styles from "../styles/components/Badge.module.scss";
 
 const Home: NextPage = () => {
+  return (
+    <div className="container-fluid mx-auto ">
+      <Hero title="Creating a pipeline of future-ready professionals.">
+        <>
+          <Text size="b1" className="mt-2">
+            We serve the urban core of Kansas City, exposing youth to various
+            programming languages, technology, cyber security, and computer
+            science concepts.
+            <br />
+            <br />
+            Our mission is to give youth the opportunity to learn technology
+            concepts, and leadership skills; creating a pipeline of future-ready
+            professionals through project-based learning and innovative programs
+          </Text>
+          <br />
+          <Button href="/programs">Get Started</Button>
+        </>
+      </Hero>
 
-    return (
-        <div className="container mx-auto">
+      <div className="bg-brand-purple mt-10">
+        <TextBanner title="Learn to Code, Code to Learn">
+          <Text className="mt-4 text-center w-100 mx-auto" size="b1">
+            WeCodeKC introduces coding for kids through project-based or game
+            development learning. Our students gradually increase their
+            skill levels to writing their own code in JavaScript and Python.
+            WeCodeKC also introduces various other technology concepts including
+            Virtual Reality, Machine Learning, NFTs, and more!
+          </Text>
+        </TextBanner>
+      </div>
 
-            <div className="bg-brand-purple" >
-                <div className="flex flex-wrap lg:flex-no-wrap justify-between">
-                    <div className="">
-                        <img className="h-64" src="/images/wecodegirls.png"></img>
-                    </div>
-                    <div>
-                        <h1 className="text-4xl font-bold p-10">
-                            <span className='block'>CODING A </span>
-                            <span className='block'>PIPELINE OF </span>
-                            <span className='block'>FUTURE-READY</span>
-                            <span className='block'>PROFESSIONALS</span>
-                        </h1>
-                    </div>
-                </div>
-            </div>
-
-            <Section>
-                <div className="px-10 py-10 grid place-items-center gap-10 md:grid-cols-3">
-
-                    <div className="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500 ">
-                        <div>
-                            <img className="h-60 w-60" src="https://source.unsplash.com/random/600x600/?tech" alt="" />
-                        </div>
-                        <div className="py-4 px-4 grid place-items-center">
-                            <Link href="#">
-                                <div className="mt-4 w-4/5 grid place-items-center bg-brand-gold py-1 rounded cursor-pointer">
-                                    <button className="font-bold text-white p-2">DONATE</button>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500">
-                        <div>
-                            <img className="h-60 w-60" src="https://source.unsplash.com/random/600x600/?coding" alt="" />
-                        </div>
-                        <div className="py-4 px-4 grid place-items-center">
-                            <Link href="#">
-                                <div className="mt-4 w-4/5 grid place-items-center bg-brand-gold py-1 rounded cursor-pointer">
-                                    <button className="font-bold text-white p-2">GET INVOLVED</button>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="max-w-xs rounded-md overflow-hidden shadow-lg hover:scale-105 transition duration-500">
-                        <div>
-                            <img className="h-60 w-60" src="https://source.unsplash.com/random/600x600/?hackathon" alt="" />
-                        </div>
-                        <div className="py-4 px-4 grid place-items-center">
-                            <Link href="#">
-                                <div className="mt-4 w-4/5 grid place-items-center bg-brand-gold py-1 rounded cursor-pointer">
-                                    <button className="font-bold text-white p-2">LEARN TO CODE</button>
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-
-                </div>
-            </Section>
-
-            <div className="bg-brand-blue">
-                <Section>
-                    <Column>
-                        <Text>
-                            <div className="text-center">
-                                <Text size="h1">OUR WHY</Text>
-                            </div>
-                            <Text className="mt-4 text-white text-center" size='b1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-                            <p ></p>
-                        </Text>
-                    </Column>
-                </Section>
-            </div>
-
-            <Section>
-                <div className="flex flex-wrap align-center justify-center  gap-12 my-12">
-                    <div >
-                        <img className="w-48" src="/images/1597745175.jpg" alt="Microsoft"></img>
-                    </div>
-                    <div >
-                        <img className="w-48" src="/images/1597745275.png" alt="Community Builders of Kansas City"></img>
-                    </div>
-                    <div >
-                        <img className="w-48" src="/images/1597745457.png" alt="Fishtech Group"></img>
-                    </div>
-                    <div>
-                        <img className=" w-48" src="/images/1597745663.png" alt="Artisan Technology Group"></img>
-                    </div>
-                    <div >
-                        <img className="w-48" src="/images/1597745834.png" alt="Initiatives"></img>
-                    </div>
-                </div>
-            </Section>
-
+      <Section>
+        <div>
+          <div className="grid md:grid-cols-1 lg:grid-cols-5 gap-4">
+            <Badge planet="Fusion fuchsia" label="HTML & CSS">
+              {/* As a techstraunaut, your journey is yours alone! Fuchsia is the
+              embodiment of uniqueness and confidence. After you master all the
+              levels, you’ll realize the power of your own shine. */}
+              <img className={styles.badgeImg} src="/images/magenta.png" />
+            </Badge>
+            <Badge planet="Aegean Cool" level="02" label="HTML & CSS">
+              {/* We hope that you’ll cruise through planet Aegean Cool! You’ve
+              pushed it this far building on basic functions and growing your
+              knowledge. The Aegean blue hue badges will be a mark of true trust
+              in your intelligence and the ability to move forward. */}
+              <img className={styles.badgeImg} src="/images/blue.png" />
+            </Badge>
+            <Badge planet="Indigo-go" level="03" label="JavaScript">
+              {/* You’ve made it halfway; look at you Indigo-Go! We love your
+              dedication and you’ll soon prove your mastery of the core
+              principles of Javascript. Your wisdom is infinite, keep on going! */}
+              <img className={styles.badgeImg} src="/images/purple.png" />
+            </Badge>
+            <Badge planet="Galactic Green" level="04" label="Python">
+              {/* Groundbreaking work getting to Galactic Green! Here you’ll learn
+              and demonstrate your rockin’ Python skills. */}
+              <img className={styles.badgeImg} src="/images/teal.png" />
+            </Badge>
+            <Badge planet="Gleaming Gold" level="05" label="App Inventor">
+              {/* The final step in your astonishing techstronaut journey–
+              completing Gleaming Gold. On this last planet, the ease you’ll
+              have in creating an app will seem like true sorcery. As this
+              become the last stop, you’ll learn you are the magic that keeps
+              tech going. */}
+              <img className={styles.badgeImg} src="/images/yellow.png" />
+            </Badge>
+          </div>
         </div>
-    );
+      </Section>
+
+      <div className="bg-brand-purple mt-10">
+        <TextBanner title="Our Mission">
+          <Text className="mt-4 text-center" size="b1">
+            Our mission is to give youth the opportunity to learn technology
+            concepts, and leadership skills. <br /> We're creating a pipeline of
+            future-ready professionals through project-based learning and
+            innovative programs.
+          </Text>
+        </TextBanner>
+      </div>
+  
+      <Section>
+        <FlexImages images={SPONSORS}/>
+      </Section>
+    </div>
+  );
 };
 
 export default Home;

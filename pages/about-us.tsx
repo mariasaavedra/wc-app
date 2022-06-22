@@ -1,52 +1,52 @@
 import Link from "next/link";
 import { Button } from "../components/Button";
-import Text from '../components/Text';
-import styles from '../styles/About.module.scss'
+import { Hero } from "../components/Hero";
+import Text from "../components/Text";
+import Carousel from "../components/Carousel";
+import TestimonialItem from "../components/TestimonialItem";
+import TESTIMONIALS from "../constants/testimonials";
+
+const slides = TESTIMONIALS.map((t, index) => {
+  return (
+    <TestimonialItem
+      index={index}
+      image={t.image}
+      name={t.name}
+      title={t.title}
+      testimonial={t.testimonial}
+    ></TestimonialItem>
+  );
+});
 
 const AboutPage = () => {
   return (
     <div className="mx-auto">
-      <div>
-        <div className={styles.headerContainer}>
-          <Text className={styles.header} size="h1">
-            ABOUT US  
-          </Text>
-          <Text className={styles.headerText1} size="b1">
+      <Hero title="About Us">
+        <>
+          <Text size="b1">
             Our mission is to give youth the opportunity to learn technology
             concepts, and leadership skills; creating a pipeline of future-ready
             professionals through project-based learning and innovative
-            programs. 
+            programs.
           </Text>
-          <Text className={styles.headerText2} size="b1"> 
-            WE CODE KC is an initiative that serves the urban core of
-            Kansas City, exposing youth to various programming languages,
-            technology, cyber security, and computer science concepts. Learning
-            the basic concept of coding develops creativity, problem solving
-            skills, builds confidence and helps to build a positive future.
+          <br />
+          <Text size="b1">
+            We're an initiative that serves the urban core of Kansas City,
+            exposing youth to various computer science concepts.
+            <br />
+            <br />
             Every child, no matter their zip code or their family’s financial
             status, should have the opportunity to learn to code.
           </Text>
-        </div>
-      </div>
-      <div className={styles.cardContainer}>
-          <img
-            className={styles.image}
-            src="/images/mentor-kid.jpeg" />
-          <img
-            className={styles.image}
-            src="/images/wecode_team.jpeg" />  
-          <img
-            className={styles.image}
-            src="/images/boys_computer.png" />   
-      </div>
-      <div className={styles.buttoncontainer}>
-        <a className={styles.aboutButton} href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform">
-          JOIN OUR TEAM 
-        </a>  
-        {/* <Link href="">
-          <button>JOIN OUR TEAM</button>
-        </Link> */}
-      </div>
+          <Button
+            className="mt-8"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform"
+          >
+            Join Our Team
+          </Button>
+        </>
+      </Hero>
+      <Carousel pagination={["dots"]} slides={slides}></Carousel>
     </div>
   );
 };

@@ -1,0 +1,44 @@
+@use "../variables.scss" as variables;
+
+.CarouselComponent {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  .leftArrow,
+  .rightArrow {
+    position: absolute;
+    cursor: pointer;
+  }
+  .leftArrow {
+    top: 45%;
+    left: 0;
+  }
+  .rightArrow {
+    top: 45%;
+    right: 0;
+  }
+  .dots {
+    text-align: center;
+    cursor: pointer;
+    margin: 16px 0;
+    margin-top: 0;
+  }
+  .dot {
+    &.active,
+    &:hover {
+      transition: 0.5s ease all;
+      background: darken(#ccc, 90%);
+    }
+    align-items: center;
+    background: #ccc;
+    border-radius: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 12px;
+    justify-content: center;
+    margin: 0 8px;
+    opacity: 0.75;
+    transition: 1s ease all;
+    width: 12px;
+  }
+}

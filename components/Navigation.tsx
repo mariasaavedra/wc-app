@@ -1,7 +1,8 @@
-import Link from "next/link";
+import Link from "./Link";
 import { useState } from "react";
 import { Button } from "./Button";
-import  styles from "../styles/components/Navigation.module.scss"
+import Image from "next/image";
+import styles from "../styles/components/Navigation.module.scss";
 
 export const Navigation = () => {
   const [active, setActive] = useState(false);
@@ -11,34 +12,30 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="navigation py-4 shadow-md">
+    <nav className="navigation shadow-md">
       <div className="lg:px-10 mx-auto">
-        <div className="nav-desktop-container pl-4 flex justify-between">
+        <div className="nav-desktop-container pl-4 py-4 flex justify-between">
           <div className="logo-container flex items-center">
             <Link href="/">
-              <a className="logo-link w-3/5 lg:w-full flex justify-start md:items-center py-2">
-                <img
-                  className="logo-image h-full w-full"
-                  src="/images/logo-simple.png"
-                ></img>{" "}
-              </a>
+              <img
+                className="logo-image h-full w-full"
+                src="/images/full-logo.png"
+              ></img>
             </Link>
           </div>
+
           <div className="hidden lg:flex items-center space-x-1">
-            <Link href="/about-us">
-              <a className="py-4 px-3 text-base font-semibold hover:text-brand-purple">About Us</a>
-            </Link>
-            <Link href="/programs">
-              <a className="py-4 px-3 text-base font-semibold hover:text-brand-purple">Programs</a>
-            </Link>
-            <Link href="/events">
-              <a className="py-4 px-3 text-base font-semibold hover:text-brand-purple">Event</a>
-            </Link>
-            <Link href="https://www.eventbrite.com/o/we-code-kc-29250142705">
-              <a className="py-2 px-5  text-base font-semibold bg-brand-green text-white rounded-sm hover:text-black">
-                Learn to Code
-              </a>
-            </Link>
+            <Link href="/about-us">About Us</Link>
+            <Link href="/programs">Programs</Link>
+            <Link href="/events">Events</Link>
+            <Link href="/board">Our Team</Link>
+
+            <Button
+              size="small"
+              href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU"
+            >
+              Donate
+            </Button>
           </div>
           <div className="lg:hidden flex items-center pr-4">
             <button className="mobile-menu-button" onClick={handleClick}>
@@ -64,20 +61,17 @@ export const Navigation = () => {
       <div
         className={`${
           active ? "" : "hidden"
-        } " mobile-menu bg-brand-blue z-50"`}
+        } " mobile-menu text-white py-4 bg-brand-green z-50"`}
       >
-        <Link href="/about-us">
-          <a className="block py-2 px-4 text-white border-b-2">About Us</a>
-        </Link>
-        <Link href="/programs">
-          <a className="block py-2 px-4 text-white border-b-2">Programs</a>
-        </Link>
-        <Link href="/events">
-          <a className="block py-2 px-4 text-white border-b-2">Event</a>
-        </Link>
-        <Link href="https://www.eventbrite.com/o/we-code-kc-29250142705">
-          <Button>Learn to Code</Button>
-        </Link>
+        <div className={styles.mobileMenu}>
+          <Link href="/about-us">About Us</Link>
+          <Link href="/programs">Programs</Link>
+          <Link href="/events">Event</Link>
+          <Link href="/board">Our Team</Link>
+          <Link href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU">
+            Donate
+          </Link>
+        </div>
       </div>
     </nav>
   );
