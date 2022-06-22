@@ -13,7 +13,7 @@ export const Hero = (props: HeroProps) => {
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <main className="mt-16 md:mt-28 mx-auto max-w-7xl  ">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900">
+              <h1 className="text-5xl tracking-tight font-extrabold text-gray-900">
                 {props?.title}
               </h1>
               <div className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">

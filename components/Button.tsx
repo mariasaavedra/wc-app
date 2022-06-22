@@ -34,9 +34,9 @@ export function Button(props: ButtonProps) {
 
   const getClasses = () => {
     if (props.size === "medium") {
-      return "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium uppercase rounded-sm text-white bg-black cursor-pointer hover:bg-black-700 md:py-4 text-xs  tracking-widest md:px-10";
+      return "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium uppercase rounded-sm text-white bg-black cursor-pointer hover:bg-black-700 md:py-4 text-xs tracking-wide md:px-5";
     } else if (props.size === "small") {
-      return "w-full flex px-4 py-2 items-center justify-center border border-transparent text-base font-small uppercase rounded-md text-white bg-black cursor-pointer hover:bg-black-700  text-xs tracking-widest cursor-pointer ";
+      return "w-full flex px-4 py-2 items-center justify-center border border-transparent text-base font-small uppercase text-white bg-black cursor-pointer hover:bg-black-700  text-xs tracking-wide cursor-pointer ";
     }
   };
   return (

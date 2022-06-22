@@ -4,6 +4,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    letterSpacing: {
+      wide: '0.2em',
+      widest: '0.5em'
+    },
     extend: {
       colors: {
         'brand-gold': '#BE9619',

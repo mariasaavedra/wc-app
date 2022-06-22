@@ -24,12 +24,13 @@ const ProgramsPage = () => {
             Virtual Reality, Machine Learning, and more!
           </Text>
           <br />
-          <Button href='#get-into-tech'>Get Started</Button>
+          <Button href="#get-into-tech">Get Started</Button>
         </>
       </Hero>
 
       <Section>
-        <div id='get-into-tech'></div> {/*Added to link to section from home-page.*/}
+        <div id="get-into-tech"></div>{" "}
+        {/*Added to link to section from home-page.*/}
         <img className={styles.image2} src="/images/blob1.png" />
         <Column>
           <Text className="px-10 py-10 text-black" size="h1">
@@ -46,7 +47,7 @@ const ProgramsPage = () => {
             className="d-block  my-4 mx-auto"
             href="https://www.eventbrite.com/e/techstronauts-coding-club-by-wecode-kc-tickets-317392187577"
           >
-             Join Techstronauts
+            Join Techstronauts
           </Button>
         </Column>
       </Section>
@@ -62,10 +63,10 @@ const ProgramsPage = () => {
             residents.
           </Text>
           <Text className="px-10 py-4" size="b1">
-            For people  ages of 16 - 35 and that are interested starting a
-            career in technology. Complete the form below and one of
-            our representatives will be in touch with you within 48 hours.
-            Thanks and we look forward to having you volunteer for us!
+            For people ages of 16 - 35 and that are interested starting a career
+            in technology. Complete the form below and one of our
+            representatives will be in touch with you within 48 hours. Thanks
+            and we look forward to having you volunteer for us!
           </Text>
           <Button
             className="d-block  my-4 mx-auto"
