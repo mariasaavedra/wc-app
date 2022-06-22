@@ -1,95 +1,9 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { NextPage } from "next";
 import Hero from "../components/Hero";
 import Text from "../components/Text";
 import EventCard from "../components/EventCard";
 
-const BASE_URL = "http://www.eventbriteapi.com/v3";
-const TOKEN = process.env.NEXT_PUBLIC_EVENTBRITE_TOKEN; // @TODO -> move this into secret.
-
-console.log("env", process.env);
-
-export const getStaticProps: GetStaticProps = async () => {
-  let data;
-  let results;
-
-  const orgId = "354358193503";
-  const init = async () => {
-    const res = await fetch(`${BASE_URL}/users/me/`, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${TOKEN}`,
-      },
-    });
-    data = await res.json();
-  };
-
-  const fetchEventsByOrgId = async () => {
-    const res = await fetch(
-      `${BASE_URL}/organizations/${orgId}/events/?status=live&expand=ticket_classes`,
-      {
-        method: "GET",
-        headers: {
-          Authorization: "Bearer HJBPBHYXVAW7GFRXTAZ7",
-        },
-      }
-    );
-    results = await res.json();
-  };
-
-  await init();
-  await fetchEventsByOrgId();
-
-  return {
-    props: {
-      data,
-      results,
-    },
-  };
-};
-
-interface EventsPageProps {
-  data: any;
-  results: any;
-}
-
-interface EventText {
-  html: string;
-  text: string;
-}
-interface EventTime {
-  local: string;
-  timezone: string;
-  utc: string;
-}
-interface Event {
-  name: EventText;
-  description: EventText;
-  url: string;
-  series_id: string;
-  is_series: boolean;
-  start: EventTime;
-  end: EventTime;
-}
-
-const Events: NextPage = ({ data, results }: EventsPageProps) => {
-  const events: Array<Event> = results?.events.map((e) => {
-    return {
-      name: e.name,
-      description: e.description,
-      url: e.url,
-      series_id: e.series_id,
-      is_series: e.is_series,
-      start: e.start,
-      end: e.end,
-    };
-  });
-
-  // retrieve list of events.
-  console.log(results.events);
-
-  // if event is non-series, display.
-
-  // if event is part of series, group into a bucket.
+const Events: NextPage = () => {
   return (
     <div className="mx-auto">
       <Hero title="Our Events">
