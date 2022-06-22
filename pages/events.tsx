@@ -6,7 +6,7 @@ import EventCard from "../components/EventCard";
 const Events: NextPage = () => {
   return (
     <div className="mx-auto">
-      <Hero title="Our Events">
+      <Hero title="Events">
         <>
           <h2>Develop your tech skills in one of our many courses below</h2>
           <br />
