@@ -39,7 +39,7 @@ const Home: NextPage = () => {
             development learning. Our students gradually increase their
             skill levels to writing their own code in JavaScript and Python.
             WeCodeKC also introduces various other technology concepts including
-            Virtual Reality, Machine Learning, NFTs, and more!
+            Virtual Reality, Machine Learning and more!
           </Text>
         </TextBanner>
       </div>

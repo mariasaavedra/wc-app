@@ -9,16 +9,23 @@ export interface EventCardProps extends MaybeParentComponentProps {
 
 export default function EventCard(props: EventCardProps) {
   return (
-    <div className={styles.EventCardComponent + " " + "my-8 p-4"}>
-      <Text size="h3">{props.title}</Text>
+    <div
+      className={
+        styles.EventCard +
+        " " +
+        "my-4 mx-[0.5rem] p-8 rounded-xl text-center relative min-h-[350px]"
+      }
+    >
+      <h3 className="text-2xl uppercase my-4 font-black">{props.title}</h3>
       <div className="my-2">
-        <Text style={{ maxWidth: '700px'}} size="b2"> {props.children}</Text>
+        <p className="font-light text-sm leading-normal">{props.children}</p>
       </div>
-      <div className="my-4">
-        <Button size="small" href={props.href}>
-          Register
-        </Button>
-      </div>
+      <Button
+        className="absolute mx-auto left-0 right-0 bottom-6"
+        href={props.href}
+      >
+        Register
+      </Button>
     </div>
   );
 }
