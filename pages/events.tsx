@@ -27,7 +27,7 @@ const Events: NextPage = () => {
         </>
       </Hero>
 
-      <div className="mx-auto container my-4 py-5  px-5 text-left">
+      <div className="mx-auto container my-4 pt-5  px-5 text-left">
         <div className="md:w-1/2 mx-auto text-center my-8">
           <h1 className="text-5xl text-center bold">Summer of Code</h1>
 
@@ -48,7 +48,7 @@ const Events: NextPage = () => {
           </Text>
         </div>
       </div>
-      <div className=" ml-8 md:mx-auto container overflow-x-scroll grid grid-rows-1 grid-flow-col">
+      <div className=" ml-8 mt-0 md:mx-auto container overflow-x-scroll grid grid-rows-1 grid-flow-col">
         <EventCard
           title="Build-a-Laptop"
           href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
