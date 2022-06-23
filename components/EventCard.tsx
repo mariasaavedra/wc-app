@@ -13,7 +13,7 @@ export default function EventCard(props: EventCardProps) {
       className={
         styles.EventCard +
         " " +
-        "m-4 p-8 rounded-xl text-center relative min-h-[300px]"
+        "my-4 mx-[0.5rem] p-8 rounded-xl text-center relative min-h-[350px]"
       }
     >
       <h3 className="text-2xl uppercase my-4 font-black">{props.title}</h3>

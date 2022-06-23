@@ -18,15 +18,12 @@ const Events: NextPage = () => {
             technology. Our classes and clubs below are designed for various age
             groups and skill levels.
             <br />
-            <br />
             Our adult programs include wrap-around services and mentorships with
             professionals and business owners to further assist in the
             full-scope of skill-building and knowledge development that is
             needed for a career in the field of technology
             <br />
           </Text>
-          <br />
-          {/* <Button href="/programs">Get Started</Button> */}
         </>
       </Hero>
 
@@ -51,7 +48,7 @@ const Events: NextPage = () => {
           </Text>
         </div>
       </div>
-      <div className="mx-auto container grid grid-rows-1 grid-flow-col gap-0">
+      <div className=" ml-8 md:mx-auto container overflow-x-scroll grid grid-rows-1 grid-flow-col">
         <EventCard
           title="Build-a-Laptop"
           href="https://www.eventbrite.com/e/summer-of-code-with-wecode-kc-tickets-354095869277"
