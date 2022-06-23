@@ -28,7 +28,7 @@ const Events: NextPage = () => {
       </Hero>
 
       <div className="mx-auto container my-4 py-5  px-5 text-left">
-        <div className="w-2/3 mx-auto text-center my-8">
+        <div className="md:w-1/2 mx-auto text-center my-8">
           <h1 className="text-5xl text-center bold">Summer of Code</h1>
 
           <p className="my-4">
