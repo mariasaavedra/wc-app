@@ -5,7 +5,7 @@ import { Button } from "../components/Button";
 const BoardPage = () => {
   return (
     <div className="mx-auto mt-0">
-      <Hero title="Our Board">
+      <Hero title="Our Team">
         <div className="pr-0 md:pr-20">
           <Text size="b1" className="mt-2 mb-8">
           Diversity is our #1 priority because we understand that creativity and a broader range 
