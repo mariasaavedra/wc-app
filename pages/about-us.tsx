@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "../components/Button";
 import { Hero } from "../components/Hero";
 import Text from "../components/Text";
+import {Section} from "../components/Section";
 import Carousel from "../components/Carousel";
 import TestimonialItem from "../components/TestimonialItem";
 import TESTIMONIALS from "../constants/testimonials";
@@ -47,6 +48,14 @@ const AboutPage = () => {
         </>
       </Hero>
       <Carousel pagination={["dots"]} slides={slides}></Carousel>
+      <Section>
+        <Button
+          className='mx-auto'
+          href='https://docs.google.com/forms/d/e/1FAIpQLSeGW0hbDEaTVQrZ9wPZ2wBAUfe8I3-2wNrb-sAPmaTcdcw5RQ/viewform'
+        >
+        Submit Testimonial
+        </Button>
+      </Section>
     </div>
   );
 };

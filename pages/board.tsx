@@ -5,22 +5,17 @@ import { Button } from "../components/Button";
 const BoardPage = () => {
   return (
     <div className="mx-auto mt-0">
-      <Hero title="Our Board">
+      <Hero title="Our Team">
         <div className="pr-0 md:pr-20">
           <Text size="b1" className="mt-2 mb-8">
-            Our mission is to give youth the opportunity to learn technology
-            concepts, and leadership skills; creating a pipeline of future-ready
-            professionals through project-based learning and innovative
-            programs. WE CODE KC is an initiative that serves the urban core of
-            Kansas City, exposing youth to various programming languages,
-            technology, cyber security, and computer science concepts.
+          Diversity is our #1 priority because we understand that creativity and a broader range 
+          of skills are imperative to a great tech team.  Our volunteer and mentor teams are comprised 
+          of individuals from various backgrounds and with varied skills.  We do this because we know 
+          that every WeCode KC student will be able to envision a future where faces like theirs exist 
+          and contribute to better a technological future.
           </Text>
-
-          <Text size="b1" className="mt-2">
-            Learning the basic concept of coding develops creativity, problem
-            solving skills, builds confidence and helps to build a positive
-            future. Every child, no matter their zip code or their family’s
-            financial status, should have the opportunity to learn to code.
+          <Text size='h3'>
+          We encourage those who wish to see a more diverse future in technology to join our team!
           </Text>
 
           <Button
@@ -123,7 +118,7 @@ const BoardPage = () => {
 
         <div className="md:flex m-10 py-4 even:flex-row-reverse">
           <div className="mx-auto md:w-[440px] shadow-xl">
-            <img className="w-full" src="/images/ryan-reed.jpeg" />
+            <img className="w-full h-full object-fill" src="/images/ryan-reed.jpeg" />
           </div>
           <div className="w-16">
             {/* Used to imitate padding on flex-row-reverse best I could find to keep aligned onreverse */}
