@@ -29,3 +29,37 @@ a {
     filter: brightness(100);
   }
 }
+
+//Constant Contact Inline Form (Subscribe to Newsletter)
+#gdpr_text, .ctct-form-header{
+  display: none;
+}
+
+.ctct_cont{
+  border: 1px solid lightslategray;
+  border-radius: 3px;
+  margin: 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.ctct_cont h2 {
+  font-size: x-large;
+  font-weight: bold;
+  padding: 12px 0px 0px 24px;
+}
+
+.ctct-form-button{
+  background-color:lightgray !important;
+  font-weight: bold;
+}
+
+.ctct-form-button:hover{
+  background-color: gray !important;
+}
+
+.ctct-form-element{
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
