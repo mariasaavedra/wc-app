@@ -43,5 +43,9 @@ const SPONSORS = [
         url: "/images/VMLY&R.png",
         name:"VMLY&R",
     },
+    {
+        url: "/images/dunkin-donuts.png",
+        name:"Dunkin Donuts",
+    },
 ];
 export default SPONSORS;
