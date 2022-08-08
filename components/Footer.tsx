@@ -114,7 +114,6 @@ export const Footer = () => {
               future-ready professionals.
             </p>
             <div id="ctct" className="ctct_cont">
-            <h2>Get our newsletter!</h2>
             <div
               className="ctct-inline-form mx-auto"
               data-form-id="ee8658ce-ccb4-4c02-97cf-808c5b6f1b0e"
