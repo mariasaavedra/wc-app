@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -26,6 +27,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <Footer></Footer>
       </div>
+      
+      <Script> var _ctct_m = "371aedc04fb5f9dceaf81bb5a6145e47"; </Script>
+      <Script
+        id="signupScript"
+        src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js"
+        async
+        defer
+      ></Script>
     </div>
   );
 }
