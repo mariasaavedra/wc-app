@@ -184,9 +184,11 @@ export const Footer = () => {
           <div className="text-center">
             <img className="text-align mx-auto" src="/images/QRCODE.png"></img>
             <p className="d-block py-4 text-align mx-auto">
-              Want to support our mission? <br/> Scan this QR code below to donate.
+              Want to support our mission? <br/> Scan this QR code to donate.
             </p>
+            <p>EIN: 833413497</p>
           </div>
+ 
         </div>
       </div>
       <div className="text-center p-6 bg-black">

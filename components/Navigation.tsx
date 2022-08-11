@@ -18,8 +18,12 @@ export const Navigation = () => {
           <div className="logo-container flex items-center">
             <Link href="/">
               <img
-                className="logo-image h-full w-full"
+                className="logo-image inline h-full w-full"
                 src="/images/full-logo.png"
+              ></img>
+              <img
+                className="logo-image inline pl-5 pb-0.5 h-1/3 w-1/3"
+                src='/images/TEDxKC.png'
               ></img>
             </Link>
           </div>
