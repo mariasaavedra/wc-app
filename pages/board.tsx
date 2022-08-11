@@ -26,7 +26,7 @@ const BoardPage = () => {
           </Button>
         </div>
       </Hero>
-      <Text className="text-center" size='h1'>Our Team</Text>
+      <Text className="text-center pt-8" size='h1'>OUR TEAM</Text>
 
       <div className="content-container">
         <div className="md:flex m-10 py-4 even:flex-row-reverse">
@@ -89,7 +89,7 @@ const BoardPage = () => {
             </Text>
           </div>
         </div>
-        <Text className="text-center" size='h1'>Our Board</Text>
+        <Text className="text-center" size='h1'>OUR BOARD</Text>
         <div className="flex flex-wrap justify-center">
 
           <div className="m-5 shadow-xl  p-4 bg-white">
