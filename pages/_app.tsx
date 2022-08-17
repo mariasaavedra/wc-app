@@ -26,11 +26,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Header></Header>
         <Component {...pageProps} />
 
-        <div
-          className="ctct-inline-form"
-          data-form-id="ee8658ce-ccb4-4c02-97cf-808c5b6f1b0e"
-        ></div>
-
         <Footer></Footer>
       </div>
 
