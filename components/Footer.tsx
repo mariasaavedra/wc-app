@@ -113,6 +113,12 @@ export const Footer = () => {
               concepts, and leadership skills; creating a pipeline of
               future-ready professionals.
             </p>
+            <div id="ctct" className="ctct_cont">
+            <div
+              className="ctct-inline-form mx-auto"
+              data-form-id="ee8658ce-ccb4-4c02-97cf-808c5b6f1b0e"
+            ></div>
+            </div>
           </div>
 
           <div className="">
@@ -178,9 +184,11 @@ export const Footer = () => {
           <div className="text-center">
             <img className="text-align mx-auto" src="/images/QRCODE.png"></img>
             <p className="d-block py-4 text-align mx-auto">
-              Want to support our mission? <br/> Scan this QR code below to donate.
+              Want to support our mission? <br/> Scan this QR code to donate.
             </p>
+            <p>EIN: 833413497</p>
           </div>
+ 
         </div>
       </div>
       <div className="text-center p-6 bg-black">

@@ -18,8 +18,12 @@ export const Navigation = () => {
           <div className="logo-container flex items-center">
             <Link href="/">
               <img
-                className="logo-image h-full w-full"
+                className="logo-image inline h-full w-full"
                 src="/images/full-logo.png"
+              ></img>
+              <img
+                className="logo-image inline pl-5 pb-0.5 h-1/3 w-1/3"
+                src='/images/TEDxKC.png'
               ></img>
             </Link>
           </div>
@@ -29,12 +33,17 @@ export const Navigation = () => {
             <Link href="/programs">Programs</Link>
             <Link href="/events">Events</Link>
             <Link href="/board">Our Team</Link>
-
             <Button
               size="small"
               href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU"
             >
               Donate
+            </Button>
+            <Button
+              size="small"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform"
+            >
+              VOLUNTEER
             </Button>
           </div>
           <div className="lg:hidden flex items-center pr-4">
@@ -61,7 +70,7 @@ export const Navigation = () => {
       <div
         className={`${
           active ? "" : "hidden"
-        } " mobile-menu text-white py-4 bg-brand-green z-50"`}
+        } " mobile-menu text-white py-4 bg-brand-green z-50 "`}
       >
         <div className={styles.mobileMenu}>
           <Link href="/about-us">About Us</Link>
@@ -70,6 +79,9 @@ export const Navigation = () => {
           <Link href="/board">Our Team</Link>
           <Link href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU">
             Donate
+          </Link>
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform">
+            Volunteer
           </Link>
         </div>
       </div>
