@@ -1,8 +1,12 @@
 @use "../variables.scss" as variables;
 
+.CarouselMD{
+  max-width: 700px;
+}
+
 .CarouselComponent {
   position: relative;
-  max-width: 700px;
+ //max-width: 700px;
   margin: 0 auto;
   .leftArrow,
   .rightArrow {
