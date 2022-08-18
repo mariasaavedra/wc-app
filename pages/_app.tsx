@@ -25,9 +25,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div>
         <Header></Header>
         <Component {...pageProps} />
+
         <Footer></Footer>
       </div>
-      
+
       <Script> var _ctct_m = "371aedc04fb5f9dceaf81bb5a6145e47"; </Script>
       <Script
         id="signupScript"
