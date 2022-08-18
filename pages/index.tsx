@@ -11,8 +11,35 @@ import TextBanner from "../components/TextBanner";
 import Badge from "../components/Badge";
 import FlexImages from "../components/FlexImages";
 import styles from "../styles/components/Badge.module.scss";
+import Carousel from "../components/Carousel";
+import { Key } from "react";
+
+const slideSplices = [];
+const slides = [];
+const slideCount = 4;
+let slideSplice = [];
+
+while(SPONSORS.length > 0)
+{
+  slideSplice = SPONSORS.splice(0, slideCount);
+  slideSplices.push(slideSplice);
+}
+
+for(let i = 0 ; i < slideSplices.length; i++){
+  var slide = (
+    <div  key={i} className="flex flex-wrap align-center justify-center gap-12 my-12">
+    {
+      slideSplices[i].map((item: { url: string; name: string; }, idx: Key) => {
+            return ( <div key={idx}className='w-48' ><img src={item.url} alt={item.name}></img></div> ) 
+      })
+    }
+    </div>
+    );
+  slides.push(slide);
+}
 
 const Home: NextPage = () => {
+ 
   return (
     <div className="container-fluid mx-auto ">
       <Hero title="Creating a pipeline of future-ready professionals.">
@@ -93,10 +120,11 @@ const Home: NextPage = () => {
           </Text>
         </TextBanner>
       </div>
-  
-      <Section>
-        <FlexImages images={SPONSORS}/>
-      </Section>
+
+    <div className="pb-10">
+      <Carousel size={['lg']} pagination={["dots"]} slides={slides}></Carousel>
+    </div>
+
     </div>
   );
 };
