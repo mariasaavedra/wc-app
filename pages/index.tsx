@@ -125,7 +125,7 @@ const Home: NextPage = () => {
           </Text>
           <Button
             className="d-block  my-4 mx-auto"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScNJSLewdZK-agF5Jog7GXyv9sLmu_nd26zyNqfrhP6pZ2uBw/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc9K2MrAHVBio53bzpPLu-lf9t3Su0Huidp6SHgm-wkwWBANw/viewform"
           >
             Get Into Tech
           </Button>
