@@ -29,7 +29,7 @@ const BoardPage = () => {
       <Text className="text-center pt-8" size='h1'>OUR TEAM</Text>
 
       <div className="content-container">
-        <div className="md:flex m-10 py-4 even:flex-row-reverse">
+        <div className="md:flex m-10 pb-4  even:flex-row-reverse">
           <div className="mx-auto md:w-[440px]  shadow-xl ">
             <img className="w-full" src="/images/tammy-buckner.jpeg" />
           </div>
@@ -58,7 +58,7 @@ const BoardPage = () => {
 
         <div className="md:flex m-10 py-4 even:flex-row-reverse">
           <div className="mx-auto md:w-[440px] shadow-xl">
-            <img className="w-full" src="/images/nicole-urban.jpg" />
+            <img className="w-full h-full" src="/images/nicole-urban.jpg" />
           </div>
           <div className="w-16">
             {/* Used to imitate padding on flex-row-reverse best I could find to keep aligned onreverse */}
@@ -68,7 +68,14 @@ const BoardPage = () => {
               Nicole Urban <span className="text-gray-500">|</span> Program Director
             </Text>
             <Text className="pb-4 px-4 text-gray-500" size="b1">
-              Bio coming soon!
+            Nicole Urban, PMP, MBA, CSPO brings over 25 years of project management experience from the utility, 
+            construction  and IT industries.  Nicole has been part of the WeCode program since November 2018, 
+            first serving as a volunteer project manager and program coordinator before advancing to her current 
+            role as the Program Director.  As a supporter of all things tech and a strong advocate for tech education for youth, 
+            Nicole leads by example by holding her Professional Project Management certification through the Project Management Institute, 
+            a Masters of Business Administration degree from Rasmussen University, and a Certified Scrum Product Owner certification through Scrum Alliance. 
+            Nicole is committed to ensuring the strategies for all of WeCode's programs and initiatives are developed, implemented, executed for the achievement of our organizational goals. 
+            In her spare time, Nicole is also a serial entrepreneur and owner of 3 small businesses.
             </Text>
           </div>
         </div>
@@ -90,7 +97,7 @@ const BoardPage = () => {
           </div>
         </div>
         <Text className="text-center" size='h1'>OUR BOARD</Text>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap pb-10 justify-center">
 
           <div className="m-5 shadow-xl  p-4 bg-white">
             <div>
