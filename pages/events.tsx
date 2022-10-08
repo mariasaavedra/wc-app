@@ -28,7 +28,7 @@ const Events: NextPage = () => {
           </>
         </Hero>
       </div>
-      <div className="mx-auto mt-4 container flex">
+      <div className="mx-auto mt-4 container md:flex">
         <EventCard
           title="DECONSTRUCTED | WeCode KC featuring Grammy award winning producer J. White"
           href="https://www.eventbrite.com/e/deconstructed-wecode-kc-featuring-grammy-award-winning-producer-j-white-registration-431488964107"
