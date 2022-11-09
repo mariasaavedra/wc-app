@@ -1,0 +1,74 @@
+//CSS for tabs container and tabs
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 0 auto;
+    
+    //border: 2px solid #fff;
+    border-collapse: collapse;
+   
+
+  }
+  
+  .tabs input[type='radio']{
+    display: none;
+  }
+  
+  .tabs label{
+    padding: 20px;
+    background: #fff;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
+}
+  
+  .tabs .tab {
+    width: 100%;
+    padding: 20px;
+    
+    background: #fff;
+    order:1;
+    display: none;
+    border-radius: 0 8px 8px;
+    -webkit-border-radius: 0 8px 8px;
+    -moz-border-radius: 0 8px 8px;
+    -ms-border-radius: 0 8px 8px;
+    -o-border-radius: 0 8px 8px;
+}
+
+  .tabs input[type='radio'] + label {
+    background: #f2eff0;
+  }
+  .tabs input[type='radio']:checked + label + .tab{
+    display: block;
+    background: #d8d8d8;
+  }
+  
+  .tabs input[type='radio']:checked + label {
+    background: #d8d8d8;
+  }
+
+
+//CSS for image gallery
+.imgs div{
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0px 1px 5px 0px rgba(26,26,26,0.35);
+    filter: brightness(1.1);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+ 
+.imgs div:nth-child(even){
+    background: rgba(48,76,120,0.35);
+}
+.imgs div:nth-child(odd){
+    background: rgba(127,35,98,0.35);
+}
+
