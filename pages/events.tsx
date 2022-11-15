@@ -125,7 +125,7 @@ const Events: NextPage = () => {
                   <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\TedXKC\B17CF6D2-18BF-4195-86ED-5D5FE3BC87B9_1_105_c.jpeg" alt="TedX KC"/>
               </div>
               <div>
-                  <img className="object-fill  w-96 lg:w-64 lg:h-72 rounded-lg " src="images\TedXKC\D9F76D6B-8624-4605-BA7E-1FB29CB583FA_1_105_c.jpeg" alt="TedX KC"/>
+                  <img className="object-fill  w-96 lg:w-72 lg:h-72 rounded-lg " src="images\TedXKC\D9F76D6B-8624-4605-BA7E-1FB29CB583FA_1_105_c.jpeg" alt="TedX KC"/>
               </div>
           </div>
       </div>
