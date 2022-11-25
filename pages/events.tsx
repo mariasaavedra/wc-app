@@ -12,7 +12,7 @@ const Events: NextPage = () => {
             <h2 className="tracking-tight">
               Develop your tech skills in one of our many courses below
             </h2>
-            <br />
+            
             <Text size="b1" className="mt-2">
               WeCode/KC is committed to helping Kansas City's youth and young
               adults develop their skills and knowledge to prepare for a career
@@ -28,6 +28,7 @@ const Events: NextPage = () => {
           </>
         </Hero>
       </div>
+    {/* 
       <div className="mx-auto mt-4 container md:flex">
         <EventCard
           title="DECONSTRUCTED | WeCode KC featuring Grammy award winning producer J. White"
@@ -51,7 +52,7 @@ const Events: NextPage = () => {
           wants to build websites, they won't want to miss this class!
         </EventCard>
       </div>
-
+    */}
 
     <div className={`${imgStyles.tabs} pt-10`}>
     <input type="radio" id='summer' name='mytabs' checked={true} />
@@ -234,8 +235,359 @@ const Events: NextPage = () => {
       </div>
     </div>
 
-    </div>
 
+    <input type="radio" id='proxinterns' name='mytabs' checked={true} />
+    <label htmlFor='proxinterns'>ProX Interns</label>
+    <div className={imgStyles.tab}>
+      <div className="container py-8 mx-auto">
+          <div className={imgStyles.imgs +" flex flex-wrap gap-2 md:gap-4 items-center justify-center"}>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\0ACF1EFB-197E-4DC9-87E6-754D676C1637_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\0EE3B308-385F-49BF-8928-C8D9F13BA925_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\1A8EDEF7-47F1-40C0-BF44-F49E097CE1A7_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\1AFF0D01-E847-4D90-A569-9A565E4F28AE_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\2B847008-8F49-43AE-9A21-CF8AB634437C_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\2EB94A32-E696-4A60-BB9B-801D133CFD01_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\3FA8324F-1D4B-44E2-A3D7-129E074A854F_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\4D02AC98-81B0-4C51-B3DD-E615C35097F4_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\4E77392C-9996-4047-B35D-2BF02A852DEF_1_102_o.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\4F4FE7BE-57F9-478C-B9C0-8F6F03E18075_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\05B65461-06EC-4D8B-BD8D-20D291C3AAF7_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\6B02DF90-6152-446C-AFA1-F5B95CCAC509_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\6CEFEC0B-8DD1-44A9-9152-CD7A1C18EF16_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\6DD40FDC-69A1-492A-BC9B-0B182E5771F4_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\6EEE6F5D-4620-473E-A5D1-0A55B4D33D8F_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\6F726B84-E607-4446-A7CA-8CEB66CADBAA_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\6FFDF24E-82D1-4D96-B198-402A7FAE2065_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\7D591C99-134B-4AE8-8DE9-6BFF849718DE_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\7DEC7D9E-697B-4601-AA2F-A901C9A2D572_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\8B1B68B5-91B1-41E8-AC76-7FD6EADEA34F_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\8B9CDDBB-4B24-4BD4-A4B8-6091DEA5A3CA_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\8C7DB85A-E218-4937-BAC9-EA6B032EC45A_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\9C4533E7-B71C-4886-A273-E504F3F569AD_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\9D80E95A-CC61-4262-876E-ED36942EAF7A_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\10AD5506-C0AE-46D2-B809-A2779A3E60E8_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\12A035AE-DB4F-4689-BD47-F9BC73E51338_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\25F5400E-7E5C-4955-908F-FFC87816A6A3_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\43FCDFA3-2A31-4DEA-9A88-C06C3803443B_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\46A9010D-DE77-4FA4-9577-BD6B2354B3DC_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\60C666BB-E611-4789-87B1-B86C4F070516_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\62A85113-521C-4D92-995B-D1D9AE1DB08E_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\68B77F3F-EDA3-4628-84E9-D63E17B19FA4_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\84E4E906-D77B-40D0-AA52-8C4758855A26_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\92F478F9-0C31-4502-A629-CA167B17996A_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\97E3656E-E7A0-4AD3-AB14-DFA48F25BB81_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\171EF7E9-73EB-4EAE-A805-630D6FCD7ADB_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\250F7D8A-BCCE-4601-8923-8C26CA231667_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\270D0680-EE52-4648-82DC-3E887BFFA864_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\404A563E-F044-4A48-8C97-6474C8F7F0EB_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\453C6A5B-C069-432B-AD8E-E155A00ACF8D_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\778E24ED-1384-41DC-9D0D-54944FAA4493_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\846B360E-2738-4CE7-B0DA-6A0DABFB2671_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\923DDCBC-9500-4174-BAC7-04683F070827_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\1093B2AD-6F9D-44DF-9A80-38D9699A6405_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\1590E300-53C6-41D1-9342-F069A04AEB8D_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\2551BFB8-3DDB-4C3C-8425-8761996D7BFA_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\60857A61-FAFE-4531-9CC9-BA354552A0F1_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\66674E8B-9040-48D5-8E5D-06A961774998_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\6337725C-D320-4AAD-85C6-838F8D2B9F3D_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\25451361-1E3C-43C5-AF47-07388F8787AB_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\51977640-6DE6-4745-8210-1509E50C87CB_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\70877564-F90E-4751-BDEA-24DB6A5CEFAC_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\A0EA66D5-4893-4F59-8CBF-CB7B3D5817DD_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\A4A39B28-97BB-4177-A083-23708294F7C4_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\A29AF208-9F5B-4532-8D34-C3806348BCB3_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\A61CD439-824B-4836-97F6-EC108539F182_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\A998E4EC-B574-4C32-8DC3-4516E5665B02_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\A5567AE7-AF61-4388-BD67-D6F387A1718D_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\AD2B59F5-0D40-4945-9822-803BECC4DE05_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\AE0558EA-59A7-4091-A099-4A6B55F771EA_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\B3B728C8-D057-4D58-AE17-869297473705_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\B9E50C92-62C5-482B-8FBB-57D8A8C15815_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\B699C40E-80B5-4A8C-AB29-943B9D2CA192_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\C6B624C9-3938-47D1-A29F-6218075E518E_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\C7EE758F-EE8A-4A24-9771-F98A2FB8180F_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\C8F24D39-9315-4824-9915-0C5B7AE7C1F8_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\D3EAA504-D14D-44C0-A3D7-44EFC40264D2_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\D8A52ED7-A476-42F2-A767-EA3111390743_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\D7441421-6D96-4281-81DD-3ED8A749D34F_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\DA275980-8DDE-499B-86FB-334C842DB2BC_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\DD045198-8A0A-4724-9282-E71A2BE00F82_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\DE0D7638-6599-47F2-86CC-1E2318983F7E_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\E3E28AAF-8489-43AA-A82A-B8789F176C0D_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\EAAF5F70-59FA-49A7-BA0C-B6668ADB6354_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\EB13866A-05D5-4995-AB04-77954647EE9C_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\ProXInterns\F117E08F-15B5-4BAB-8E86-0A700F5F3A80_1_105_c.jpeg" alt="ProX Interns 2022"/>
+              </div>
+          </div>
+      </div>
+    </div>
+    <input type="radio" id='geeksquad' name='mytabs' checked={true} />
+    <label htmlFor='geeksquad'>WeCodeKC & Geek Squad</label>
+    <div className={imgStyles.tab}>
+      <div className="container py-8 mx-auto">
+          <div className={imgStyles.imgs +" flex flex-wrap gap-2 md:gap-4 items-center justify-center"}>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\8D584DEE-349C-4FD4-96DE-2E4E68821047_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\9D53D637-B83A-4A76-9F56-6627431BBA11_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\029A6EFB-46FE-4FE2-8F95-AC6EA58DF65B_1_106_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\77BA48D5-0A23-4C6F-9081-CBB24FBE5F0A_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\097E4AF7-8397-4FB1-9175-0F4692FDCE1C_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\869C1E44-AE88-472A-A30A-8C8EC374F091_1_106_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\03198B0A-D9C0-481C-9490-2E323FFC04C3_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\765046D3-C8A9-4A2C-96B1-E26A38305217_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\A65DB657-147A-4A4A-BF4D-F0D789D5C891_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\EE23A751-FE95-49B5-B23E-ACAC47B126C2_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\EF42E4B4-579D-483C-B451-187BE59CDFCB_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\WeCodeGeekSquad\F1295670-A268-49B7-AE3A-2EF33296D42F_1_105_c.jpeg" alt="WeCodeKC & Geek Squad"/>
+              </div>
+          </div>
+      </div>
+    </div>
+    <input type="radio" id='oct12022' name='mytabs' checked={true}/>
+    <label htmlFor='oct12022'>Oct 1st, 2022</label>
+    <div className={imgStyles.tab}>
+      <div className="container px-4 py-10">
+          <div className={imgStyles.imgs +" flex flex-wrap gap-5 items-center justify-center"}>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\Oct1st2022\20221001_102755.jpg" alt="October 1st, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\Oct1st2022\20221001_102939.jpg" alt="October 1st, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\Oct1st2022\20221001_104009.jpg" alt="October 1st, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\Oct1st2022\20221001_110929.jpg" alt="October 1st, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\Oct1st2022\imagejpeg_0.jpg" alt="October 1st, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\Oct1st2022\imagejpeg_0(1).jpg" alt="October 1st, 2022"/>
+              </div>
+          </div>
+      </div>
+    </div>
+    <input type="radio" id='jun42022' name='mytabs' checked={true}/>
+    <label htmlFor='jun42022'>June 4th, 2022</label>
+    <div className={imgStyles.tab}>
+      <div className="container px-4 py-10">
+          <div className={imgStyles.imgs +" flex flex-wrap gap-5 items-center justify-center"}>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\0C2B9662-0910-46D9-B843-5B652F05DAA7_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\0F8B95F5-55D4-47FB-8ECF-298AAA04D163_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\6C6580A1-33BE-49E3-9AFE-351D83B11F71_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\44BAD168-891E-4CAB-B1FF-91CAA3D928D9_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\86FF2E5A-9C6A-4C74-A563-A9DC70B05FF0_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\504C1D41-809B-44D5-BDC5-FCF4C88BF0AA_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\BCC2C7FC-8278-444E-8D3F-18CABADC7A1F_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\BF1DC20D-3FCF-46D4-A314-818CBDBD5BBE_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\D69D934D-3C7F-47A8-AB92-F1E7F2050968_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\D9535430-3948-422E-918B-767132200172_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\E1B84F49-79AF-45BF-A473-86CB36D3BE33_1_105_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+              <div>
+                  <img className="object-fill w-96 lg:w-72 lg:h-72 rounded-lg " src="images\June42022\E54E5A5A-B738-45B0-98DA-D3E229638528_1_106_c.jpeg" alt="June 4th, 2022"/>
+              </div>
+
+          </div>
+      </div>
+    </div>
+    </div>
     </div>
   );
 };
