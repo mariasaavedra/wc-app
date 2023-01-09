@@ -14,6 +14,7 @@ import styles from "../styles/components/Badge.module.scss";
 import Carousel from "../components/Carousel";
 import courseraStyles from "../styles/courseraCard.module.scss";
 import { Key } from "react";
+import EventCard from "../components/EventCard";
 
 const slideSplices = [];
 const slides = [];
@@ -60,6 +61,16 @@ const Home: NextPage = () => {
           <Button href="/programs">Get Started</Button>
         </>
       </Hero> */}
+
+      <div className="mx-auto mt-4 container md:flex">
+        <EventCard
+          title="WeCode/KC Volunteer Round Up & Happy Hour"
+          href="https://www.eventbrite.com/e/wecodekc-volunteer-round-up-happy-hour-tickets-490656576027"
+        >
+        Interested in Volunteering? Click here to join us on Volunteer Round-Up Night to learn more.
+        </EventCard>
+      </div>
+
       <div className="bg-brand-purple mt-10">
         <TextBanner title="Learn to Code, Code to Learn">
           <Text className="mt-4 text-center w-100 mx-auto" size="b1">
