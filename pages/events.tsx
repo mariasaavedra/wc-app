@@ -28,18 +28,15 @@ const Events: NextPage = () => {
           </>
         </Hero>
       </div>
-    {/* 
-      <div className="mx-auto mt-4 container md:flex">
+   
+      <div className="mx-auto mt-8 container md:flex">
         <EventCard
-          title="DECONSTRUCTED | WeCode KC featuring Grammy award winning producer J. White"
-          href="https://www.eventbrite.com/e/deconstructed-wecode-kc-featuring-grammy-award-winning-producer-j-white-registration-431488964107"
+          title="WeCode/KC Volunteer Round Up & Happy Hour"
+          href="https://www.eventbrite.com/e/wecodekc-volunteer-round-up-happy-hour-tickets-490656576027"
         >
-          Students who attend this workshop will learn how to create a #1 Hit
-          song with Grammy Award winning music producer and KC native J. White.
-          He is the producer of several chart-topping tracks, including "Bodak
-          Yellow", "I Like It", "Money" & more! Your student won't want to miss
-          this INCREDIBLE opportunity.
+        Interested in Volunteering? Click here to join us on Volunteer Round-Up Night to learn more.
         </EventCard>
+     {/* 
         <EventCard
           title="Techstronauts Coding Club by WeCode KC!"
           href="https://www.eventbrite.com/e/techstronauts-coding-club-by-wecode-kc-tickets-387267386177"
@@ -51,9 +48,9 @@ const Events: NextPage = () => {
           launching an actual website onto the world wide web. If your student
           wants to build websites, they won't want to miss this class!
         </EventCard>
-      </div>
+      
     */}
-
+    </div>
     <div className={`${imgStyles.tabs} pt-10`}>
     <input type="radio" id='summer' name='mytabs' checked={true} />
     <label htmlFor='summer'>Summer of Code 2022</label>
