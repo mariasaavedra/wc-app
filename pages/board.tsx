@@ -82,45 +82,46 @@ const BoardPage = () => {
 
         <div className="md:flex m-10 py-4 even:flex-row-reverse">
           <div className="mx-auto md:w-[440px] shadow-xl">
-            <img className="w-full" src="/images/shineta-horton.jpeg" />
+            <img className="w-full h-full" src="/images/adrienne.jpg" />
           </div>
           <div className="w-16">
             {/* Used to imitate padding on flex-row-reverse best I could find to keep aligned onreverse */}
           </div>
           <div className="w-full shadow-xl border-2 border-gray-100 p-8">
             <Text className="p-4 text-black " size="h1">
-              Shineta Horton <span className="text-gray-500">|</span> Curriculum Director
+              Adrienne Story <span className="text-gray-500">|</span> Executive Administrative Assistant
             </Text>
             <Text className="pb-4 px-4 text-gray-500" size="b1">
-              Bio coming soon!
+            Adrienne is a professional Executive Administrative Coordination Manager with over 11 years of experience in customer service, C-Level Executive support, 
+            and HR coordination. Her people-focused attitude paired with her strong relational skills help create and sustain positive client relations. 
             </Text>
           </div>
         </div>
+
+        <div className="md:flex m-10 py-4 even:flex-row-reverse">
+          <div className="mx-auto md:w-[440px] shadow-xl">
+            <img className="w-full h-full" src="/images/ben.jpg" />
+          </div>
+          <div className="w-16">
+            {/* Used to imitate padding on flex-row-reverse best I could find to keep aligned onreverse */}
+          </div>
+          <div className="w-full shadow-xl border-2 border-gray-100 p-8">
+            <Text className="p-4 text-black " size="h1">
+              Ben Richardson <span className="text-gray-500">|</span> Program Director
+            </Text>
+            <Text className="pb-4 px-4 text-gray-500" size="b1">
+            Ben is an engineer and entrepreneur with 16 years as a business owner, 
+            13 years in the electrical utility industry, and 5 years in STEAM education. 
+            He graduated from Prairie View A&M University with a Bachelor of Science degree in 
+            Electrical Engineering and from Park University with a Master of Business Administration degree 
+            with a focus on Computer Network & Security. His analytical and problem-solving skills are transferable 
+            amongst and variety of fields of knowledge from music to coding. He is coined as being a modern-day renaissance man.
+            </Text>
+          </div>
+        </div>
+
         <Text className="text-center" size='h1'>OUR BOARD</Text>
         <div className="flex flex-wrap pb-10 justify-center">
-
-          <div className="m-5 shadow-xl  p-4 bg-white">
-            <div>
-              <img className="w-80 h-80 border-black border-2" src="/images/natalie-lewis.jpeg" />
-            </div>
-            <div className="w-full ">
-              <Text className="p-2 pt-6 text-black text-center " size="b2">
-                Natalie Lewis <span className="text-gray-500">|</span> Board Chair
-              </Text>
-            </div>
-          </div>
-
-          <div className="m-5 shadow-xl  p-4 bg-white">
-            <div>
-              <img className="w-80 h-80 border-black border-2" src="/images/jan.jpg" />
-            </div>
-            <div className="w-full ">
-              <Text className="p-2 pt-6 text-black text-center " size="b2">
-              Janice Kreamer <span className="text-gray-500">|</span> Treasurer & Secretary
-              </Text>
-            </div>
-          </div>
-
           <div className="m-5 shadow-xl  p-4 bg-white">
             <div>
               <img className="w-80 h-80 border-black border-2" src="/images/rob-rogers.jpeg" />
@@ -143,16 +144,6 @@ const BoardPage = () => {
             </div>
           </div>
 
-          <div className="m-5 shadow-xl  p-4 bg-white">
-            <div>
-              <img className="w-80 h-80 border-black border-2" src="/images/kathy-feist.jpeg" />
-            </div>
-            <div className="w-full ">
-              <Text className="p-2 pt-6 text-black text-center " size="b2">
-                Kathy Feist <span className="text-gray-500">|</span> Board Member
-              </Text>
-            </div>
-          </div>
 
         </div>
       </div>
