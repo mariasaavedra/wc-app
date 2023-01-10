@@ -1,0 +1,51 @@
+    .courseraCard{
+        width: 260px;
+        height: 275px;
+        position: relative;
+        color: white;
+        font-family: Source Sans Pro,Arial,sans-serif!important;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        margin-bottom: 140px;
+    }
+    .courseraCardImg{
+        width: 260px;
+        background-color: rgb(130, 168, 225);
+        background-size: cover;
+    }
+    .box{
+        width: 260px;
+        height: 200px;
+        position: absolute;
+    }
+    .clip{
+        background-image: linear-gradient(135deg, rgb(4, 96, 130), rgb(4, 96, 130));
+        transform: skewY(-10deg); /* 10 deg */
+        margin-top: -60px;
+    }
+    .stackTop{
+        z-index: 9;
+        background-color: rgb(4, 96, 130);
+        margin-top: -10px;
+    }
+    .companyLogo{
+        position: absolute;
+        top: -75px;
+        left: 12px;
+        width: 57px;
+        height: 57px;
+        
+        border: 1px solid rgb(225, 225, 225);
+        border-radius: 3px;
+        background-color: rgb(225, 225, 225);
+        
+    }
+    .courseraCardHeader{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+    .courseraCardFooter{
+        font-size: 12px; 
+        position: absolute;
+        bottom: 3px;
+    }
+

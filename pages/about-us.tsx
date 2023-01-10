@@ -5,6 +5,7 @@ import Text from "../components/Text";
 import {Section} from "../components/Section";
 import Carousel from "../components/Carousel";
 import TestimonialItem from "../components/TestimonialItem";
+import TextBanner from "../components/TextBanner";
 import TESTIMONIALS from "../constants/testimonials";
 
 const slides = TESTIMONIALS.map((t, index) => {
@@ -47,6 +48,19 @@ const AboutPage = () => {
           </Button>
         </>
       </Hero>
+      <div className=" mt-10">
+        <TextBanner title="Our Mission">
+          <Text className="mt-4 text-center" size="b1">
+            Our mission is to give youth the opportunity to learn technology
+            concepts, and leadership skills. <br /> We're creating a pipeline of
+            future-ready professionals through project-based learning and
+            innovative programs.
+          </Text>
+        </TextBanner>
+      </div>
+
+      <TextBanner title="Testimonials"></TextBanner>
+
       <Carousel pagination={["dots"]} slides={slides}></Carousel>
       <Section>
         <Button

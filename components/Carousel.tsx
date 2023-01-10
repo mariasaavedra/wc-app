@@ -3,9 +3,12 @@ import { MaybeParentComponentProps } from "../interfaces/ParentComponentProps";
 import styles from "../styles/components/Carousel.module.scss";
 
 type pagination = "dots" | "arrows";
+type size = "md" | "lg";
 export interface CarouselProps extends MaybeParentComponentProps {
   slides: Array<JSX.Element>;
   pagination: Array<pagination>;
+  size: Array<size>;
+  delay: number;
 }
 
 export default function Carousel(props: CarouselProps) {
@@ -29,7 +32,7 @@ export default function Carousel(props: CarouselProps) {
           return prevIndex + 1;
         }
       });
-    }, 5000);
+    }, props.delay);
   }, []);
 
   /* Add arrows */
@@ -58,8 +61,18 @@ export default function Carousel(props: CarouselProps) {
     });
   };
 
+  const setSize = () =>{
+    if(props.size.includes("md")){
+      return styles.CarouselComponent + " " + styles.CarouselMD;
+    }else{
+      return styles.CarouselComponent;
+    }
+  };
+
   return (
-    <div className={styles.CarouselComponent}>
+
+    <div className={setSize()}>
+
       {/* Left Arrow */}
       {displayArrows() && (
         <div className={styles.leftArrow} onClick={prevSlide}>
@@ -100,4 +113,6 @@ export default function Carousel(props: CarouselProps) {
 Carousel.defaultProps = {
   slides: [<p>Slide One</p>, <p>Slide Two</p>],
   pagination: ["dots"],
+  size: ["md"],
+  delay: 5000,
 };
