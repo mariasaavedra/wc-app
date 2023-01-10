@@ -32,6 +32,7 @@ export const Navigation = () => {
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
             <Link href="/events">Events</Link>
+            <Link href="/donate">Donate</Link>
             <Link href="/board">Our Team</Link>
             <Button
               size="small"
@@ -76,6 +77,7 @@ export const Navigation = () => {
           <Link href="/about-us">About Us</Link>
           <Link href="/programs">Programs</Link>
           <Link href="/events">Event</Link>
+          <Link href="/donate">Donate</Link>
           <Link href="/board">Our Team</Link>
           <Link href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU">
             Donate
