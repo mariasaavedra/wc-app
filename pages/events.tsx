@@ -28,7 +28,7 @@ const Events: NextPage = () => {
           </>
         </Hero>
       </div>
-   
+    {/* 
       <div className="mx-auto mt-8 container md:flex">
         <EventCard
           title="WeCode/KC Volunteer Round Up & Happy Hour"
@@ -36,7 +36,7 @@ const Events: NextPage = () => {
         >
         Interested in Volunteering? Click here to join us on Volunteer Round-Up Night to learn more.
         </EventCard>
-     {/* 
+    
         <EventCard
           title="Techstronauts Coding Club by WeCode KC!"
           href="https://www.eventbrite.com/e/techstronauts-coding-club-by-wecode-kc-tickets-387267386177"
@@ -48,9 +48,8 @@ const Events: NextPage = () => {
           launching an actual website onto the world wide web. If your student
           wants to build websites, they won't want to miss this class!
         </EventCard>
-      
-    */}
     </div>
+    */}
     <div className={`${imgStyles.tabs} pt-10`}>
     <input type="radio" id='summer' name='mytabs' checked={true} />
     <label htmlFor='summer'>Summer of Code 2022</label>
