@@ -36,7 +36,7 @@ export const Navigation = () => {
             <Link href="/board">Our Team</Link>
             <Button
               size="small"
-              href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU"
+              href="https://secure.givelively.org/donate/we-code-kc"
             >
               Donate
             </Button>
@@ -79,7 +79,7 @@ export const Navigation = () => {
           <Link href="/events">Event</Link>
           <Link href="/donate">Donate</Link>
           <Link href="/board">Our Team</Link>
-          <Link href="https://www.paypal.com/donate/?hosted_button_id=AV3BJKXGLJ2BU">
+          <Link href="https://secure.givelively.org/donate/we-code-kc">
             Donate
           </Link>
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform">

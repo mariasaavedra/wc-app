@@ -62,15 +62,6 @@ const Home: NextPage = () => {
         </>
       </Hero> */}
 
-      <div className="mx-auto mt-4 container md:flex">
-        <EventCard
-          title="WeCode/KC Volunteer Round Up & Happy Hour"
-          href="https://www.eventbrite.com/e/wecodekc-volunteer-round-up-happy-hour-tickets-490656576027"
-        >
-        Interested in Volunteering? Click here to join us on Volunteer Round-Up Night to learn more.
-        </EventCard>
-      </div>
-
       <div className="bg-brand-purple mt-10">
         <TextBanner title="Learn to Code, Code to Learn">
           <Text className="mt-4 text-center w-100 mx-auto" size="b1">
