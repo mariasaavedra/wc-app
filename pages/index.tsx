@@ -20,7 +20,7 @@ const slideSplices = [];
 const slides = [];
 const slideCount = 4;
 let slideSplice = [];
-
+{/* Comment demonstrating git */}
 while(SPONSORS.length > 0)
 {
   slideSplice = SPONSORS.splice(0, slideCount);
