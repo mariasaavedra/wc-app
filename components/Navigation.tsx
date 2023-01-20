@@ -42,7 +42,7 @@ export const Navigation = () => {
             </Button>
             <Button
               size="small"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdwNpwaXcASLhOk5m-WJM1KnYksY8g7kxNeIij_Id_z6L4S-A/viewform"
+              href="https://wecodekc.my.salesforce-sites.com/VolunteersSignup"
             >
               VOLUNTEER
             </Button>

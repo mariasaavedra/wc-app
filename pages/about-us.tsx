@@ -42,7 +42,7 @@ const AboutPage = () => {
           </Text>
           <Button
             className="mt-8"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdYfOQ_31AsFUE9HKPkI45diPVndUdWah8eH8eep90HiON9qA/viewform"
+            href="https://wecodekc.my.salesforce-sites.com/VolunteersSignup"
           >
             Join Our Team
           </Button>
