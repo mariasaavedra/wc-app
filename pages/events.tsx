@@ -28,15 +28,16 @@ const Events: NextPage = () => {
           </>
         </Hero>
       </div>
-    {/* 
+
       <div className="mx-auto mt-8 container md:flex">
         <EventCard
-          title="WeCode/KC Volunteer Round Up & Happy Hour"
-          href="https://www.eventbrite.com/e/wecodekc-volunteer-round-up-happy-hour-tickets-490656576027"
+          title="Spring Into Code with WeCode KC: Build It. Play It. Gaming for the future!"
+          href="https://www.eventbrite.com/e/spring-into-code-with-wecode-kc-build-it-play-it-gaming-for-the-future-tickets-523108841627"
         >
-        Interested in Volunteering? Click here to join us on Volunteer Round-Up Night to learn more.
+        WeCode KC’s Spring into Code is a week-long program that introduces area students to technology concepts and various software languages. Students will meet at 5008 Prospect Ave, from 5pm to 7pm every night of the week to work on creating their games! This year our classes will focus on the concept of building and playing video games. Students aged 7-11 will use Roblox Studio to build a 3D city for gaming; and students aged 12-17 will build tabletop arcade consoles and program them with a Raspberry Pi-based programming language.
         </EventCard>
-    
+      </div>
+    {/*    
         <EventCard
           title="Techstronauts Coding Club by WeCode KC!"
           href="https://www.eventbrite.com/e/techstronauts-coding-club-by-wecode-kc-tickets-387267386177"
