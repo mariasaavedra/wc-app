@@ -32,6 +32,7 @@ export const Navigation = () => {
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
             <Link href="/events">Events</Link>
+            <Link href="/resources">Resources</Link>
             <Link href="/donate">Donate</Link>
             <Link href="/board">Our Team</Link>
             <Button
@@ -77,6 +78,7 @@ export const Navigation = () => {
           <Link href="/about-us">About Us</Link>
           <Link href="/programs">Programs</Link>
           <Link href="/events">Event</Link>
+          <Link href="/resources">Resources</Link>
           <Link href="/donate">Donate</Link>
           <Link href="/board">Our Team</Link>
           <Link href="https://secure.givelively.org/donate/we-code-kc">
