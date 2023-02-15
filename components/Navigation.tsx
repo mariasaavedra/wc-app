@@ -13,7 +13,7 @@ export const Navigation = () => {
 
   return (
     <nav className="navigation shadow-md">
-      <div className="lg:px-10 mx-auto">
+      <div className="lg:px-6 mx-auto">
         <div className="nav-desktop-container pl-4 py-4 flex justify-between">
           <div className="logo-container flex items-center">
             <Link href="/">
@@ -22,19 +22,20 @@ export const Navigation = () => {
                 src="/images/full-logo.png"
               ></img>
               <img
-                className="logo-image inline pl-5 pb-0.5 h-1/3 w-1/3"
+                className="logo-image inline pl-3 pb-0.5 h-1/3 w-1/3"
                 src='/images/TEDxKC.png'
               ></img>
             </Link>
           </div>
 
-          <div className="hidden lg:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1 ">
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
             <Link href="/events">Events</Link>
             <Link href="/resources">Resources</Link>
             <Link href="/donate">Donate</Link>
             <Link href="/board">Our Team</Link>
+            <Link href="/news">News</Link>
             <Button
               size="small"
               href="https://secure.givelively.org/donate/we-code-kc"
@@ -81,6 +82,7 @@ export const Navigation = () => {
           <Link href="/resources">Resources</Link>
           <Link href="/donate">Donate</Link>
           <Link href="/board">Our Team</Link>
+          <Link href="/news">News</Link>
           <Link href="https://secure.givelively.org/donate/we-code-kc">
             Donate
           </Link>

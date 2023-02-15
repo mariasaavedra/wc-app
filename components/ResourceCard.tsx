@@ -16,7 +16,7 @@ export default function EventCard(props: ResourceProps) {
        <img
           src={props.url}
           alt="resource image"
-          className=" w-full border-solid border-b-2"
+          className=" w-full border-solid border-b-2 md:max-h-36"
           />
        <div className="p-8 sm:p-9  md:p-7 xl:p-9 text-center">
           <h3>
