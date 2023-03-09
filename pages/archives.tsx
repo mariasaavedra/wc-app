@@ -3,11 +3,11 @@ import Hero from "../components/Hero";
 import Text from "../components/Text";
 import EventCard from "../components/EventCard";
 import imgStyles from  "../styles/imageGallery.module.scss"
-const Events: NextPage = () => {
+const Archives: NextPage = () => {
   return (
     <div className="mx-auto">
       <div className="max-h-[70vh] overflow-hidden">
-        <Hero title="Events">
+        <Hero title="Archives">
           <>
             <h2 className="tracking-tight">
               Develop your tech skills in one of our many courses below
@@ -589,4 +589,4 @@ const Events: NextPage = () => {
   );
 };
 
-export default Events;
+export default Archives;

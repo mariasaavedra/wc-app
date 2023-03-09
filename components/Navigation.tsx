@@ -31,7 +31,7 @@ export const Navigation = () => {
           <div className="hidden lg:flex items-center space-x-1 ">
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
-            <Link href="/events">Events</Link>
+            <Link href="/archives">Archives</Link>
             <Link href="/resources">Resources</Link>
             <Link href="/news">News</Link>
             <Button
@@ -76,7 +76,7 @@ export const Navigation = () => {
         <div className={styles.mobileMenu}>
           <Link href="/about-us">About Us</Link>
           <Link href="/programs">Programs</Link>
-          <Link href="/events">Event</Link>
+          <Link href="/archives">Archives</Link>
           <Link href="/resources">Resources</Link>
           <Link href="/news">News</Link>
           <Link href="https://secure.givelively.org/donate/we-code-kc">
