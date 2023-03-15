@@ -216,6 +216,11 @@ export const Footer = () => {
               2023 Futures Schedule
               </p>
             </a>
+            <div className= "pt-4">
+            <a href="https://www.guidestar.org/profile/shared/334f707b-4fb9-4a84-94f1-d64e56a7927b" target="_blank">
+              <img src="https://widgets.guidestar.org/TransparencySeal/9784272" />
+            </a>
+          </div>
           </div>
 
           <div className="text-center">
@@ -225,9 +230,9 @@ export const Footer = () => {
             </p>
             <p>EIN: 833413497</p>
           </div>
- 
         </div>
       </div>
+
       <div className="text-center p-6 bg-black">
         © Copyright 2022 - WeCodeKC All rights Reserved
       </div>
