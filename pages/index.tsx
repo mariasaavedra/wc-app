@@ -68,9 +68,9 @@ const Home: NextPage = () => {
           </Text>
           <Button
             className="d-block  mt-4 mb-0 mx-auto"
-            href="https://www.eventbrite.com/e/spring-into-code-with-wecode-kc-build-it-play-it-gaming-for-the-future-tickets-523108841627?aff=erelexpmlt"
+            href="https://www.eventbrite.com/cc/wecode-kc-coding-classes-for-students-1733409"
           >
-            Spring Into Code
+            Sign up to attend
           </Button>
         </TextBanner>
       </div>
