@@ -33,6 +33,7 @@ export const Navigation = () => {
             <Link href="/programs">Programs</Link>
             <Link href="/archives">Archives</Link>
             <Link href="/news">News</Link>
+            <Link href="/faq">FAQ</Link>
             <Button
               size="small"
               href="https://secure.givelively.org/donate/we-code-kc"
@@ -77,6 +78,7 @@ export const Navigation = () => {
           <Link href="/programs">Programs</Link>
           <Link href="/archives">Archives</Link>
           <Link href="/news">News</Link>
+          <Link href="/faq">FAQ</Link>
           <Link href="https://secure.givelively.org/donate/we-code-kc">
             Donate
           </Link>
