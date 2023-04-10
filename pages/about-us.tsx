@@ -164,26 +164,112 @@ const AboutPage = () => {
             </Text>
           </div>
         </div>
+
+        <div className="md:flex m-10 py-4 even:flex-row-reverse">
+          <div className="mx-auto md:w-[440px] shadow-xl">
+            <img className="w-full h-full" src="/images/claudehawkins.jpg" />
+          </div>
+          <div className="w-16">
+            {/* Used to imitate padding on flex-row-reverse best I could find to keep aligned onreverse */}
+          </div>
+          <div className="w-full shadow-xl border-2 border-gray-100 p-8">
+            <Text className="p-4 text-black " size="h1">
+              Claude Hawkins <span className="text-gray-500">|</span> IT/Asset Manager
+            </Text>
+            <Text className="pb-4 px-4 text-gray-500" size="b1">
+              Bio Coming Soon!
+            </Text>
+          </div>
+        </div>
+
+
+
         <TextBanner title="OUR BOARD"></TextBanner>
-        <div className="flex flex-wrap pb-10 justify-center">
-          <div className="m-5 shadow-xl  p-4 bg-white">
+        <div className="flex flex-wrap pb-20 justify-center">
+          <div className="w-72 h-72 m-3 mb-10 shadow-xl  p-4 bg-white">
             <div>
-              <img className="w-80 h-80 border-black border-2" src="/images/rob-rogers.jpeg" />
+              <img className=" border-black border" src="/images/kimbryant.jpg" />
             </div>
             <div className="w-full ">
-              <Text className="p-2 pt-6 text-black text-center " size="b2">
-                Rob Rogers <span className="text-gray-500">|</span> Board Member
+              <Text className="p-2 pt-6  text-black text-center" size="b2">
+              Kimberly Bryant<span className="text-gray-500"> | </span>Interim Board Chair
               </Text>
             </div>
           </div>
 
-          <div className="m-5 shadow-xl  p-4 bg-white">
+          <div className="w-72 h-72 m-3 mb-10 shadow-xl  p-4 bg-white">
             <div>
-              <img className="w-80 h-80 border-black border-2" src="/images/ryan-reed.jpeg" />
+              <img className=" border-black border" src="/images/brandoncalloway.jpg" />
             </div>
             <div className="w-full ">
               <Text className="p-2 pt-6 text-black text-center " size="b2">
-                Ryan Reed <span className="text-gray-500">|</span> Board Member
+              Brandon Calloway<span className="text-gray-500"> | </span> Board Member
+              </Text>
+            </div>
+          </div>
+
+          <div className=" w-72 h-72 m-3 mb-10 shadow-xl  p-4 bg-white">
+            <div>
+              <img className=" border-black border" src="/images/davidmitchell.jpg" />
+            </div>
+            <div className="w-full ">
+              <Text className="p-2 pt-6 text-black text-center " size="b2">
+              David Mitchell<span className="text-gray-500"> | </span> Board Member
+              </Text>
+            </div>
+          </div>
+
+          <div className="w-72 h-72 m-3 mb-10 shadow-xl  p-4 bg-white">
+            <div>
+              <img className=" border-black border" src="/images/angeliquenedved.jpg" />
+            </div>
+            <div className="w-full ">
+              <Text className="p-2 pt-6 text-black text-center " size="b2">
+              Angelique Nedved<span className="text-gray-500"> | </span> Board Member
+              </Text>
+            </div>
+          </div>
+
+          <div className="w-72 h-72 m-3 mb-10 shadow-xl  p-4 bg-white">
+            <div>
+              <img className=" border-black border" src="/images/aprilboyd.jpg" />
+            </div>
+            <div className="w-full ">
+              <Text className="p-2 pt-6 text-black text-center " size="b2">
+              April Boyd-Noronha<span className="text-gray-500"> | </span> Board Member
+              </Text>
+            </div>
+          </div>
+
+          <div className="w-72 h-72 m-3 mb-10 shadow-xl  p-4 bg-white">
+            <div>
+              <img className=" border-black border" src="/images/ryanreed.jpg" />
+            </div>
+            <div className="w-full ">
+              <Text className="p-2 pt-6 text-black text-center " size="b2">
+              Ryan Reed<span className="text-gray-500"> | </span> Board Member
+              </Text>
+            </div>
+          </div>
+
+          <div className="w-72 h-72 m-3 mb-10 shadow-xl  p-4 bg-white">
+            <div>
+              <img className=" border-black border" src="/images/robrogers.jpg" />
+            </div>
+            <div className="w-full ">
+              <Text className="p-2 pt-6 text-black text-center " size="b2">
+              Robert Rogers<span className="text-gray-500"> | </span> Board Member
+              </Text>
+            </div>
+          </div>
+      
+          <div className="w-72 h-72 m-3 mb-10 shadow-xl  p-4 bg-white">
+            <div>
+              <img className=" border-black border" src="/images/rochellewalker.jpg" />
+            </div>
+            <div className="w-full ">
+              <Text className="p-2 pt-6 text-black text-center " size="b2">
+              Rochelle Walker<span className="text-gray-500"> | </span> Board Member
               </Text>
             </div>
           </div>
