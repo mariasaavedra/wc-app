@@ -20,9 +20,9 @@ const FaqPage = () => {
 				</span>
 					</summary>
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
-					We're so excited to be a part of your students' tech journey! Go to www.wecodekc.org and click the
-					"Join Techstronaughts" button to be directed to our Eventbrite page. There you'll choose from all of our
-					available classes.
+					We're so excited to be a part of your students' tech journey! To sign up for classes, click the
+					"Sign Up To Attend" button on our home page to be directed to our Eventbrite page. There you'll choose
+					from all of our available classes.
 					</p>
 				</details>
 			</div>
@@ -35,9 +35,9 @@ const FaqPage = () => {
 				</span>
 					</summary>
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
-					We kick off our year with our "Spring into Code" event from March 20th - March 24th. After that,
-					regular classes such as Scratch, Python, and Web Development will be available every first, second, and
-					third Saturday of the month. Go to www.wecodekc.org to join!
+					We kicked off our year with our "Spring into Code" event from March 20th - March 24th. Moving
+					forward, regular classes such as Scratch, Python, and Robotics will be available every first, second, and
+					third Saturday of the month.
 					</p>
 				</details>
 			</div>
@@ -51,9 +51,8 @@ const FaqPage = () => {
 					</summary>
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
 					Our program is designed for students from the ages of 7-17. Suggested ages are given for each class
-					you can sign up for, but we understand that every child is different. If you have a little tech head on your
-					hands, do not hesitate to reach out at learntech@wecodekc.org so we can accommodate your student's
-					specific needs.
+					you can sign up for, but we understand that every child is different. Do not hesitate to reach out at
+					learntech@wecodekc.org so we can accommodate to your student's specific needs.
 					</p>
 				</details>
 			</div>
@@ -67,7 +66,7 @@ const FaqPage = () => {
 					</summary>
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
 					Yes! Sign up for our newsletter and follow our Eventbrite page to stay up to date on exclusive events
-					(i.e., 5th Saturdays, workshops, and competitions). 
+					(i.e., 5th Saturdays, workshops, and competitions).
 					</p>
 				</details>
 			</div>
@@ -82,8 +81,8 @@ const FaqPage = () => {
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
 					We are so glad you're interested in participating in this amazing journey with us. It's the dedication
 					and talent of our volunteers that make this organization stand out. We need instructors, assistants,
-					content creators, and administrators to help do what we do best. Sign up at www.wecodekc.org and
-					click the "Volunteer" button or contact us at volunteer@wecodekc.org to get started.
+					content creators, and administrators to help do what we do best. To sign up, click the "Volunteer"
+					button or contact us at volunteer@wecodekc.org to get started.	
 					</p>
 				</details>
 			</div>
