@@ -46,6 +46,12 @@ export const Navigation = () => {
             >
               VOLUNTEER
             </Button>
+            <Button
+              size="small"
+              href="https://a.co/6ETECMC"
+            >
+             <span className="whitespace-nowrap">WISH LIST</span>
+            </Button>
           </div>
           <div className="lg:hidden flex items-center pr-4">
             <button className="mobile-menu-button" onClick={handleClick}>
