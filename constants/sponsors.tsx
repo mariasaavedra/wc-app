@@ -1,5 +1,9 @@
 const SPONSORS = [
     {
+        url:"/images/kc-current-logo.png",
+        name:"KC Current",
+    },
+    {
         url:"/images/1597745175.jpg",
         name:"Microsoft",
     },
