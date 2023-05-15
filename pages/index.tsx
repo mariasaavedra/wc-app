@@ -72,6 +72,11 @@ const Home: NextPage = () => {
           >
             Sign up to attend
           </Button>
+          <Text className="mt-4 text-center w-100 italic mx-auto" size="b1">
+            <p className='italic text-base'>
+            *please be sure to have your student signed up for class prior to dropping them off
+            </p>
+          </Text>
         </TextBanner>
       </div>
 
