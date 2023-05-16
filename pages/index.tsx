@@ -9,7 +9,6 @@ import styles from "../styles/components/Badge.module.scss";
 import Carousel from "../components/Carousel";
 import { Key } from "react";
 
-
 const slideSplices = [];
 const slides = [];
 const slideCount = 4;

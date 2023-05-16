@@ -1,15 +1,33 @@
 import Link from "./Link";
 import { useState } from "react";
 import { Button } from "./Button";
+import Modal from "./Modal";
+import Backdrop from "./Backdrop";
 import Image from "next/image";
 import styles from "../styles/components/Navigation.module.scss";
-
+import TEDX from "../constants/tedx";
+import Carousel from "./Carousel"; 
 export const Navigation = () => {
   const [active, setActive] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModalHandler = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModalHandler = () => {
+    setModalIsOpen(false);
+  };
 
   const handleClick = () => {
     setActive(!active);
   };
+
+  const tedxSlides = TEDX.map((t, index) => {
+    return (
+      <img className='h-96' src={t.url} alt={t.name} />
+    );
+  });
 
   return (
     <nav className="navigation shadow-md">
@@ -21,13 +39,18 @@ export const Navigation = () => {
                 className="logo-image inline h-full w-full"
                 src="/images/full-logo.png"
               ></img>
-              <img
+              <img onClick={openModalHandler}
                 className="logo-image inline pl-3 pb-0.5 h-1/3 w-1/3"
                 src='/images/TEDxKC.png'
               ></img>
             </Link>
           </div>
-
+          {
+            modalIsOpen && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler}><Carousel pagination={["arrows"]} slides={tedxSlides}></Carousel></Modal>
+          }
+          {
+            modalIsOpen && <Backdrop onCancel={closeModalHandler}/>
+          }
           <div className="hidden lg:flex items-center space-x-1 ">
             <Link href="/about-us">About Us</Link>
             <Link href="/programs">Programs</Link>
