@@ -46,7 +46,7 @@ export const Navigation = () => {
             </Link>
           </div>
           {
-            modalIsOpen && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler}><Carousel pagination={["arrows"]} slides={tedxSlides}></Carousel></Modal>
+            modalIsOpen && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler}><Carousel pagination={["dots"]} slides={tedxSlides}></Carousel></Modal>
           }
           {
             modalIsOpen && <Backdrop onCancel={closeModalHandler}/>
