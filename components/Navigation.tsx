@@ -11,14 +11,9 @@ export const Navigation = () => {
   const [active, setActive] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModalHandler = () => {
-    setModalIsOpen(true);
+  const handleModalClick = () => {
+    setModalIsOpen(!modalIsOpen)
   };
-
-  const closeModalHandler = () => {
-    setModalIsOpen(false);
-  };
-
   const handleClick = () => {
     setActive(!active);
   };
@@ -39,17 +34,17 @@ export const Navigation = () => {
                 className="logo-image inline h-full w-full"
                 src="/images/full-logo.png"
               ></img>
-              <img onClick={openModalHandler}
+              <img onClick={handleModalClick}
                 className="logo-image inline pl-3 pb-0.5 h-1/3 w-1/3"
                 src='/images/TEDxKC.png'
               ></img>
             </Link>
           </div>
           {
-            modalIsOpen && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler}><Carousel pagination={["dots"]} slides={tedxSlides}></Carousel></Modal>
+            modalIsOpen && <Modal onCancel={handleModalClick} onConfirm={handleModalClick}><Carousel pagination={["dots"]} slides={tedxSlides}></Carousel></Modal>
           }
           {
-            modalIsOpen && <Backdrop onCancel={closeModalHandler}/>
+            modalIsOpen && <Backdrop onCancel={handleModalClick}/>
           }
           <div className="hidden lg:flex items-center space-x-1 ">
             <Link href="/about-us">About Us</Link>
