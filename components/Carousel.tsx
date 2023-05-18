@@ -84,7 +84,7 @@ export default function Carousel(props: CarouselProps) {
       <div className="flex flex-col items-center m-8">
         <div className="w-100 rounded overflow-x-hidden flex snap-x">
           {props.slides.map((slide, index) => {
-            return <div>{currentIndex === index && slide}</div>;
+            return <div key={index}>{currentIndex === index && slide}</div>;
           })}
         </div>
       </div>
@@ -101,6 +101,7 @@ export default function Carousel(props: CarouselProps) {
         {displayDots &&
           props.slides.map((slide, index) => (
             <div
+              key={index}
               onClick={() => setCurrentIndex(index)}
               className={getClasses(index)}
             ></div>
