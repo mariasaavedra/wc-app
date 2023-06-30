@@ -177,7 +177,7 @@ const AboutPage = () => {
               Claude Hawkins <span className="text-gray-500">|</span> IT/Asset Manager
             </Text>
             <Text className="pb-4 px-4 text-gray-500" size="b1">
-              Bio Coming Soon!
+            Claude Hawkins is a seasoned IT asset management professional with a proven track record of optimizing IT assets for efficiency and cost-effectiveness. He excels in the complete lifecycle management of assets, from procurement to retirement. Claude's expertise lies in developing strategies aligned with organizational goals, negotiating vendor contracts, and ensuring compliance with licensing agreements. He leverages data analysis and industry trends to make informed technology investment decisions. Claude's proficiency in asset management tools, strong communication skills, and commitment to continuous learning make him a valuable asset for enhancing IT infrastructure and driving organizational growth.
             </Text>
           </div>
         </div>
