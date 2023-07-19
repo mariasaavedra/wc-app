@@ -14,15 +14,15 @@ const FaqPage = () => {
 			<div className="py-5">
 				<details className="group">
 					<summary className="flex justify-between items-center font-medium cursor-pointer list-none ">
-						<span> How do I sign my child up to join the Techstronaught Coding Club at WeCode KC?</span>
+						<span>How do I sign my child up to join the Techstronaught Coding Club at WeCode KC?</span>
 						<span className="transition group-open:rotate-180">
 					<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
 				</span>
 					</summary>
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
-					We're so excited to be a part of your students' tech journey! To sign up for classes, click the
-					"Sign Up To Attend" button on our home page to be directed to our Eventbrite page. There you'll choose
-					from all of our available classes.
+					We're so excited to be a part of your students' tech journey! 
+					Go to ww.wecodekc.org and click the "Sign Up To Attend" button to be directed to our Eventbrite page. 
+					There you'll choose from all of our available classes
 					</p>
 				</details>
 			</div>
@@ -35,9 +35,7 @@ const FaqPage = () => {
 				</span>
 					</summary>
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
-					We kicked off our year with our "Spring into Code" event from March 20th - March 24th. Moving
-					forward, regular classes such as Scratch, Python, and Robotics will be available every first, second, and
-					third Saturday of the month.
+					We kick off our year with our "Spring into Code" event in March After that, regular classes such as Scratch, Python, and Web Development will be available every first, second, and third Saturday of the month. Go to www.wecodekc.org to join!
 					</p>
 				</details>
 			</div>
@@ -50,23 +48,22 @@ const FaqPage = () => {
 				</span>
 					</summary>
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
-					Our program is designed for students from the ages of 7-17. Suggested ages are given for each class
-					you can sign up for, but we understand that every child is different. Do not hesitate to reach out at
-					learntech@wecodekc.org so we can accommodate to your student's specific needs.
+					Our program is designed for students from the ages of 7-17. 
+					Suggested ages are given for each class you can sign up for, but we understand that every child is different. 
+					If you have a little tech head on your hands, do not hesitate to reach out at learntech@wecodekc.org so we can accommodate your student's specific needs.
 					</p>
 				</details>
 			</div>
 			<div className="py-5">
 				<details className="group">
 					<summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-						<span>Are there any other events at WeCode that my child can participate in? </span>
+						<span>Are there any other events at WeCode KC that my child can participate in?</span>
 						<span className="transition group-open:rotate-180">
 					<svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
 				</span>
 					</summary>
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
-					Yes! Sign up for our newsletter and follow our Eventbrite page to stay up to date on exclusive events
-					(i.e., 5th Saturdays, workshops, and competitions).
+					 Yes! Sign up for our newsletter and follow our Eventbrite page to stay up to date on exclusive events (i.e., 5th Saturdays, workshops, and competitions).
 					</p>
 				</details>
 			</div>
@@ -79,10 +76,10 @@ const FaqPage = () => {
 				</span>
 					</summary>
 					<p className="text-neutral-600 mt-3 pb-0 px-4 group-open:animate-fadeIn">
-					We are so glad you're interested in participating in this amazing journey with us. It's the dedication
-					and talent of our volunteers that make this organization stand out. We need instructors, assistants,
-					content creators, and administrators to help do what we do best. To sign up, click the "Volunteer"
-					button or contact us at volunteer@wecodekc.org to get started.	
+					We are so glad you're interested in participating in this amazing journey with us. 
+					It's the dedication and talent of our volunteers that make this organization stand out. 
+					We need instructors, assistants, content creators, and administrators to help do what we do best. 
+					Sign up at www.wecodekc.org and click the "Volunteer" button or contact us at volunteer@wecodekc.org to get started.
 					</p>
 				</details>
 			</div>
