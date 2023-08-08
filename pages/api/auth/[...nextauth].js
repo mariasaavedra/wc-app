@@ -19,13 +19,6 @@ export default NextAuth({
           email: credentials.email,
         });
 
-  
-
-
-
-
-
-
         if (!user) {
           client.close();
           throw new Error('No user found!');
