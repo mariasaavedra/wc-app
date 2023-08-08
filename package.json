@@ -3,19 +3,22 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "new:component": "./node_modules/plop/bin/plop.js"
   },
   "dependencies": {
+    "@prisma/client": "^2.16.1",
     "animate.css": "^4.1.1",
     "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "mongodb": "^5.7.0",
     "next": "^12.1.6",
+    "next-auth": "^3.29.10",
     "node-fetch": "^3.2.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-eventbrite-popup-checkout": "^1.0.5"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.38",
