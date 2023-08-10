@@ -1,5 +1,9 @@
 const SPONSORS = [
     {
+        url: "/images/meta.png",
+        name: "Meta",
+    },
+    {
         url:"/images/kc-current-logo.png",
         name:"KC Current",
     },
